@@ -1,0 +1,38 @@
+\chapter{Média Móvel}
+\label{Anexo:MM}
+ \section{Séries Temporais}
+
+
+O conceito de séries temporais está relacionado a um conjunto de observações de uma determinada variável feita em períodos sucessivos de tempo e ao longo de um determinado intervalo. Podemos citar como exemplos as cotações diárias da taxa do dólar, as vendas mensais de um determinado produto, a taxa de desemprego de um país, e etc. Segundo \citeonline{Morettin} os objetivos de se analisar uma série temporal são os seguintes: 
+
+\begin{enumerate}
+\item Descrição: propriedades da série como, por exemplo, o padrão de tendência, a existência de alterações estruturais, etc. 
+\item Explicação: construir modelos que permitam explicar o comportamento da série no período observado. 
+\item Controle de Processos: por exemplo, controle estatístico de qualidade. 
+\item Previsão: prever valores futuros com base em valores passados. 
+\end{enumerate}
+
+Existem inúmeros métodos para se fazer previsão de séries temporais, desde os mais complexos que envolvem diferentes parâmetros aos métodos mais simples e de fácil entendimento. Para \citeonline{Makridakis} o fato de se utilizar métodos estatísticos mais complexos não significa necessariamente uma melhora nos resultados da previsão. Métodos simples podem apresentar resultados satisfatórios sobre certas condições, além de permitir uma total compreensão de suas limitações facilitando assim a interpretação dos resultados. Sendo assim deve-se primeiro avaliar os benefícios de se utilizar um método simples ou um mais complexo antes de se iniciar a previsão em uma determinada aplicação.
+
+\section{Métodos Simples de Previsão de Série Temporal}
+
+Muitos estudos envolvendo séries temporais têm como objetivo fazer previsões. Existem alguns métodos de previsão simples e que efetuam a previsão de valores futuros da série temporal através das observações de valores passados da série em interesse. Segundo \citeonline{Morettin} o propósito destes métodos é identificar um padrão básico presente nos dados históricos da série e através deste padrão prever valores futuros.
+Estes métodos simples têm uma grande popularidade, pois são simples de programar, e o custo computacional é muito pequeno além de obter uma razoável previsão. Dentre estes métodos podemos citar a média móvel, o alisamento exponencial simples e linear e também o alisamento exponencial sazonal e linear de Winter.
+
+Os modelos de média móvel utilizam como previsão para um determinado período no futuro a média das observações passadas. As médias móveis podem ser simples, centradas ou ponderadas. Para os modelos de média móvel simples que são os modelos utilizados neste trabalho podemos definir sua equação como:  
+
+\begin{equation} 
+	x_{t} = \frac {[x_{t-1} + x_{t-2} + x_{t-2} + . . . + x_{t-n}]}  {n}
+\end{equation}
+
+Na equação acima n representa o número de observações incluídas na média Xt, ou seja, n (também pode ser chamado de janela de observações) pode ser considerado como um parâmetro a ser ajustado. Neste caso quanto maior for a janela de observações maior o efeito de alisamento na previsão. Sendo assim, se a série em estudo apresentar muita aleatoriedade ou pequenas mudanças em seus padrões um número maior de observações podem ser utilizadas no cálculo da média móvel, ou seja, podemos dizer que a média móvel neste caso fica mais imune a ruídos e movimentos curtos. Já para o caso de séries que apresentam pouca flutuação aleatória nos dados ou mudança significativa, um número menor deve ser usado para o tamanho da janela de observações, pois caso contrário a série prevista poderá reagir de maneira muito lenta as estas mudanças significativas.   Para \citeonline{Morettin} o termo média móvel é utilizado porque à medida que a próxima observação está disponível, a média das observações é recalculada, incluindo esta observação no conjunto de observações e desprezando a observação mais antiga, conforme podemos visualizar na figura ~\ref{Fig:MMA}:
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5.5in]{Imagens/MM.png}
+\DeclareGraphicsExtensions.
+\caption{Cálculo das Médias Móveis Simples.}
+\label{Fig:MMA}
+\end{figure}
+
+Na figura acima o valor N corresponde ao número de observações (tamanho da janela igual a três) a ser utilizado para o cálculo da média móvel simples. Podemos perceber claramente que para cada nova janela de três dias a ser formada, a observação mais antiga é desprezada, e uma nova observação é inserida no conjunto N para o próximo cálculo. 

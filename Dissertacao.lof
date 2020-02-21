@@ -1,0 +1,67 @@
+\select@language {portuges}
+\select@language {portuges}
+\select@language {english}
+\select@language {portuges}
+\select@language {english}
+\select@language {portuges}
+\contentsline {figure}{\numberline {1}{\ignorespaces Rob\IeC {\^o}s desenvolvidos.\relax }}{13}{figure.caption.8}
+\contentsline {figure}{\numberline {2}{\ignorespaces Exemplo Filtro Gaussiana.\relax }}{23}{figure.caption.10}
+\contentsline {figure}{\numberline {3}{\ignorespaces Segmenta\IeC {\c c}\IeC {\~a}o do Laranja usando como entrada uma imagem no modelo de cores HSV.\relax }}{24}{figure.caption.11}
+\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de eros\IeC {\~a}o e dilata\IeC {\c c}\IeC {\~a}o para um objeto circular, com elemento estruturante circular.\relax }}{25}{figure.caption.12}
+\contentsline {figure}{\numberline {5}{\ignorespaces Divis\IeC {\~a}o de regi\IeC {\~o}es para aplica\IeC {\c c}\IeC {\~a}o do gradientes.\relax }}{31}{figure.caption.13}
+\contentsline {figure}{\numberline {6}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o esquem\IeC {\'a}tica da classifica\IeC {\c c}\IeC {\~a}o em duas dimens\IeC {\~o}es do SVM.\relax }}{32}{figure.caption.14}
+\contentsline {figure}{\numberline {7}{\ignorespaces Um exemplo da maximiza\IeC {\c c}\IeC {\~a}o da margem.\relax }}{33}{figure.caption.15}
+\contentsline {figure}{\numberline {8}{\ignorespaces Algumas caracter\IeC {\'\i }sticas simples usadas para descrever objetos.\relax }}{36}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Caracter\IeC {\'\i }sticas de Borda}}}{36}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Caracter\IeC {\'\i }sticas de linhas Horizontais e Verticais}}}{36}{subfigure.8.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Caracter\IeC {\'\i }sticas de linhas Diagonais}}}{36}{subfigure.8.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Caracter\IeC {\'\i }sticas de Centro e Arredores}}}{36}{subfigure.8.4}
+\contentsline {figure}{\numberline {9}{\ignorespaces Caracter\IeC {\'\i }sticas usadas para descrever objetos.\relax }}{36}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Defini\IeC {\c c}\IeC {\~a}o da caracter\IeC {\'\i }stica}}}{36}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Janela rotacionada}}}{36}{subfigure.9.2}
+\contentsline {figure}{\numberline {10}{\ignorespaces Um exemplo de fronteira complexa.\relax }}{39}{figure.caption.19}
+\contentsline {figure}{\numberline {11}{\ignorespaces Um exemplo de v\IeC {\'a}rios classificadores mais simples ou mais fracos trabalhando em conjunto para determina\IeC {\c c}\IeC {\~a}o de fronteiras mais complexas.\relax }}{40}{figure.caption.20}
+\contentsline {figure}{\numberline {12}{\ignorespaces Planos que cortam o ser humano utilizados em rob\IeC {\^o}s humanoides.\relax }}{50}{figure.caption.22}
+\contentsline {figure}{\numberline {13}{\ignorespaces A bola utilizada em 2014.\relax }}{51}{figure.caption.23}
+\contentsline {figure}{\numberline {14}{\ignorespaces A bola utilizada em 2015.\relax }}{53}{figure.caption.25}
+\contentsline {figure}{\numberline {15}{\ignorespaces A diversidade de rob\IeC {\^o}s da liga humanoide.\relax }}{55}{figure.caption.28}
+\contentsline {figure}{\numberline {16}{\ignorespaces Divis\IeC {\~a}o esquem\IeC {\'a}tica do quadro em 9 regi\IeC {\~o}es.\relax }}{59}{figure.caption.33}
+\contentsline {figure}{\numberline {17}{\ignorespaces Vis\IeC {\~a}o Geral do Software a ser Implementado.\relax }}{62}{figure.caption.35}
+\contentsline {figure}{\numberline {18}{\ignorespaces O Rob\IeC {\^o} Darwin Modificado.\relax }}{64}{figure.caption.36}
+\contentsline {figure}{\numberline {19}{\ignorespaces O rob\IeC {\^o} Darwin seguindo uma bola parcialmente oculta pelo seu bra\IeC {\c c}o.\relax }}{66}{figure.caption.37}
+\contentsline {figure}{\numberline {20}{\ignorespaces Rob\IeC {\^o} Milton seguindo a bola com a influ\IeC {\^e}ncia da luz do sol e sombras.\relax }}{66}{figure.caption.38}
+\contentsline {figure}{\numberline {21}{\ignorespaces B1 utilizando a condensa\IeC {\c c}\IeC {\~a}o para identificar probabilisticamente e qualitativamente a posi\IeC {\c c}\IeC {\~a}o da bola laranja no quadro.\relax }}{67}{figure.caption.40}
+\contentsline {figure}{\numberline {22}{\ignorespaces Rastreamento da bola usando caracter\IeC {\'\i }sticas HAAR em um campo de futebol sobrecarregado de objetos, pessoas e regi\IeC {\~o}es n\IeC {\~a}o pertencentes ao jogo.\relax }}{69}{figure.caption.41}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{69}{subfigure.22.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{69}{subfigure.22.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{69}{subfigure.22.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{69}{subfigure.22.4}
+\contentsline {figure}{\numberline {23}{\ignorespaces Curva ROC para detec\IeC {\c c}\IeC {\~a}o da bola usando caracter\IeC {\'\i }sticas HAAR.}}{69}{figure.caption.42}
+\contentsline {figure}{\numberline {24}{\ignorespaces Fun\IeC {\c c}\IeC {\~a}o relacionando pixels com dist\IeC {\^a}ncia de uma bola de tamanho conhecido.\relax }}{70}{figure.caption.43}
+\contentsline {figure}{\numberline {25}{\ignorespaces Curvas ROC. A linha verde mostra o classificador cl\IeC {\'a}ssico HOG-SVM, usado para reconhecimento de pessoas. A linha vermelha demonstra o mesmo classificador treinado com pessoas usado para reconhecer rob\IeC {\^o}s e a linha amarela mostra o classificador treinado com 100 imagens de rob\IeC {\^o}s positivas e 100 imagens negativas usado na classifica\IeC {\c c}\IeC {\~a}o dos rob\IeC {\^o}s.\relax }}{72}{figure.caption.44}
+\contentsline {figure}{\numberline {26}{\ignorespaces Detec\IeC {\c c}\IeC {\~a}o do rob\IeC {\^o} Milton usando imagens de pessoas como conjunto de treinamento.\relax }}{73}{figure.caption.45}
+\contentsline {figure}{\numberline {27}{\ignorespaces Rastreamento do rob\IeC {\^o} B2 usando caracter\IeC {\'\i }sticas HAAR no campo de futebol com grama artificial.\relax }}{74}{figure.caption.46}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{74}{subfigure.27.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{74}{subfigure.27.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{74}{subfigure.27.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{74}{subfigure.27.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{74}{subfigure.27.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{74}{subfigure.27.6}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{74}{subfigure.27.7}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{74}{subfigure.27.8}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {}}}{74}{subfigure.27.9}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {}}}{74}{subfigure.27.10}
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {}}}{74}{subfigure.27.11}
+\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {}}}{74}{subfigure.27.12}
+\contentsline {figure}{\numberline {28}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o do Rob\IeC {\^o} Bold Hearts \cite {Bold} da universidade de Hertfordshire usando HOG-SVM (Figura a) e HAAR-Adaboost (Figura b).\relax }}{75}{figure.caption.47}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HOG - SVM}}}{75}{subfigure.28.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {HAAR - Boosting}}}{75}{subfigure.28.2}
+\contentsline {figure}{\numberline {29}{\ignorespaces Curvas ROC. A linha verde mostra o algoritmo HOG-SVM cl\IeC {\'a}ssico treinado com imagens de rob\IeC {\^o}s usado para detec\IeC {\c c}\IeC {\~a}o de rob\IeC {\^o}s. A linha vermelha demonstra o resultado do classificador HAAR-AdaBoost treinado com o mesmo prop\IeC {\'o}sito.\relax }}{76}{figure.caption.48}
+\contentsline {figure}{\numberline {30}{\ignorespaces Desempenho dos descritores HAAR-AdaBoost e HOG-SVM em termos de quadros por segundo ap\IeC {\'o}s processamento.\relax }}{77}{figure.caption.49}
+\contentsline {figure}{\numberline {31}{\ignorespaces V\IeC {\'a}rios rob\IeC {\^o}s identificados usando o HOG-SVM e o HAAR-AdaBoost.\relax }}{78}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HOG - SVM}}}{78}{subfigure.31.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {HAAR - Boosting}}}{78}{subfigure.31.2}
+\contentsline {figure}{\numberline {32}{\ignorespaces Quadro de captura do rob\IeC {\^o} B2 identificando v\IeC {\'a}rios rob\IeC {\^o}s usando o HOG-SVM (Figura a) e o HAAR-AdaBoost (Figura b).\relax }}{79}{figure.caption.51}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HOG - SVM}}}{79}{subfigure.32.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {HAAR - Boosting}}}{79}{subfigure.32.2}
+\contentsline {figure}{\numberline {33}{\ignorespaces C\IeC {\'a}lculo das M\IeC {\'e}dias M\IeC {\'o}veis Simples.\relax }}{92}{figure.caption.53}

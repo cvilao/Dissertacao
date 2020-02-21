@@ -1,0 +1,564 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.5 }
+
+\bibitem[Aloimonos, Weiss e Bandyopadhyay 1988]{Aloimonos}
+\abntrefinfo{Aloimonos, Weiss e Bandyopadhyay}{ALOIMONOS; WEISS;
+  BANDYOPADHYAY}{1988}
+{ALOIMONOS, J.; WEISS, I.; BANDYOPADHYAY, A. Active vision.
+\textbf{International Journal of Computer Vision}, Kluwer Academic Publishers,
+  v.~1, n.~4, p. 333--356, 1988.
+ISSN 0920-5691.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/BF00133571}.}
+
+\bibitem[AUTMan Humanoid KidSize Team Description Paper 2014]{AUTMan}
+\abntrefinfo{AUTMan\ldots}{AUTMAN\ldots}{2014}
+{AUTMAN Humanoid KidSize Team Description Paper. 2014. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2015/teams/}.
+Acesso em: 01 Set. 2015.}
+
+\bibitem[Avidan 2007]{Avidan}
+\abntrefinfo{Avidan}{AVIDAN}{2007}
+{AVIDAN, S. Ensemble tracking.
+\textbf{Pattern Analysis and Machine Intelligence, IEEE Transactions on},
+  2007.}
+
+\bibitem[Baset Kid-Size 2014 Team Description Paper 2014]{Baset}
+\abntrefinfo{Baset\ldots}{BASET\ldots}{2014}
+{BASET Kid-Size 2014 Team Description Paper. 2014. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2015/teams/}.
+Acesso em: 01 Set. 2015.}
+
+\bibitem[Benallal e Meunier 2003]{Benallal}
+\abntrefinfo{Benallal e Meunier}{BENALLAL; MEUNIER}{2003}
+{BENALLAL, M.; MEUNIER, J. Real-time color segmentation of road signs. In:
+  \textbf{Electrical and Computer Engineering, 2003. IEEE CCECE 2003. Canadian
+  Conference on}. [S.l.: s.n.], 2003. v.~3, p. 1823--1826 vol.3.
+ISSN 0840-7789.}
+
+\bibitem[Bold Hearts - RoboCup 2015 Qualification - Kid Size Humanoid League
+  2014]{BoldHearts}
+\abntrefinfo{Bold\ldots}{BOLD\ldots}{2014a}
+{BOLD Hearts - RoboCup 2015 Qualification - Kid Size Humanoid League. 2014.
+  Disponível em: \url{https://www.youtube.com/watch?v=pzYHAp7b7sY}.
+Acesso em: 03 Set. 2015.}
+
+\bibitem[Bold Hearts Team Description RoboCup 2014 Kid Size 2014]{Bold}
+\abntrefinfo{Bold\ldots}{BOLD\ldots}{2014b}
+{BOLD Hearts Team Description RoboCup 2014 Kid Size. 2014. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2015/teams/}.
+Acesso em: 01 Set. 2015.}
+
+\bibitem[Broggi et al. 2007]{Broggi}
+\abntrefinfo{Broggi et al.}{BROGGI et al.}{2007}
+{BROGGI, A. et al. Real time road signs recognition. In:  IEEE.
+  \textbf{Intelligent Vehicles Symposium, 2007 IEEE}. [S.l.], 2007. p.
+  981--986.}
+
+\bibitem[Budden et al. 2012]{Bunden}
+\abntrefinfo{Budden et al.}{BUDDEN et al.}{2012}
+{BUDDEN, D. et al. A novel approach to ball detection for humanoid robot
+  soccer.
+\textbf{AI 2012: Advances in Artificial Intelligence, Lecture Notes in Computer
+  Science}, v.~7691, p. 827--838, 2012.}
+
+\bibitem[Can not get new positive sample. 2012]{Maria}
+\abntrefinfo{Can\ldots}{CAN\ldots}{2012}
+{CAN not get new positive sample. 2012. Disponível em:
+  \url{http://goo.gl/5qZl0j}.
+Acesso em: 10 Abr. 2014.}
+
+\bibitem[Chaumette e Hutchinson 2006]{VS1}
+\abntrefinfo{Chaumette e Hutchinson}{CHAUMETTE; HUTCHINSON}{2006}
+{CHAUMETTE, F.; HUTCHINSON, S. Visual servo control. i. basic approaches.
+\textbf{Robotics \& Automation Magazine, IEEE}, IEEE, v.~13, n.~4, p. 82--90,
+  2006.}
+
+\bibitem[Chaumette e Hutchinson 2007]{VS2}
+\abntrefinfo{Chaumette e Hutchinson}{CHAUMETTE; HUTCHINSON}{2007}
+{\underline{\ \ \ \ \ \ \ \ }. Visual servo control, part ii: Advanced
+  approaches.
+\textbf{IEEE Robotics and Automation Magazine}, v.~14, n.~1, p. 109--118,
+  2007.}
+
+\bibitem[CIT Brains 2014]{CIT}
+\abntrefinfo{CIT\ldots}{CIT\ldots}{2014}
+{CIT Brains. 2014. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2015/teams/}.
+Acesso em: 01 Set. 2015.}
+
+\bibitem[Colombo, Bimbo e Pala 1999]{Bimbo}
+\abntrefinfo{Colombo, Bimbo e Pala}{COLOMBO; BIMBO; PALA}{1999}
+{COLOMBO, C.; BIMBO, A. D.; PALA, P. Semantics in visual information retrieval.
+\textbf{IEEE MultiMedia}, IEEE, n.~3, p. 38--53, 1999.}
+
+\bibitem[Cristianini e Shawe-Taylor 2000]{cristianini2000introduction}
+\abntrefinfo{Cristianini e Shawe-Taylor}{CRISTIANINI; SHAWE-TAYLOR}{2000}
+{CRISTIANINI, N.; SHAWE-TAYLOR, J. \textbf{An introduction to support vector
+  machines and other kernel-based learning methods}. [S.l.]: Cambridge
+  university press, 2000.}
+
+\bibitem[Dalal e Triggs 2005]{Dallal}
+\abntrefinfo{Dalal e Triggs}{DALAL; TRIGGS}{2005}
+{DALAL, N.; TRIGGS, B. Histograms of oriented gradients for human detection.
+  In:  IEEE. \textbf{Computer Vision and Pattern Recognition. CVPR 2005. IEEE
+  Computer Society Conference on}. [S.l.], 2005. v.~1, p. 886--893.}
+
+\bibitem[Davies 1988]{Davies}
+\abntrefinfo{Davies}{DAVIES}{1988}
+{DAVIES, E. A modified hough scheme for general circle location.
+\textbf{Pattern Recognition Letters}, v.~7, n.~1, p. 37 -- 43, 1988.
+ISSN 0167-8655.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/0167865588900426}.}
+
+\bibitem[Denzler, Zobel e Niemann 2003]{Denzler}
+\abntrefinfo{Denzler, Zobel e Niemann}{DENZLER; ZOBEL; NIEMANN}{2003}
+{DENZLER, J.; ZOBEL, M.; NIEMANN, H. Information theoretic focal length
+  selection for real-time active 3d object tracking. In:  IEEE.
+  \textbf{Computer Vision, 2003. Proceedings. Ninth IEEE International
+  Conference on}. [S.l.], 2003. p. 400--407.}
+
+\bibitem[Dougherty 1992]{Dougherty}
+\abntrefinfo{Dougherty}{DOUGHERTY}{1992}
+{DOUGHERTY, E.~R. \textbf{An Introduction to Morphological Image Processing}.
+  [S.l.]: SPIE Optical Engineering Press, 1992.}
+
+\bibitem[Duda e Hart 1972]{HoughCircle}
+\abntrefinfo{Duda e Hart}{DUDA; HART}{1972}
+{DUDA, R.~O.; HART, P.~E. Use of the hough transformation to detect lines and
+  curves in pictures.
+\textbf{Communications of the ACM}, ACM, v.~15, n.~1, p. 11--15, 1972.}
+
+\bibitem[Duda e Hart 2001]{DudaHart}
+\abntrefinfo{Duda e Hart}{DUDA; HART}{2001}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Pattern Classification}. 2. ed. [S.l.]:
+  Wiley, 2001.}
+
+\bibitem[Dumais et al. 1998]{Dumais}
+\abntrefinfo{Dumais et al.}{DUMAIS et al.}{1998}
+{DUMAIS, S. et al. Using svms for text categorization.
+\textbf{IEEE Intelligent Systems}, Trends and Controversies—Support Vector
+  Machines, v.~13, n.~4, p. 21--23, 1998.}
+
+\bibitem[EDROM Humanoid Kid Size 2014 2014]{Edrom}
+\abntrefinfo{EDROM\ldots}{EDROM\ldots}{2014}
+{EDROM Humanoid Kid Size 2014. 2014. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2014/teams/}.
+Acesso em: 03 Set. 2015.}
+
+\bibitem[Erhan et al. 2014]{Deep2}
+\abntrefinfo{Erhan et al.}{ERHAN et al.}{2014}
+{ERHAN, D. et al. Scalable object detection using deep neural networks. In:
+  IEEE. \textbf{Computer Vision and Pattern Recognition (CVPR), 2014 IEEE
+  Conference on}. [S.l.], 2014. p. 2155--2162.}
+
+\bibitem[EROS Team Description for Humanoid Kid Size League of Robocup 2014
+  2014]{EROS}
+\abntrefinfo{EROS\ldots}{EROS\ldots}{2014}
+{EROS Team Description for Humanoid Kid Size League of Robocup 2014. 2014.
+  Disponível em: \url{https://www.robocuphumanoid.org/hl-2015/teams/}.
+Acesso em: 01 Set. 2015.}
+
+\bibitem[Estivill-Castro e Radev 2013]{Castro}
+\abntrefinfo{Estivill-Castro e Radev}{ESTIVILL-CASTRO; RADEV}{2013}
+{ESTIVILL-CASTRO, V.; RADEV, J. Humanoids learning who are teammates and who
+  are opponents.
+\textbf{The 8th Workshop on Humanoid Soccer Robots 13th at IEEE-RAS
+  International Conference on Humanoid Robots}, 2013.}
+
+\bibitem[Faria et al. 2008]{Lopes}
+\abntrefinfo{Faria et al.}{FARIA et al.}{2008}
+{FARIA, E. et al. Previs{\~a}o de s{\'e}ries temporais utilizando m{\'e}todos
+  estat{\'\i}sticos.
+\textbf{Centro Brasileiro de Pesquisas F{\'\i}sicas--CBPF. Pontif{\'\i}cia
+  Universidade Cat{\'o}lica--PUC. Rio de Janeiro}, 2008.}
+
+\bibitem[Fleet e Weiss 2006]{Fleet}
+\abntrefinfo{Fleet e Weiss}{FLEET; WEISS}{2006}
+{FLEET, D.; WEISS, Y. Optical flow estimation. In:  \textbf{Handbook of
+  mathematical models in computer vision}. [S.l.]: Springer, 2006. p.
+  237--257.}
+
+\bibitem[Fluxo Ótico 2007]{Faria}
+\abntrefinfo{Fluxo\ldots}{FLUXO\ldots}{2007}
+{FLUXO Ótico. 2007. Disponível em:
+  \url{http://www.verlab.dcc.ufmg.br/_media/cursos/visao/2007-1/alunos/alexandrewagner/optical_flow_article.pdf}.
+Acesso em: 12 Ago. 2014.}
+
+\bibitem[Freund e Schapire 1997]{Adaboost}
+\abntrefinfo{Freund e Schapire}{FREUND; SCHAPIRE}{1997}
+{FREUND, Y.; SCHAPIRE, R.~E. A decision-theoretic generalization of on-line
+  learning and an application to boosting.
+\textbf{Journa1 of computer and system sciences}, Elsevier, v.~55, n.~1, p.
+  119--139, 1997.}
+
+\bibitem[Friedman et al. 2000]{FriedmanReal}
+\abntrefinfo{Friedman et al.}{FRIEDMAN et al.}{2000}
+{FRIEDMAN, J. et al. Additive logistic regression: a statistical view of
+  boosting (with discussion and a rejoinder by the authors).
+\textbf{The annals of statistics}, Institute of Mathematical Statistics, v.~28,
+  n.~2, p. 337--407, 2000.}
+
+\bibitem[Gonzalez e Woods 2010]{Gonzalez}
+\abntrefinfo{Gonzalez e Woods}{GONZALEZ; WOODS}{2010}
+{GONZALEZ, R.~C.; WOODS, R.~E. \textbf{Digital Image Processing}. 3. ed.
+  [S.l.]: Prentice Hall, 2010.}
+
+\bibitem[Guil, Villalba e Zapata 1995]{FastHough}
+\abntrefinfo{Guil, Villalba e Zapata}{GUIL; VILLALBA; ZAPATA}{1995}
+{GUIL, N.; VILLALBA, J.; ZAPATA, E.~L. A fast hough transform for segment
+  detection.
+\textbf{Image processing, IEEE transactions on}, IEEE, v.~4, n.~11, p.
+  1541--1548, 1995.}
+
+\bibitem[Ha et al. 2011]{Darwin}
+\abntrefinfo{Ha et al.}{HA et al.}{2011}
+{HA, I. et al. Development of open humanoid platform darwin-op. In:  IEEE.
+  \textbf{SICE Annual conference (SICE), 2011 proceedings of}. [S.l.], 2011. p.
+  2178--2181.}
+
+\bibitem[Haar 1910]{AlfredHaar}
+\abntrefinfo{Haar}{HAAR}{1910}
+{HAAR, A. Zur theorie der orthogonalen funktionensysteme.
+\textbf{Mathematische annalen}, Springer, v.~69, n.~3, p. 331--371, 1910.}
+
+\bibitem[Haas, Matheron e Serra 1967]{Matheron}
+\abntrefinfo{Haas, Matheron e Serra}{HAAS; MATHERON; SERRA}{1967}
+{HAAS, A.; MATHERON, G.; SERRA, J. Morphologie math{\'e}matique et
+  granulom{\'e}tries en place. In:  \textbf{Annales des mines}. [S.l.: s.n.],
+  1967. v.~11, n. 736-753, p.~7--3.}
+
+\bibitem[Haj et al. 2011]{Fernandez}
+\abntrefinfo{Haj et al.}{HAJ et al.}{2011}
+{HAJ, M. A. et al. \textbf{Visual analysis of humans: \textmd {Looking at
+  people}}. [S.l.]: Springer, 2011.}
+
+\bibitem[Haykin e Network 2004]{Haykin}
+\abntrefinfo{Haykin e Network}{HAYKIN; NETWORK}{2004}
+{HAYKIN, S.; NETWORK, N. A comprehensive foundation.
+\textbf{Neural Networks}, v.~2, n.~2004, 2004.}
+
+\bibitem[Hough 1959]{Hough}
+\abntrefinfo{Hough}{HOUGH}{1959}
+{HOUGH, P.~V. Machine analysis of bubble chamber pictures. In:
+  \textbf{International conference on high energy accelerators and
+  instrumentation}. [S.l.: s.n.], 1959. v.~73.}
+
+\bibitem[Hutchinson et al. 1996]{Corke}
+\abntrefinfo{Hutchinson et al.}{HUTCHINSON et al.}{1996}
+{HUTCHINSON, S. et al. A tutorial on visual servo control.
+\textbf{Robotics and automation, IEEE transactions on}, IEEE, v.~12, n.~5, p.
+  651--670, 1996.}
+
+\bibitem[Isard e Blake 1998]{Condensation}
+\abntrefinfo{Isard e Blake}{ISARD; BLAKE}{1998}
+{ISARD, M.; BLAKE, A. Condensation—conditional density propagation for visual
+  tracking.
+\textbf{International journal of computer vision}, Springer, v.~29, n.~1, p.
+  5--28, 1998.}
+
+\bibitem[Ju, Zhang e Xue 2013]{Xue}
+\abntrefinfo{Ju, Zhang e Xue}{JU; ZHANG; XUE}{2013}
+{JU, Y.; ZHANG, H.; XUE, Y. Research of feature selection and comparision in
+  adaboost based object detection system.
+\textbf{Journal of Computational Information Systems}, Binary Information
+  Press, v.~9, p.~22, 2013.
+Doi = {10.12733/jcis7492}.}
+
+\bibitem[Kiryati, Eldar e Bruckstein 1991]{Kiryatti}
+\abntrefinfo{Kiryati, Eldar e Bruckstein}{KIRYATI; ELDAR; BRUCKSTEIN}{1991}
+{KIRYATI, N.; ELDAR, Y.; BRUCKSTEIN, A.~M. A probabilistic hough transform.
+\textbf{Pattern recognition}, Elsevier, v.~24, n.~4, p. 303--316, 1991.}
+
+\bibitem[Kuranov, Lienhart e Pisarevsky 1998]{Kuranov}
+\abntrefinfo{Kuranov, Lienhart e Pisarevsky}{KURANOV; LIENHART;
+  PISAREVSKY}{1998}
+{KURANOV, A.; LIENHART, R.; PISAREVSKY, V. An empirical analysis of boosting
+  algorithms for rapid objects with an extended set of haar-like features.
+\textbf{Intel Technical Report MRL-TR-July02-01}, 1998.
+Http://www.lienhart.de/Publications/DAGM2003.pdf.}
+
+\bibitem[Li e Zhang 2004]{LiZhang}
+\abntrefinfo{Li e Zhang}{LI; ZHANG}{2004}
+{LI, S.~Z.; ZHANG, Z. Floatboost learning and statistical face detection.
+\textbf{Pattern Analysis and Machine Intelligence, IEEE Transactions on}, IEEE,
+  v.~26, n.~9, p. 1112--1123, 2004.}
+
+\bibitem[Lorena e Carvalho 2003]{Ana}
+\abntrefinfo{Lorena e Carvalho}{LORENA; CARVALHO}{2003}
+{LORENA, A.~C.; CARVALHO. Introdução as máquinas de vetores suporte.
+\textbf{Relatórios Técnicos do ICMC: Usp - São Carlos}, 2003.}
+
+\bibitem[Mackworth 1993]{Mackworth}
+\abntrefinfo{Mackworth}{MACKWORTH}{1993}
+{MACKWORTH, A.~K. On seeing robots. In:  BASU, A.; LI, X. (Ed.).
+  \textbf{Computer Vision: Systems, Theory and Applications}. Singapore: World
+  Scientific Press, 1993. p. 1--13.
+Reprinted in P. Thagard (ed.), Mind Readings, MIT Press, 1998.}
+
+\bibitem[Makridakis, Wheelwright e Sons 1998]{Makridakis}
+\abntrefinfo{Makridakis, Wheelwright e Sons}{MAKRIDAKIS; WHEELWRIGHT;
+  SONS}{1998}
+{MAKRIDAKIS, S.; WHEELWRIGHT, S.~C.; SONS, R. J. H. J.~W. Forecasting: Methods
+  and applications.
+\textbf{IIE Transactions}, v.~31, 1998.}
+
+\bibitem[Mart{\'\i}nez e Kak 2001]{Martinez}
+\abntrefinfo{Mart{\'\i}nez e Kak}{MART{\'I}NEZ; KAK}{2001}
+{MART{\'I}NEZ, A.~M.; KAK, A.~C. Pca versus lda.
+\textbf{Pattern analysis and machine intelligence, IEEE transactions on}, IEEE,
+  v.~23, n.~2, p. 228--233, 2001.}
+
+\bibitem[McCann e Reesman 2013]{mccannobject}
+\abntrefinfo{McCann e Reesman}{MCCANN; REESMAN}{2013}
+{MCCANN, S.; REESMAN, J. Object detection using convolutional neural networks.
+Stanford University, p. 331--371, 2013.}
+
+\bibitem[Mita et al. 2008]{Mita}
+\abntrefinfo{Mita et al.}{MITA et al.}{2008}
+{MITA, T. et al. Discriminative feature co-occurrence selection for object
+  detection.
+\textbf{Pattern analysis and machine intelligence, IEEE transactions on}, IEEE,
+  v.~30, n.~7, p. 1257--1269, 2008.}
+
+\bibitem[Morettin e Toloi 2006]{Morettin}
+\abntrefinfo{Morettin e Toloi}{MORETTIN; TOLOI}{2006}
+{MORETTIN, P.~A.; TOLOI, C. \textbf{An{\'a}lise de s{\'e}ries temporais}.
+  [S.l.]: Blucher, 2006.}
+
+\bibitem[Ms Excel 2013 2015]{MS}
+\abntrefinfo{Ms\ldots}{MS\ldots}{2015}
+{MS Excel 2013. 2015. Disponível em: \url{https://www.office.com/}.
+Acesso em: 03 Set. 2015.}
+
+\bibitem[NAO 2015]{NAO}
+\abntrefinfo{NAO}{NAO}{2015}
+{NAO. 2015. Disponível em:
+  \url{http://www.active8robots.com/wp-content/uploads/File-1400771269.pdf}.
+Acesso em: 06/02/2015.}
+
+\bibitem[Nummiaro, Koller-Meier e Gool 2002]{AdaptPart}
+\abntrefinfo{Nummiaro, Koller-Meier e Gool}{NUMMIARO; KOLLER-MEIER; GOOL}{2002}
+{NUMMIARO, K.; KOLLER-MEIER, E.; GOOL, L. V. Object tracking with an adaptive
+  color-based particle filter. In:  \textbf{Pattern recognition}. [S.l.]:
+  Springer, 2002. p. 353--360.}
+
+\bibitem[OpenCV - (Open Source Computer Vision Library) 2014]{OpenCV}
+\abntrefinfo{OpenCV\ldots}{OPENCV\ldots}{2014}
+{OPENCV - (Open Source Computer Vision Library). 2014. Disponível em:
+  \url{http://www.opencv.org}.
+Acesso em: 20 Mai. 2014.}
+
+\bibitem[Osuna, Freund e Girosi 1997]{Osuna}
+\abntrefinfo{Osuna, Freund e Girosi}{OSUNA; FREUND; GIROSI}{1997}
+{OSUNA, E.; FREUND, R.; GIROSI, F. Training support vector machines: \textmd{an
+  application to face detection}. In:  IEEE. \textbf{Computer Vision and
+  Pattern Recognition, 1997. Proceedings., 1997 IEEE Computer Society
+  Conference on}. [S.l.], 1997. p. 130--136.}
+
+\bibitem[Paisitkriangkrai, Shen e Zhang 2010]{Sakrapee}
+\abntrefinfo{Paisitkriangkrai, Shen e Zhang}{PAISITKRIANGKRAI; SHEN;
+  ZHANG}{2010}
+{PAISITKRIANGKRAI, S.; SHEN, C.; ZHANG, J. Face detection with effective
+  feature extraction.
+\textbf{Computer Vision – ACCV 2010 in 10th Asian Conference on Computer
+  Vision, Queenstown, New Zealand}, v.~6494, 2010.}
+
+\bibitem[Papageorgiou, Oren e Poggio 1998]{Papageorgiou}
+\abntrefinfo{Papageorgiou, Oren e Poggio}{PAPAGEORGIOU; OREN; POGGIO}{1998}
+{PAPAGEORGIOU, C.~P.; OREN, M.; POGGIO, T. A general framework for object
+  detection. In:  IEEE. \textbf{Computer vision, 1998. sixth international
+  conference on}. [S.l.], 1998. p. 555--562.}
+
+\bibitem[Parag, Porikli e Elgammal 2008]{Parag}
+\abntrefinfo{Parag, Porikli e Elgammal}{PARAG; PORIKLI; ELGAMMAL}{2008}
+{PARAG, T.; PORIKLI, F.; ELGAMMAL, A. Boosting adaptive linear weak classifiers
+  for online learning and tracking.
+\textbf{Computer Vision and Pattern Recognition, 2008. CVPR 2008. IEEE
+  Conference on}, 2008.}
+
+\bibitem[Patel e G. 2013]{Kalmman}
+\abntrefinfo{Patel e G.}{PATEL; G.}{2013}
+{PATEL, H.~A.; G., T.~D. Moving object tracking using kalman filter.
+\textbf{International Journal of Computer Science and Mobile Computing}, v.~02,
+  p. 326--332, 2013.}
+
+\bibitem[Pedregosa et al. 2011]{scikit-learn}
+\abntrefinfo{Pedregosa et al.}{PEDREGOSA et al.}{2011}
+{PEDREGOSA, F. et al. Scikit-learn: Machine learning in {P}ython.
+\textbf{Journal of Machine Learning Research}, v.~12, p. 2825--2830, 2011.}
+
+\bibitem[Perico et al. 2014]{perico2014hardware}
+\abntrefinfo{Perico et al.}{PERICO et al.}{2014}
+{PERICO, D.~H. et al. Hardware and software aspects of the design and assembly
+  of a new humanoid robot for robocup soccer. In:  IEEE. \textbf{Robotics:
+  SBR-LARS Robotics Symposium and Robocontrol (SBR LARS Robocontrol), 2014
+  Joint Conference on}. [S.l.], 2014. p. 73--78.}
+
+\bibitem[Polikar 2006]{Polikar}
+\abntrefinfo{Polikar}{POLIKAR}{2006}
+{POLIKAR, R. Ensemble based systems in decision making.
+\textbf{Circuits and Systems Magazine, IEEE}, v.~6, p. 21 -- 45, 2006.}
+
+\bibitem[Resultados da RoboCup 2014]{JP2014}
+\abntrefinfo{Resultados\ldots}{RESULTADOS\ldots}{2014}
+{RESULTADOS da RoboCup. 2014. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2014/results/}.
+Acesso em: 03 Set. 2015.}
+
+\bibitem[Resultados da RoboCup 2015]{JP2015}
+\abntrefinfo{Resultados\ldots}{RESULTADOS\ldots}{2015}
+{RESULTADOS da RoboCup. 2015. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2015/results/}.
+Acesso em: 03 Set. 2015.}
+
+\bibitem[Resultados do LARC/CBR 2014]{LARC2014}
+\abntrefinfo{Resultados\ldots}{RESULTADOS\ldots}{2014}
+{RESULTADOS do LARC/CBR. 2014. Disponível em:
+  \url{http://www.cbrobotica.org/}.
+Acesso em: 25 Set. 2015.}
+
+\bibitem[Rivlin e Rotstein 2000]{Rivlin}
+\abntrefinfo{Rivlin e Rotstein}{RIVLIN; ROTSTEIN}{2000}
+{RIVLIN, E.; ROTSTEIN, H. Control of a camera for active vision: Foveal vision,
+  smooth tracking and saccade.
+\textbf{International Journal of Computer Vision}, Kluwer Academic Publishers,
+  v.~39, n.~2, p. 81--96, 2000.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A\\%3A1008166825510}.}
+
+\bibitem[Robocup Official Website 2014]{Rules}
+\abntrefinfo{Robocup\ldots}{ROBOCUP\ldots}{2014}
+{ROBOCUP Official Website. 2014. Disponível em: \url{http://www.robocup.org}.
+Acesso em: 25 Mai. 2014.}
+
+\bibitem[Ross 2006]{Ross}
+\abntrefinfo{Ross}{ROSS}{2006}
+{ROSS, M. Statistical motion segmentation and object tracking without a-priori
+  models.
+\textbf{Vision, Modeling, and Visualization 2006: Proceedings}, 2006.}
+
+\bibitem[Sanderson e Weiss 1980]{Weiss}
+\abntrefinfo{Sanderson e Weiss}{SANDERSON; WEISS}{1980}
+{SANDERSON, A.; WEISS, L. Image-based visual servo control using relational
+  graph error signals.
+\textbf{Proc. ieee}, v.~1074, 1980.}
+
+\bibitem[Schapire e Singer 1999]{SchapireGentle1}
+\abntrefinfo{Schapire e Singer}{SCHAPIRE; SINGER}{1999a}
+{SCHAPIRE, R.~E.; SINGER, Y. Improved boosting algorithms using
+  confidence-rated predictions.
+\textbf{Machine learning}, Springer, v.~37, n.~3, p. 297--336, 1999.}
+
+\bibitem[Schapire e Singer 1999]{SchapireGentle2}
+\abntrefinfo{Schapire e Singer}{SCHAPIRE; SINGER}{1999b}
+{\underline{\ \ \ \ \ \ \ \ }. A short introduction to boosting.
+\textbf{Journal-Japanese Society For Artificial Intelligence}, JAPANESE SOC
+  ARTIFICIAL INTELL, v.~14, n. 771-780, p.~1612, 1999.}
+
+\bibitem[Sharma 1998]{Sharma}
+\abntrefinfo{Sharma}{SHARMA}{1998}
+{SHARMA, R. Role of active vision in optimizing visual feedback for robot
+  control. In:  \textbf{The confluence of vision and control}. [S.l.]:
+  Springer, 1998. p. 24--40.}
+
+\bibitem[Sherman 1981]{Young}
+\abntrefinfo{Sherman}{SHERMAN}{1981}
+{SHERMAN, P.~D. \textbf{Colour vision in the nineteenth century: the
+  Young-Helmholtz-Maxwell theory}. [S.l.]: Taylor \& Francis, 1981.}
+
+\bibitem[Site Oficial da RoboCup Brasil 2014]{siteobjetivoRoboCup}
+\abntrefinfo{Site\ldots}{SITE\ldots}{2014}
+{SITE Oficial da RoboCup Brasil. 2014. Disponível em:
+  \url{http://www.robocup.org.br/objetivo.php}.
+Acesso em: 01 Set. 2015.}
+
+\bibitem[Szegedy, Toshev e Erhan 2013]{Deep1}
+\abntrefinfo{Szegedy, Toshev e Erhan}{SZEGEDY; TOSHEV; ERHAN}{2013}
+{SZEGEDY, C.; TOSHEV, A.; ERHAN, D. Deep neural networks for object detection.
+  In:  BURGES, C. et al. (Ed.). \textbf{Advances in Neural Information
+  Processing Systems 26}. [s.n.], 2013. p. 2553--2561.
+Dispon{\'\i}vel em:
+  \url{http://media.nips.cc/nipsbooks/nipspapers/paper\_files/nips26/1210.pdf}.}
+
+\bibitem[The NUbots Team Description Paper 2014 2014]{Nubots}
+\abntrefinfo{The\ldots}{THE\ldots}{2014}
+{THE NUbots Team Description Paper 2014. 2014. Disponível em:
+  \url{https://www.robocuphumanoid.org/hl-2015/teams/}.
+Acesso em: 01 Set. 2015.}
+
+\bibitem[Thrun 2002]{Thrun}
+\abntrefinfo{Thrun}{THRUN}{2002}
+{THRUN, S. Particle filters in robotics. In:  \textbf{Proceedings of the 17th
+  Annual Conference on Uncertainty in AI (UAI)}. [S.l.: s.n.], 2002.}
+
+\bibitem[Tsotsos 1992]{Tsotsos}
+\abntrefinfo{Tsotsos}{TSOTSOS}{1992}
+{TSOTSOS, J. On the relative complexity of active vs. passive visual search.
+\textbf{International Journal of Computer Vision}, Kluwer Academic Publishers,
+  v.~7, n.~2, p. 127--141, 1992.
+ISSN 0920-5691.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/BF00128132}.}
+
+\bibitem[Vapnik e Chervonenkis 1995]{SVM}
+\abntrefinfo{Vapnik e Chervonenkis}{VAPNIK; CHERVONENKIS}{1995}
+{VAPNIK, V.~N.; CHERVONENKIS, A.~Y. Support-vector networks.
+\textbf{Machine Learning 20 (3): 273.}, p.~273, 1995.}
+
+\bibitem[Vilao et al. 2015]{Vilao2}
+\abntrefinfo{Vilao et al.}{VILAO et al.}{2015}
+{VILAO, C. et al. Evaluating the performance of two visual descriptors
+  techniques for a humanoid robot. In:  \textbf{LARS/SBR 2015}. Uberlândia -
+  MG: [s.n.], 2015.}
+
+\bibitem[Vilao et al. 2014]{Vilao}
+\abntrefinfo{Vilao et al.}{VILAO et al.}{2014}
+{\underline{\ \ \ \ \ \ \ \ }. A single camera vision system for humanoid
+  robots acting at robocup kid-size soccer league. In:  \textbf{LARS-SBR 2014}.
+  USP São Carlos - SP: [s.n.], 2014.}
+
+\bibitem[Viola e Jones 2001]{Viola}
+\abntrefinfo{Viola e Jones}{VIOLA; JONES}{2001}
+{VIOLA, P.; JONES, M. Rapid object detection using a boosted cascade of simple
+  features.
+\textbf{Conference on Computer Vision and Pattern Recognition (CVPR)}, p.
+  511--518, 2001.}
+
+\bibitem[Walther et al. 2005]{Walther}
+\abntrefinfo{Walther et al.}{WALTHER et al.}{2005}
+{WALTHER, D. et al. Selective visual attention enables learning and recognition
+  of multiple objects in cluttered scenes.
+\textbf{Computer Vision and Image Understanding}, v.~100, n. 1–2, p. 41 --
+  63, 2005.
+Special Issue on Attention and Performance in Computer Vision.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S1077314205000433}.}
+
+\bibitem[Wand 1996]{Wand}
+\abntrefinfo{Wand}{WAND}{1996}
+{WAND, M.~P. Data-based choice of histogram bin width.
+\textbf{The American Statistician}, v.~51, p. 59--64, 1996.}
+
+\bibitem[Westervelt et al. 2007]{bookFeedbackcontrol}
+\abntrefinfo{Westervelt et al.}{WESTERVELT et al.}{2007}
+{WESTERVELT, E.~R. et al. \textbf{Feedback control of dynamic bipedal robot
+  locomotion}. Boca Raton: CRC Press, 2007.  (Control and automation).
+ISBN 978-1-4200-5372-2. Dispon{\'\i}vel em:
+  \url{http://opac.inria.fr/record=b1134075}.}
+
+\bibitem[Wu et al. 2008]{Brubaker}
+\abntrefinfo{Wu et al.}{WU et al.}{2008}
+{WU, J. et al. Fast asymmetric learning for cascade face detection.
+\textbf{Pattern Analysis and Machine Intelligence, IEEE Transactions on},
+  v.~30, 2008.}
+
+\bibitem[Wu e Rehg 2011]{Wu}
+\abntrefinfo{Wu e Rehg}{WU; REHG}{2011}
+{WU, J.; REHG, J.~M. Centrist: A visual descriptor for scene categorization.
+\textbf{Pattern analysis and machine intelligence, IEEE transactions on}, IEEE,
+  v.~33, n.~8, p. 1489--1501, 2011.}
+
+\end{thebibliography}

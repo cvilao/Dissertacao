@@ -1,0 +1,171 @@
+
+\documentclass[rascunho]{fei}
+\usepackage[utf8]{inputenc}
+%\usepackage[brazilian]{babel}
+\usepackage{verbatim}
+
+\usepackage[caption=false]{subfig}
+\usepackage{float}
+
+%\usepackage{subfigure}
+%\selectlanguage{brazilian}
+
+\author{Claudio de Oliveira Vilão Junior}
+\title{UM SISTEMA DE VISÃO COMPUTACIONAL MONOCULAR PARA UM ROBÔ HUMANOIDE NO DOMÍNIO DO FUTEBOL DE ROBÔS}
+%\subtitulo{CONTROLE SERVO-VISUAL DE JOGADORES DE FUTEBOL DE ROBÔS humanoides}
+%\cidade{Cidade}
+%\instituicao{Instituição de Ensino}
+
+\begin{document}
+\overfullrule=2cm
+\maketitle
+
+\begin{folhaderosto}
+Dissertação de Mestrado apresentada ao Centro Universitário da FEI para obtenção do título de Mestre em Engenharia Elétrica, orientado pelo Prof. Dr. Reinaldo Augusto da Costa Bianchi.
+\end{folhaderosto}
+
+%\fichacatalografica
+%\folhadeaprovacao
+\dedicatoria{As meus pais.}
+
+%\begin{agradecimentos}
+%Agradeço ao Latex por não ter vírus.
+%\end{agradecimentos}
+
+\epigrafe{A good scientist is a person with original ideas.} {Freeman Dyson}
+
+\begin{resumo}
+
+Onde os algoritmos propostos na literatura não se enquadram no contexto. Apresentar resultados no resumo.
+
+
+Uma única imagem representa um conjunto de dados de tamanho considerável e tipicamente várias operações precisam ser feitas em cada pixel da referida imagem. Em uma estrutura de vídeo, a qual pode ser assimilado como uma sucessão de várias imagens, esta tarefa torna-se ainda mais difícil, já que, a taxa de quadros por segundo necessita ser mantida. Este trabalho pretende descrever um sistema de visão monocular para quatro robôs humanoides desenvolvidos para participar da liga humanoide na categoria Kid Size, da RoboCup. O sistema de visão proposto permite que os robôs sejam capazes de acompanhar uma bola, identificar os gols, linhas de campo, companheiros e adversários, fornecendo informações, tais como, distâncias e orientações de todos esses objetos simultaneamente, de forma que, todos os processos são executados em tempo real com diferentes resoluções de câmera.
+
+\palavraschave{Robô humanoide, Visão Computacional, Controle Servo-Visual, Rastreamento de objetos, Reconhecimento de objetos }
+
+\end{resumo}
+
+\begin{abstract}
+
+A single image represents a dataset of considerable size, and tipically several operations has to be done in each pixel of that image. In a video structure, which can be assimilated as a succession of several images, this task becomes even more challenging, as the frame rate has to be maintained. This work intends to describe a monocular vision system for four humanoid robots assembled to participate in the Humanoid KidSize League at RoboCup. The proposed vision system allows the robots to be able to track a ball, identify goals, field lines, teammates and  opponents, providing information such as distances and estimated location for the robots simultaneously, via threads. It is possible for all threads to run in real time with different camera resolutions, achieving the main target.
+
+\keywords{Humanoid robot, Computational Vision, Visual servoing, object tracking, object recognition}
+
+\end{abstract}
+
+%\tabelas
+%\figuras
+%\algoritmos
+%\sumario
+
+%Esse foi colocado depois usando o manual.tex
+\glsaddall
+\listoffigures
+\listoftables
+\listofalgorithms
+%\listoftheorems
+\printglossaries
+\tableofcontents
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------CAPÍTULO 1 - INTRODUÇÃO ------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+\chapter{Introdução}
+\label{chap:introduction}
+\input{Introduction}
+%%===============================================================================
+
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------CAPÍTULO 2 - FUNDAMENTAÇÃO TEÓRICA--------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+\chapter{Fundamentação Teórica: Visão Computacional}
+\label{chap:revision}
+\input{revision}
+
+\section{Processamento de imagens coloridas}
+\input{ColorImages}
+
+\section{Filtros}
+\input{filters}
+
+\section{Médio Nível - Regionalização de Partes das Imagens}
+\input{medium}
+
+
+\section{Alto Nível}
+	\subsection{Máquina de Vetores de Suporte - SVM}
+	\input{svm}
+
+	\subsection{Adaboost}
+	\input{adaboost}
+
+\section{Controle Servo-Visual}
+\input{servo}
+
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------CAPÍTULO 3 - TRABALHO CORRELATOS----------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+\chapter{Trabalhos Correlatos}
+\label{chap:relatedwork}
+\input{relatedwork}
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------------  CAPÍTULO 4 - PROPOSTA --------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+\chapter{Descrição do Software - Proposta}
+\label{chap:software}
+\input{software}
+
+\section{Algoritmos Propostos}
+\input{algorithms}
+
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------  CAPÍTULO 5 - EXPERIMENTOS E RESULTADOS ---------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+%*******************************************************************************************************
+% 	Experimentos Preliminares e Resultados
+%*******************************************************************************************************
+\chapter{Experimentos Realizados e Resultados}
+\label{chap:experiments}
+\input{Experiments}
+\input{ExperimentsBall}
+\input{ExperimentsRobot}
+\input{ExperimentsDistances}
+%%===============================================================================
+
+
+%*******************************************************************************************************
+% 	Planejamento e Cronograma
+%*******************************************************************************************************
+
+\chapter{Conclusão}
+\input{conclusion}
+
+%%===============================================================================
+
+
+
+\bibliography{Bibliografia}
+
+\appendix
+\input{appendix}
+%\indice
+
+\end{document}

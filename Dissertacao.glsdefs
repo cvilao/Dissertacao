@@ -1,0 +1,60 @@
+\ifglsentryexists{svm}{}%
+{%
+\gls@defglossaryentry{svm}%
+{%
+name={SVM},%
+sort={SVM},%
+type={acronym},%
+first={Support Vector Machine\glsspace (SVM)},%
+firstplural={Support Vector Machine\glsspace (SVMs)},%
+text={SVM},%
+plural={SVMs},%
+description={Support Vector Machine},%
+descriptionplural={Support Vector Machine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Support Vector Machine},%
+longplural={Support Vector Machine},%
+short={SVM},%
+shortplural={SVMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hog}{}%
+{%
+\gls@defglossaryentry{hog}%
+{%
+name={HOG},%
+sort={HOG},%
+type={acronym},%
+first={Histogram of Oriented Gradients\glsspace (HOG)},%
+firstplural={Histogram of Oriented Gradients\glsspace (HOGs)},%
+text={HOG},%
+plural={HOGs},%
+description={Histogram of Oriented Gradients},%
+descriptionplural={Histogram of Oriented Gradients},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Histogram of Oriented Gradients},%
+longplural={Histogram of Oriented Gradients},%
+short={HOG},%
+shortplural={HOGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

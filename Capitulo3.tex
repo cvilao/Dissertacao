@@ -1,0 +1,438 @@
+No embasamento teórico, no capítulo 2, foi feita uma revisão bibliográfica de alguns algoritmos de visão computacional bem conceituados, além de, o que outras equipes têm feito com esses algoritmos no sentido de solucionar os problemas visuais do jogo de futebol. Utilizando o conhecimento desse capítulo, a proposta desse trabalho tem por objetivo criar um sistema de visão rápido e eficaz, abordando o uso dessas técnicas no domínio proposto. Visando facilitar o entendimento de suas diversas aplicações, as seções a seguir foram sub-divididas em: \ref{Bola}, que lida com as propostas escolhidas para o rastreamento da bola. A seção \ref{Robos} apresenta a proposta para a detecção de robôs (companheiros ou adversários). A seção \ref{Servo} trata do controle dos servo-mecanismos pan-tilt e como cada um dos algoritmos podem controlá-lo em um determinado instante de tempo. E, finalmente, a seção \ref{Sistema} propõe como todos esses algoritmos estariam interligados.
+
+\section{Bola}
+\label{Bola}
+
+A bola tem características próprias, que podem ser usadas para identificá-la, além de outras duas informações que são do campo, de fundo verde, e estar abaixo da linha do horizonte, entenda-se por linha do horizonte pela linha mediana da imagem de captura quando a câmera está posicionada paralelamente ao plano transversal do robô e paralelo ao piso. Ver figura ~\ref{Fig:Ori} para referência sobre o plano transversal.
+
+\begin{figure}[!h!]
+\centering \caption{Planos que cortam o ser humano utilizados em robôs humanoides.}
+\includegraphics[width=5cm]{Imagens/Orientation.png}
+\DeclareGraphicsExtensions.
+\caption*{Fonte: Parte integrante do livro \citefloat{bookFeedbackcontrol}.}
+\label{Fig:Ori}
+\end{figure}
+
+Na verdade, nenhum robô da liga é capaz de erguer a bola, isso quer dizer que, os robôs atualmente desenvolvidos ainda não chutam a bola de forma a erguê-la mais que alguns centímetros do chão, assim é razoável estimar que a bola estará sempre abaixo da linha do horizonte, tipicamente envolta por uma região verde com a matiz entre 190 e 270 graus. Isso irá evoluir gradativamente e significará uma quebra de paradigma para o rastreamento da bola, que não será abordado neste trabalho de pesquisa. 
+
+O rastreamento clássico, usando o fluxo ótico de pixels \cite{Faria}, falha nessa aplicação devido à trepidação da câmera e também ao fato dela não estar fixa em um determinado ponto do campo. O quadro adquirido da captura da câmera é inserido no sistema de rastreamento da bola e é uma variável bloqueada via mutex. Esse bloqueio permite que diversos processos paralelos acessem a captura da câmera sem modificá-la, o que inviabilizaria o uso dessa imagem por vários processos de forma paralela. 
+
+A ideia aqui é começar fazendo um pré-processamento da imagem transformando o sistema de cores do RGB para o HSV, isso é especialmente importante, já que o HSV possui uma certa robustez à mudanças de iluminação. 
+
+Duas abordagens serão comparadas, uma usando segmentação e outra usando a técnica HAAR-AdaBoost para reconhecimento de objetos.
+Para a bola laranja a abordagem de segmentação e círculos de Hough com a imagem devidamente pré-processada e utilizando a técnica HAAR-AdaBoost para a detecção da bola branca. Dividindo a resolução da tela em nove regiões, é possível inferir de forma qualitativa se a bola está à direita, esquerda e, de forma quantitativa calculando valores de distância. Isso será melhor explicado na seção que trata do controle servo-visual Pan-tilt na seção ~\ref{Servo}.
+
+\subsection{A Bola Laranja}
+
+No caso da bola laranja, após segmentação usando uma LUT (Look-Up Table), duas operações morfológicas, Dilatação e Erosão, são aplicadas, ambas para retirar áreas e ruídos que não fazem parte da região de interesse. Ao mover-se pelo campo de visão do robô a bola provoca um borramento em sua imagem, para minimizar esse borramento aplica-se uma suavização usando uma Gaussiana. A transformada de Hough para círculos é aplicada e, com isso, temos a posição do centro da bola e seu raio expressos em pixels.Note que a bola usada em 2014, figura ~\ref{Fig:BolaLaranja}, é lisa em termos construtivos, chegando inclusive a refletir a luz branca, porém, em termos de cor possui uma heterogeneidade bem marcante.
+
+\begin{figure}[!h!]
+\centering \caption{A bola utilizada em 2014.}
+\includegraphics[width=7cm]{Imagens/ImBolaL.png}
+\DeclareGraphicsExtensions.
+\caption*{Fonte: Autor.}
+\label{Fig:BolaLaranja}
+\end{figure}
+
+
+
+\begin{algorithm}[!h!]
+
+
+\caption{Algoritimo de rastreamento da bola laranja - Círculos de Hough.}\label{lst:algBall}
+
+
+\Entrada{Abra Captura da Câmera (Dispositivo 0)}
+\Se{Captura vazia}
+	{Erro! Dispositivo não está pronto.
+	Aborte Algoritimo.
+		}
+
+\Enqto{ Não for pressionada a tecla esc e Quadro não vazio}
+{
+
+Extraia um quadro RGB da captura, converta para uma imagem HSV.
+
+\begin{equation}
+     \centering
+    	H = \left\{
+		\begin{array}
+		{ccl} 
+		$$\theta, 	& Se B  \leq  G $$\\
+		$$360 - \theta,	& Se B  >  G $$
+		\end{array} 
+\right.
+\end{equation}
+
+\begin{equation}
+	\theta  =  \cos^-{^1} \left[  {   \frac {  \frac {1} {2} * [(R -G) + (R-B)]}  {  \sqrt{[(R -G)^2 + (R -B)(G -B)]}   }    }\right]
+\end{equation}
+
+\begin{equation}
+	S  =  1 - { \frac {3} {(R+G+B)} } * [min (R,G,B)]
+\end{equation}
+
+\begin{equation}
+	I  =  { \frac {1} {3}} * {(R+G+B)}
+\end{equation}
+
+
+
+\Entrada{Tabela de pesquisa (LUT). (0<H<35, 0<S<180, 0<V<255)}
+
+\ParaTodo {Pixel dentro da imagem HSV e dentro dos limites da LUT}
+	{Altere o valor do Pixel de uma matriz binária na mesma posição}
+
+Na matriz binária aplique Erosão seguida da Dilatação. ( 5x5 Pixels)
+
+Aplique filtro espacial. (Gaussiana 9x9 Pixels)
+
+Transformada de Hough para círculos:
+
+- Atualize a média móvel do raio (MRB) e da posição XY dos círculos encontrados.
+
+\begin{equation} 
+	D_{bola} = \frac {9143} {MRB}
+\end{equation}\\
+
+Armazene \(D_{bola}\), a posição dos servos Pan-Tilt em graus e da bola em pixels.
+}
+
+\Retorna \(D_{bola}\)
+
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor} \end{localsize} \end{center}}
+
+
+
+\end{algorithm}%%
+
+
+A fim de incorporar a informação temporal, os centros dos círculos e raios encontrados serão armazenados na forma de média móvel (Ver referência de séries temporais no “ANEXO A”, trecho do trabalho de \citeonline{Lopes}). Isso é importante para melhorar a estimativa da posição da bola. Essa média garante que a bola estará em uma posição muito próxima de sua última detecção. Como o tamanho da bola é conhecido, podemos achar uma relação entre o tamanho real em centímetros e o tamanho da bola em pixels, dada a resolução da tela.
+
+Na medida que a bola se afasta, seu tamanho em pixels se reduz até o momento que o algoritmo acaba tratando-a como ruído, nesse momento a ideia é utilizar o algoritmo de condensação, a fim de, tentar inferir sua posição de forma qualitativa se está a direita ou a esquerda no campo de visão do robô. Infelizmente seu tamanho não será calculado até que o robô se aproxime novamente da bola. Perceba aqui que, para distinguir a bola do plano de fundo, a cor foi utilizada como característica antes do formato, isso foi feito, visando diminuir o espaço de ação da transformada de Hough para círculos, tornando-a mais rápido. Veja algoritimo ~\ref{lst:algBall} proposto. 
+
+No capítulo 2 fica claro que a transformada de Hough para círculos testa todas as possibilidades de círculo para todos os pixels encontrados usando três parâmetros, dessa forma, se esse algoritmo fosse aplicado à toda a imagem, provavelmente o algoritmo ficaria mais robusto porém, às custas de mais processamento.
+
+\subsection{A Bola Branca}
+
+A modificação do regulamento da competição fez com que todas as equipes tivessem que pensar em uma forma diferente de reconhecer a bola. A bola branca da figura ~\ref{Fig:BolaBranca}, diferentemente da usada anteriormente, possui uma textura que pode ser usada como característica discrepante. Assim, a proposta é o descritor HAAR com o classificador AdaBoost, onde diversas imagens serão coletadas com a própria câmera do robô. A bola será posicionada em diferentes distâncias e posições no campo de futebol, essas imagens denominadas imagens positivas possuem a bola em qualquer posição da imagem. A bola se encontrará por completo na imagem, isso quer dizer que não haverá oclusão nas imagens de treinamento.
+
+
+\begin{figure}[!h!]
+\centering \caption{A bola utilizada em 2015.}
+\includegraphics[width=8cm]{Imagens/ImBola.png}
+\DeclareGraphicsExtensions.
+\caption*{Fonte: Autor.}
+\label{Fig:BolaBranca}
+\end{figure}
+
+As imagens negativas são adquiridas rotacionando o robô em diversas posições do \\campo de futebol. Imagens de multidões também foram usadas. Isso é feito para que se possua uma visão 360 graus do campo e para que de qualquer posição do robô o mesmo possa identificar um plano de fundo negativo, mesmo com muitas pessoas em volta e aumenta a probabilidade de que a bola será encontrada nessas condições. 
+
+\begin{algorithm}
+
+\caption{Algoritmo de Identificação da bola branca. (HAAR-Adaboost Offline)}\label{lst:algHaarOFBall}
+
+\Entrada{Conjunto de imagens positivas - Contém robôs participantes}
+\Entrada{Conjunto de imagens negativas - Não contém robôs}
+
+\Entrada{Posição da bola contida em todas as imagens positivas}
+
+\ParaTodo {Estágio da árvore e para todas as imagens}
+{
+\Enqto{\(Min_{\text{TaxaAcerto}}\) = 0,999 não atingida}
+	{
+	Extraia as características de HAAR para as imagens positivas.\\
+	Execute o Adaboost conforme algoritmo ~\ref{lst:algHaar} usando como parâmetros:\\
+		- Tamanho da amostra = 20x20 Pixels;\\
+		- Tamanho mínimo do objeto = 30x30 Pixels;\\
+		- Tamanho máximo do objeto = Resolução vertical x \( \frac {Resolução Horizontal}{2}\) Pixels\\
+		- Classificador 8 Vizinhos mais próximos. \\
+	}
+	Armazene a hipótese final do estágio.\\
+}
+	Armazene a hipótese final em um arquivo .xml
+
+
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor ``Adaptado de'' \citefloat{Adaboost}} \end{localsize} \end{center}}
+
+
+\end{algorithm}
+
+Tanto o algoritimo de treinamento ~\ref{lst:algHaarOFBall}, quanto o de identificação online ~\ref{lst:algHaarOnBall}, estão sendo propostos utilizando-se os parâmetros de seus respectivos artigos originais, mas alguns parâmetros serão postos a prova no capítulo ~\ref{chap:experiments}.
+
+\begin{algorithm}
+
+\caption{Algoritmo de Identificação da bola branca. (HAAR-Adaboost Online)}\label{lst:algHaarOnBall}
+
+\Entrada{Árvore proveniente do Adaboost (Arquivo .xml)}
+
+\Entrada{Aquisição da câmera}
+
+\Enqto{ Quadro não vazio}
+{
+
+Extraia o vetor de caracterísiticas (descritores) da imagem adquirida.\\
+Percorra os nós (Estágios) da árvore presentes no arquivo xml encontrando a melhor classificação para a imagem adquirida\\
+
+	\Se {Houver bola presente na imagem}
+	{
+		Para cada bloco da imagem adquirida, encontre em qual bloco a bola se encontra\\
+
+		Calcule seu raio em pixels\\
+
+		Armazene o centro do círculo e a raio em pixels\\
+
+		Calcule sua distância real até o robô em centímetros\\
+	}
+}
+
+
+
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor ``Adaptado de'' \citefloat{Adaboost}} \end{localsize} \end{center}}
+
+
+\end{algorithm}
+
+Como forma de checar o qualidade do classificador uma curva ROC será plotada e como forma de verificar o desempenho será usada a taxa de quadros por segundo após processamento para a resolução de 1920x1080 pixels. Essa resolução foi escolhida devido ao seu potencial de alcance de detecção da bola, já que existe uma correlação entre o tamanho da mesma em pixels e sua distância da câmera.
+
+
+\section{Adversários e Companheiros de Equipe}
+\label{Robos}
+
+A ideia geral é identificar objetos conhecidos e parecidos com relação à alguma característica. Com os robôs não seria diferente, entretanto, existem poucas características semelhantes entre os robôs da liga. Na verdade, mesmo que muitas equipes ainda usem uma plataforma (Darwin-OP) \cite{Darwin} com algumas modificações, os robôs, de maneira geral, têm formas e tamanhos variados, veja figura ~\ref{Fig:DivRob},  e identificar esses robôs de forma confiável é complexo. 
+
+Os descritores HOG e HAAR e seus classificadores em sua forma clássica, respectivamente, SVM e AdaBoost serão testados para a identificação dos robôs em campo. 
+
+
+\begin{figure}[!h!]
+\centering \caption{A diversidade de robôs da liga humanoide.}
+\includegraphics[width=15cm]{Imagens/liga.jpg}
+\DeclareGraphicsExtensions.
+\caption*{Fonte: Autor.}
+\label{Fig:DivRob}
+\end{figure}
+
+Ambos os descritores são computados para todas as imagens de um conjunto de imagens positivas e negativas, entenda-se imagens positivas, como sendo imagens que possuam apenas um robô em qualquer pose e em diversos cenários. 
+Esses vetores de descrição são inseridos em seus respectivos classificadores, sendo esse treinamento efetuado em um computador externo ao robô com as mesmas especificações. O classificador treinado é inserido no robô, que, durante o jogo, calcula o descritor de um quadro adquirido e classifica o vetor de descrição no classificador treinado. A resposta do classificador informa se há robô no quadro e qual região tem a maior quantidade de descritores, apontando em qual região o robô foi identificado na imagem. Os algoritimos propostos [~\ref{lst:algROF}] [~\ref{lst:algROn}] [~\ref{lst:algHaarOF}] [~\ref{lst:algHaarOn}] são apresentados conforme revisão feita nos capítulos anteriores.
+
+O mesmo conjunto de imagens positivas e negativas serão computadas tanto pelo HAAR com o AdaBoost como pelo HOG com o SVM, de forma que seja possível definir qual possui maior precisão, com maior taxa de quadros por segundo após processamento, para o robô proposto.
+\begin{algorithm}
+{
+\caption{Algoritmo para Identificação de Robôs. (HOG-SVM Offline)}\label{lst:algROF}
+
+\Entrada{Conjunto de imagens positivas - Contém robôs participantes}
+\Entrada{Conjunto de imagens negativas - Não contém robôs}
+
+Extraia, do diretório de imagens negativas, todas as imagens que possuam tamanho e extensão compatíveis (jpg,jpeg,png,bmp)
+
+Calcule o histograma de gradientes para todas as imagens.
+
+Armazene o vetor de características (descritores) de cada uma das imagens negativas.
+
+Extraia, do diretório de imagens positivas, todas as imagens que possuam tamanho e extensão compatíveis (jpg,jpeg,png,bmp)
+
+Calcule o histograma de gradientes para todas as imagens desse diretório.
+
+Armazene o vetor de características (descritores) de cada uma das imagens positivas.
+
+Armazene o vetor de características (descritores) de cada uma das imagens negativas.
+
+\Entrada{Vetores de características (descritores) das imagens positivas}
+\Entrada{Vetores de características (descritores) das imagens negativas}
+
+Determine os vetores de suporte e o hiperplano que melhor separa as duas classes usando o SVM.
+
+\Entrada{Tabela com todas as alturas de todos os robôs de todos os times}
+\Entrada{Tabela com a cor do time adversário}
+}
+
+
+
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor ``Adaptado de'' \citefloat{Dallal}.} \end{localsize} \end{center}}
+
+\end{algorithm}
+
+\pagebreak
+
+\section{HOG-SVM Online}
+
+\begin{algorithm}
+
+\caption{Algoritmo para Identificação de Robôs. (HOG-SVM Online)}\label{lst:algROn}
+
+\Entrada{Hiperplano proveniente do SVM}
+\Entrada{Aquisição da câmera}
+
+\Enqto{ Quadro não vazio}
+{
+Calcule o histograma de gradientes da imagem adquirida da câmera
+
+Extraia o vetor de caracterísiticas (descritores) da imagem adquirida.
+
+Use o SVM para classificar o vetor de caracterísiticas da imagem adquirida.
+
+	\Se {Houver robô presente na imagem}
+	{
+		Para cada bloco da imagem adquirida, encontre em qual bloco do histograma normalizado o robô se encontra\\
+
+		Calcule sua altura em pixels\\
+
+		Armazene o centro do bloco e a altura em pixels\\
+
+		Segmentação da cor do time.\\
+
+		Se a área na qual o robô for identificado conter o centroide referente à cor do time\\
+
+		Busque na tabela de alturas qual a altura em centímetros do robô que foi identificado\\
+
+		Calcule sua distância real até o robô em centímetros\\
+	}
+
+}
+
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor ``Adaptado de'' \citefloat{Dallal}.} \end{localsize} \end{center}}
+
+\end{algorithm}
+
+Com essas informações, a altura do robô em pixels e a informação de que existe pelo menos um robô na imagem, é necessário identificar a qual equipe o(s) robô(s) pertence(m). Para tal, usa-se a informação da cor da camisa via segmentação simples, ou seja, se a região, delimitada pela janela de detecção, onde foi identificado o robô coincidir com a região que possui uma área azul (ciano), esse é um robô pertencente ao time azul. As duas cores, azul ciano ou magenta, são sorteadas antes do início da partida. Com o(s) robô(s) identificado(s), é necessário calcular sua(s) distância(s) até o robô que está vendo a ação. Por se tratar de uma visão monocular, calcular a distância dos robôs necessita da informação de sua altura real assim, uma tabela de pesquisa é alimentada com as informações de altura de todos os robôs da liga em centímetros e, finalmente, com a altura do robô em pixels calculado no passo anterior e a altura real, é possível estimar a distância entre esses dois robôs.
+
+\begin{algorithm}
+
+\caption{Algoritmo de Identificação de robôs. (HAAR-Adaboost Offline)}\label{lst:algHaarOF}
+
+\Entrada{Conjunto de imagens positivas - Contém robôs participantes}
+\Entrada{Conjunto de imagens negativas - Não contém robôs}
+
+\Entrada{Posição dos robôs contidos nas imagens positivas}
+
+\ParaTodo {Estágio da árvore e para todas as imagens}
+{
+\Enqto{\(Min_{\text{TaxaAcerto}}\) = 0,999 não atingida}
+	{
+	Extraia as características de HAAR para as imagens positivas.\\
+	Execute o Adaboost conforme algoritmo ~\ref{lst:algHaar} usando como parâmetros:\\
+		- Tamanho da amostra = 20x20 Pixels;\\
+		- Tamanho mínimo do objeto = 30x30 Pixels;\\
+		- Tamanho máximo do objeto = Resolução vertical x \( \frac {Resolução Horizontal}{2}\) Pixels\\
+		- Classificador 8 Vizinhos mais próximos. \\
+	}
+	Armazene a hipótese final do estágio.\\
+}
+	Armazene a hipótese final em um arquivo.
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor ``Adaptado de'' \citefloat{Adaboost}} \end{localsize} \end{center}}
+
+\end{algorithm}
+
+\begin{algorithm}
+
+\caption{Algoritmo de Identificação de robôs. (HAAR-Adaboost Online)}\label{lst:algHaarOn}
+
+\Entrada{Árvore proveniente do Adaboost (Hipótese Final)}
+
+\Entrada{Aquisição da câmera}
+
+\Enqto{ Quadro não vazio}
+{
+
+Extraia o vetor de caracterísiticas (descritores) da imagem adquirida.\\
+Percorra os nós (Estágios) da árvore para a imagem adquirida\\
+
+	\Se {Houver robô presente na imagem}
+	{
+		Na imagem encontre em qual bloco o robô se encontra\\
+
+		Calcule sua altura em pixels\\
+
+		Armazene o centro do bloco e a altura em pixels\\
+
+		Segmentação da cor do time.\\
+
+		Se a área na qual o robô for identificado conter a cor do time\\
+
+		Busque na tabela de alturas qual a altura do robô que foi identificado\\
+
+		Calcule sua distância real até o robô em centímetros\\
+	}
+}
+
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor ``Adaptado de'' \citefloat{Adaboost}} \end{localsize} \end{center}}
+
+\end{algorithm}
+
+\pagebreak
+
+\section{Controle Servo-Visual}
+\label{Servo}
+
+O controle servo-visual toma atitudes ativas e reativas, procurando os objetos quando não estão em seu campo de visão, de forma ativa, e seguindo-os, de forma reativa, quando estão à vista. A proposta do controle servo-visual foi feita dividindo o quadro capturado pela câmera em nove regiões distribuídas da seguinte forma: três na horizontal e cada uma dessas regiões é novamente dividida em três, dessa vez na vertical. As regiões não são divididas igualmente. A região central é menor do que as outras oito regiões pois, seria o equivalente do ser humano ao foco principal da visão, ou visão central, e as outras seriam equivalentes à visão periférica.
+
+Independentemente da região na qual o objeto de interesse se encontra, o controle de pan-tilt deve mover a cabeça do robô até levá-lo à região central, ver algoritimo ~\ref{lst:algCent}. Na figura ~\ref{Fig:Regioes} essa região se refere à região 5. 
+
+\begin{figure}[!th]
+\centering \caption{Divisão esquemática do quadro em 9 regiões.}
+\includegraphics[width=3in]{Imagens/Regioes.png}
+\DeclareGraphicsExtensions.
+\caption*{Fonte: Autor}
+\label{Fig:Regioes}
+\end{figure}
+
+O tamanho da região 5 é fundamental para o bom funcionamento do sistema. Se for muito pequena, o robô terá problemas ao centralizar o objeto que sairá muito facilmente dessa região, se o contrário for verdade, a cabeça do robô se movimentará muito pouco e o objeto não será centralizado corretamente. A proposta aqui é que a região 5 tenha 5\% da resolução da câmera nos dois eixos. 
+
+\begin{algorithm}
+
+\caption{Algoritmo para buscar e centralizar o objeto}\label{lst:algCent}
+
+Divida o quadro de captura em 3 regiões horizontais, sendo a região central com 5\% da resolução horizontal.\\
+Divida o quadro de captura em 3 regiões verticais, sendo a região central com 5\% da resolução vertical.\\
+\Enqto{Quadro não vazio}
+{
+	\Se{Dentro do quadro houver objeto}
+		{
+		Encontre em qual região o objeto se encontra usando sua posição.\\
+			\Se {O objeto estiver na região 5 (central)} 
+					{Mantenha o objeto nessa região parando o movimento}
+			\Se {O objeto estiver nas regiões 1, 4 e 7} 
+					{Some a posição atual do servo com a quantidade de graus para o pan}
+			\Se {O objeto estiver nas regiões 3, 6 e 9} 
+					{Subtraia a posição atual do servo com a quantidade de graus para o pan}
+			\Se {O objeto estiver nas regiões 1, 2 e 3} 
+					{Some a posição atual do servo com a quantidade de graus para o tilt}
+			\Se {O objeto estiver nas regiões 7, 8 e 9} 
+					{Subtraia a posição atual do servo com a quantidade de graus para o tilt}
+		Guarde posição dos servos\\
+		}
+		\Senao
+		{		
+		Chame algoritmo de busca \ varredura
+		}
+	
+}
+\Retorna \(Posicao do Servo\)
+
+\Comment*[h]{\begin{center}  \begin{localsize}{12} \textrm{Fonte: Autor.} \end{localsize} \end{center}}
+
+
+\end{algorithm}
+
+Quando o objeto a ser procurado não estiver no campo de visão, um algoritmo de varredura entra em ação, varrendo em três diferentes níveis, na vertical começando em 0 graus, passando por -22,5 graus e finalmente -45 graus, enquanto movimenta a cabeça na horizontal da esquerda para a direita e da direita para a esquerda, em cada um desses níveis.
+
+
+\section{O sistema de visão}
+\label{Sistema}
+
+A visão do robô, a ser desenvolvida, será um sistema com dois processos paralelos e dois sequenciais. Todos usarão um quadro disponível no momento de aquisição da câmera. Isso permitirá que todos os processos de visão adquiram informação do ambiente praticamente ao mesmo tempo.
+
+Apenas um processo poderá ter controle sobre o Pan-Tilt em um determinado momento, isso, entretanto, não impedirá que os outros processos continuem a adquirir e processar as informações provenientes do ambiente, ver figura ~\ref{Fig:Start}. Haverá um atraso entre processos devido à diferença de complexidade entre as tarefas a serem executadas, isso se torna óbvio já que algumas são computacionalmente mais custosas do que outras. 
+
+
+\begin{figure}[!t]
+\centering \caption{Visão Geral do Software a ser Implementado.}
+\includegraphics[width=5in]{Imagens/StartP.png}
+\DeclareGraphicsExtensions.
+\caption*{Fonte: Autor}
+\label{Fig:Start}
+\end{figure}
+
+
+O que acontece é que a variável quadro é protegida por mutex, o bloqueio permite que apenas um dos processos utilize essa variável. Por exemplo, o algoritmo da bola é mais rápido que o de identificação de robôs, assim pode ser que o quadro disponível para reconhecimento de robôs seja diferente do que foi usado para rastreamento da bola. O mutex ou exclusão mútua, é um recurso técnico usado em programação paralela para evitar que dois processos tenham controle de um recurso que precisa ser compartilhado. O meio mais comum de se efetuar a exclusão mútua é através de um semáforo, que bloqueia o recurso para cada um dos processos liberando-o do processamento em seguida, de forma que no período de bloqueio apenas o processo definido pelo mutex pode controlar o recurso.
+

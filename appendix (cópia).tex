@@ -1,0 +1,251 @@
+\chapter{Algoritmo de Detecção da Bola Laranja} 
+\label{chap:apendiceBolaLaranja}
+\section{Algoritmo de rastreamento da bola - Círculos de Hough.}
+
+\begin{algorithm}
+
+\Entrada{Abre Captura da Câmera (Dispositivo 0)}
+\Se{Captura vazia}
+	{Erro! Dispositivo não está pronto.
+	Aborte Algoritmo.
+		}
+
+\Enqto{ Não for pressionada a tecla esc e Quadro não vazio}
+{
+
+Extraia um quadro RGB da captura, converta para uma imagem HSV.
+
+\begin{equation}
+     \centering
+    	H = \left\{
+		\begin{array}
+		{ccl} 
+		$$\theta, 	& Se B  \leq  G $$\\
+		$$360 - \theta,	& Se B  >  G $$
+		\end{array} 
+\right.
+\end{equation}
+
+\begin{equation}
+	\theta  =  \cos^-{^1} \left[  {   \frac {  \frac {1} {2} * [(R -G) + (R-B)]}  {  \sqrt{[(R -G)^2 + (R -B)(G -B)]}   }    }\right]
+\end{equation}
+
+\begin{equation}
+	S  =  1 - { \frac {3} {(R+G+B)} } * [min (R,G,B)]
+\end{equation}
+
+\begin{equation}
+	I  =  { \frac {1} {3}} * {(R+G+B)}
+\end{equation}
+
+
+
+\Entrada{Tabela de pesquisa (LUT). (0<H<35, 0<S<180, 0<V<255)}
+
+\ParaTodo {Pixel dentro da imagem HSV e dentro dos limites da LUT}
+	{Altere o valor do Pixel de uma matriz binária na mesma posição}
+
+Na matriz binária aplique Erosão seguida da Dilatação. ( 5x5 Pixels)
+
+Aplique filtro espacial. (Gaussiana 9x9 Pixels)
+
+Transformada de Hough para círculos:
+
+- Atualize a média móvel do raio (MRB) e da posição XY dos círculos encontrados.
+
+\begin{equation} 
+	D_{bola} = \frac {9143} {MRB}
+\end{equation}\\
+
+Armazene \(D_{bola}\), a posição dos servos Pan-Tilt em graus e da bola em pixels.
+}
+
+\Retorna \(D_{bola}\)
+
+\caption[Algoritmo de rastreamento da bola - Círculos de Hough.]{Fonte: Autor.}
+\label{lst:algBall}
+\end{algorithm}
+
+
+\chapter{Algoritmo para divisão do Quadro} \label{chap:apendiceDivQuadro}
+
+\section{Algoritmo para buscar e centralizar o objeto.}
+\begin{algorithm}
+
+Divida o quadro de captura em 3 regiões horizontais, sendo a região central com 5\% da resolução horizontal.\\
+Divida o quadro de captura em 3 regiões verticais, sendo a região central com 5\% da resolução vertical.\\
+\Enqto{Quadro não vazio}
+{
+	\Se{Dentro do quadro houver objeto}
+		{
+		Encontre em qual região o objeto se encontra usando sua posição.\\
+				\Se {O objeto estiver na região 5 (central)} 
+					{Mantenha o objeto nessa região parando o movimento}
+				\Se {O objeto estiver nas regiões 1, 4 e 7} 
+					{Some a posição atual do servo com a quantidade de graus para o pan}
+				\Se {O objeto estiver nas regiões 3, 6 e 9} 
+					{Subtraia a posição atual do servo com a quantidade de graus para o pan}
+				\Se {O objeto estiver nas regiões 1, 2 e 3} 
+					{Some a posição atual do servo com a quantidade de graus para o tilt}
+				\Se {O objeto estiver nas regiões 7, 8 e 9} 
+					{Subtraia a posição atual do servo com a quantidade de graus para o tilt}
+		Guarde posição dos servos\\
+		}
+		\Senao
+		{		
+		Chame algoritmo de busca \ varredura
+		}
+	
+}
+\Retorna \(Posicao do Servo\)
+
+\caption[Algoritmo para buscar e centralizar o objeto]{Fonte: Autor}
+\label{lst:algCent}
+\end{algorithm}
+
+
+
+\chapter{Algoritmo para Identificação de Robôs. (HOG-SVM)} \label{chap:apendiceHOG}
+
+\section{HOG-SVM Offline}
+\begin{algorithm}
+
+
+\Entrada{Conjunto de imagens positivas - Contém robôs participantes}
+\Entrada{Conjunto de imagens negativas - Não contém robôs}
+
+Extraia, do diretório de imagens negativas, todas as imagens que possuam tamanho e extensão compatíveis (jpg,jpeg,png,bmp)
+
+Calcule o histograma de gradientes para todas as imagens.
+
+Armazene o vetor de características (descritores) de cada uma das imagens negativas.
+
+Extraia, do diretório de imagens positivas, todas as imagens que possuam tamanho e extensão compatíveis (jpg,jpeg,png,bmp)
+
+Calcule o histograma de gradientes para todas as imagens desse diretório.
+
+Armazene o vetor de características (descritores) de cada uma das imagens positivas.
+
+Armazene o vetor de características (descritores) de cada uma das imagens negativas.
+
+\Entrada{Vetores de características (descritores) das imagens positivas}
+\Entrada{Vetores de características (descritores) das imagens negativas}
+
+Determine os vetores de suporte e o hiperplano que melhor separa as duas classes usando o SVM.
+
+\Entrada{Tabela com todas as alturas de todos os robôs de todos os times}
+\Entrada{Tabela com a cor do time adversário}
+
+\label{lst:algROF}
+\caption[Algoritmo para Identificação de Robôs. (HOG-SVM Offline)]{Fonte: Autor.}
+\end{algorithm}
+
+\pagebreak
+
+\section{HOG-SVM Online}
+
+\begin{algorithm}
+
+
+\Entrada{Hiperplano proveniente do SVM}
+\Entrada{Aquisição da câmera}
+
+\Enqto{ Quadro não vazio}
+{
+Calcule o histograma de gradientes da imagem adquirida da câmera
+
+Extraia o vetor de caracterísiticas (descritores) da imagem adquirida.
+
+Use o SVM para classificar o vetor de caracterísiticas da imagem adquirida.
+
+	\Se {Houver robô presente na imagem}
+	{
+		Para cada bloco da imagem adquirida, encontre em qual bloco do histograma normalizado o robô se encontra\\
+
+		Calcule sua altura em pixels\\
+
+		Armazene o centro do bloco e a altura em pixels\\
+
+		Segmentação da cor do time.\\
+
+		Se a área na qual o robô for identificado conter o centroide referente à cor do time\\
+
+		Busque na tabela de alturas qual a altura em centímetros do robô que foi identificado\\
+
+		Calcule sua distância real até o robô em centímetros\\
+	}
+
+}
+\caption[Algoritmo para Identificação de Robôs. (HOG-SVM Online)]{Fonte: Autor.}
+\label{lst:algROn}
+\end{algorithm}
+
+
+\chapter{Algoritmo para Identificação de Robôs. (HAAR-Adaboost)} \label{chap:apendiceHAAR}
+
+\section{HAAR-Adaboost Offline}
+\begin{algorithm}
+
+\Entrada{Conjunto de imagens positivas - Contém robôs participantes}
+\Entrada{Conjunto de imagens negativas - Não contém robôs}
+
+\Entrada{Posição dos robôs contidos nas imagens positivas}
+
+\ParaTodo {Estágio da árvore e para todas as imagens}
+{
+\Enqto{\(Min_{\text{TaxaAcerto}}\) = 0,999 não atingida}
+	{
+	Extraia as características de HAAR para as imagens positivas.\\
+	Execute o Adaboost conforme algoritmo ~\ref{lst:algHaar} usando como parâmetros:\\
+		- Tamanho da amostra = 20x20 Pixels;\\
+		- Tamanho mínimo do objeto = 30x30 Pixels;\\
+		- Tamanho máximo do objeto = Resolução vertical x \( \frac {Resolução Horizontal}{2}\) Pixels\\
+		- Classificador 8 Vizinhos mais próximos. \\
+	}
+	Armazene a hipótese final do estágio.\\
+}
+	Armazene a hipótese final em um arquivo .xml
+
+\caption[Algoritmo de Identificação de robôs. (HAAR-Adaboost Offline)]{Fonte: Autor ``Adaptado de'' \citefloat{Adaboost} }
+\label{lst:algHaarOF}
+\end{algorithm}
+
+\pagebreak
+
+\section{HAAR-Adaboost Online}
+\begin{algorithm}
+
+\Entrada{Árvore proveniente do Adaboost (Arquivo .xml)}
+
+\Entrada{Aquisição da câmera}
+
+\Enqto{ Quadro não vazio}
+{
+
+Extraia o vetor de caracterísiticas (descritores) da imagem adquirida.\\
+Percorra os nós (Estágios) da árvore presentes no arquivo xml encontrando a melhor classificação para a imagem adquirida\\
+
+	\Se {Houver robô presente na imagem}
+	{
+		Para cada bloco da imagem adquirida, encontre em qual bloco o robô se encontra\\
+
+		Calcule sua altura em pixels\\
+
+		Armazene o centro do bloco e a altura em pixels\\
+
+		Segmentação da cor do time.\\
+
+		Se a área na qual o robô for identificado conter o centroide referente à cor do time\\
+
+		Busque na tabela de alturas qual a altura em centímetros do robô que foi identificado\\
+
+		Calcule sua distância real até o robô em centímetros\\
+	}
+}
+
+\caption[Algoritmo de Identificação de robôs. (HAAR-Adaboost Online)]{Fonte: Autor ``Adaptado de''\citefloat{Adaboost} }
+\label{lst:algHaarOn}
+\end{algorithm}
+
+
+	

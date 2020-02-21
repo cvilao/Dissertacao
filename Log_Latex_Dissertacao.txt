@@ -1,0 +1,456 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./Dissertacao.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(./fei.cls
+Document Class: fei 2015/02/08 0.9.2 Modelo da FEI
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 80.
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def))
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def))
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty)))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/morewrites/morewrites.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3unicode-data.def)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def))
+(/usr/share/texlive/texmf-dist/tex/latex/morewrites/primargs.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmtools.sty
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-patch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/parseargs.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-kv.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/aliasctr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/remreset.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-listof.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-restate.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-amsthm.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/mfirstuc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
+307.sty) (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
+(/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuge
+s.ldf
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuge
+s-noenc.ldf))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries-english/glossaries-english.
+ldf)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
+y) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu)
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(./Dissertacao.aux
+
+LaTeX Warning: Label `fig_features' multiply defined.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(./Dissertacao.out) (./Dissertacao.out) (./Dissertacao.glsdefs) [1{/var/lib/tex
+mf/fonts/map/pdftex/updmap/pdftex.map}] (./Dissertacao.mw)
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd)
+(/usr/share/texmf/tex/latex/lm/omllmm.fd)
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd)
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+<FichaCat.pdf, id=222, 597.23125pt x 845.1575pt> <use FichaCat.pdf>
+<use FichaCat.pdf> <FichaCat.pdf, id=225, page=1, 597.23125pt x 845.1575pt>
+<use FichaCat.pdf, page 1> <use FichaCat.pdf, page 1>
+<use FichaCat.pdf, page 1> <use FichaCat.pdf, page 1>pdfTeX warning (ext4): des
+tination with the same identifier (name{page.1}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.28 \fichacatalografica
+                         [1] (./Dissertacao.mw) <use FichaCat.pdf, page 1>
+[2 <./FichaCat.pdf>] (./Dissertacao.mw)
+<Ata.pdf, id=242, 597.55246pt x 845.19763pt> <use Ata.pdf> <use Ata.pdf>
+<Ata.pdf, id=245, page=1, 597.55246pt x 845.19763pt> <use Ata.pdf, page 1>
+<use Ata.pdf, page 1> <use Ata.pdf, page 1> <use Ata.pdf, page 1>
+<use Ata.pdf, page 1>pdfTeX warning (ext4): destination with the same identifie
+r (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 \folhadeaprovacao
+                       [2 <./Ata.pdf>] (./Dissertacao.mw)
+Overfull \hbox (178.69351pt too wide) in paragraph at lines 30--30
+|  $[]$  |
+[3] (./Dissertacao.mw) [4] (./Dissertacao.mw)
+Overfull \hbox (59.18465pt too wide) in paragraph at lines 47--47
+|  $[]$  |
+[5] (./Dissertacao.mw) [6] (./Dissertacao.mw) [7] (./Dissertacao.mw)
+(./Dissertacao.lof [8] (./Dissertacao.mw)) [9] (./Dissertacao.mw)
+(./Dissertacao.lot) [10] (./Dissertacao.mw) (./Dissertacao.loa)
+No file Dissertacao.acr.
+No file Dissertacao.sym.
+[11] (./Dissertacao.mw) (./Dissertacao.toc [12] (./Dissertacao.mw)) [13]
+(./Dissertacao.mw) (./Capitulo1.tex
+<Imagens/robos.jpg, id=486, 3565.32pt x 2007.5pt> <use Imagens/robos.jpg>pdfTeX
+ warning (ext4): destination with the same identifier (name{page.12}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 
+      [12] (./Dissertacao.mw)pdfTeX warning (ext4): destination with the same i
+dentifier (name{page.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 
+      [13 <./Imagens/robos.jpg>] (./Dissertacao.mw) [14] (./Dissertacao.mw)
+[15] (./Dissertacao.mw) [16] (./Dissertacao.mw)) [17] (./Dissertacao.mw)
+(./Capitulo2.tex [18] (./Dissertacao.mw) [19] (./Dissertacao.mw) [20]
+(./Dissertacao.mw) [21] (./Dissertacao.mw) [22] (./Dissertacao.mw)
+<Imagens/Filtro_Gaussiana.png, id=635, 898.10532pt x 347.79938pt>
+<use Imagens/Filtro_Gaussiana.png>
+<Imagens/Seg_Hsv.png, id=645, 127.22531pt x 97.11281pt>
+<use Imagens/Seg_Hsv.png> <Imagens/Seg.jpeg, id=646, 115.93312pt x 90.3375pt>
+<use Imagens/Seg.jpeg> [23 <./Imagens/Filtro_Gaussiana.png>] (./Dissertacao.mw)
+[24 <./Imagens/Seg_Hsv.png> <./Imagens/Seg.jpeg>] (./Dissertacao.mw)
+<Imagens/Morphology.jpeg, id=669, 410.2828pt x 317.68687pt>
+<use Imagens/Morphology.jpeg> [25 <./Imagens/Morphology.jpeg>]
+(./Dissertacao.mw) [26] (./Dissertacao.mw) [27] (./Dissertacao.mw) [28]
+(./Dissertacao.mw) [29] (./Dissertacao.mw)
+<Imagens/HOGBloco.png, id=732, 304.88907pt x 242.40562pt>
+<use Imagens/HOGBloco.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30] (./Dissertacao.mw) [31 <./Imagens/HOGBloco.png>] (./Dissertacao.mw)
+<Imagens/SVM.png, id=752, 278.54062pt x 146.04562pt> <use Imagens/SVM.png>
+<Imagens/SVM2.png, id=757, 611.28375pt x 174.6525pt> <use Imagens/SVM2.png>
+[32 <./Imagens/SVM.png>] (./Dissertacao.mw) [33 <./Imagens/SVM2.png>]
+(./Dissertacao.mw) [34] (./Dissertacao.mw)
+<Imagens/Edges.png, id=816, 131.74219pt x 51.94406pt> <use Imagens/Edges.png>
+<Imagens/Line1.png, id=817, 131.74219pt x 51.94406pt> <use Imagens/Line1.png>
+<Imagens/Line2.png, id=818, 131.74219pt x 51.94406pt> <use Imagens/Line2.png>
+<Imagens/Center.png, id=819, 74.52844pt x 51.94406pt> <use Imagens/Center.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagens/HaarJanela.png, id=822, 381.67593pt x 147.55125pt>
+<use Imagens/HaarJanela.png>
+<Imagens/HaarJanela2.png, id=823, 479.54156pt x 132.495pt>
+<use Imagens/HaarJanela2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35] (./Dissertacao.mw) [36 <./Imagens/Edges.png> <./Imagens/Line1.png> <./Imag
+ens/Line2.png> <./Imagens/Center.png> <./Imagens/HaarJanela.png> <./Imagens/Haa
+rJanela2.png>] (./Dissertacao.mw)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo)
+<Imagens/Boost1.png, id=883, 461.47406pt x 426.09187pt>
+<use Imagens/Boost1.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37] (./Dissertacao.mw) [38] (./Dissertacao.mw)
+<Imagens/Boost2.png, id=929, 477.28313pt x 426.09187pt>
+<use Imagens/Boost2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39 <./Imagens/Boost1.png>] (./Dissertacao.mw) [40 <./Imagens/Boost2.png>]
+(./Dissertacao.mw) [41] (./Dissertacao.mw) [42] (./Dissertacao.mw) [43]
+(./Dissertacao.mw) [44] (./Dissertacao.mw) [45] (./Dissertacao.mw) [46]
+(./Dissertacao.mw) [47] (./Dissertacao.mw)) [48] (./Dissertacao.mw)
+(./Capitulo3.tex <Imagens/Orientation.png, id=1135, 310.91156pt x 361.35pt>
+<use Imagens/Orientation.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[49] (./Dissertacao.mw)
+<Imagens/ImBolaL.png, id=1147, 295.1025pt x 247.67531pt>
+<use Imagens/ImBolaL.png> [50 <./Imagens/Orientation.png>] (./Dissertacao.mw)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51 <./Imagens/ImBolaL.png>] (./Dissertacao.mw) [52] (./Dissertacao.mw)
+<Imagens/ImBola.png, id=1198, 523.20468pt x 345.54094pt>
+<use Imagens/ImBola.png>
+
+LaTeX Warning: Command \c invalid in math mode on input line 152.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 152.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo) [53 <./Imagens/ImBola.p
+ng>] (./Dissertacao.mw) [54] (./Dissertacao.mw)
+<Imagens/liga.jpg, id=1251, 2673.99pt x 758.835pt> <use Imagens/liga.jpg>
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo) [55 <./Imagens/liga.jpg
+>] (./Dissertacao.mw) [56] (./Dissertacao.mw)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo)
+
+LaTeX Warning: Command \c invalid in math mode on input line 320.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 320.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo) [57] (./Dissertacao.mw)
+[58] (./Dissertacao.mw)
+<Imagens/Regioes.png, id=1353, 368.87813pt x 255.20343pt>
+<use Imagens/Regioes.png>
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo) [59 <./Imagens/Regioes.
+png>] (./Dissertacao.mw) [60] (./Dissertacao.mw)
+<Imagens/StartP.png, id=1393, 380.17032pt x 462.22687pt>
+<use Imagens/StartP.png>) [61] (./Dissertacao.mw) [62 <./Imagens/StartP.png>]
+(./Dissertacao.mw) (./Capitulo4.tex [63] (./Dissertacao.mw)
+<Imagens/resized-darwin.jpg, id=1420, 481.8pt x 271.0125pt>
+<use Imagens/resized-darwin.jpg> [64 <./Imagens/resized-darwin.jpg>]
+(./Dissertacao.mw) [65] (./Dissertacao.mw)
+<Imagens/resized-3.png, id=1441, 240.14719pt x 89.58469pt>
+<use Imagens/resized-3.png>
+<Imagens/resized-1.png, id=1442, 237.13594pt x 88.83188pt>
+<use Imagens/resized-1.png>
+<Imagens/resized-4.png, id=1443, 237.13594pt x 89.58469pt>
+<use Imagens/resized-4.png>
+<Imagens/resized-2.png, id=1444, 238.64156pt x 88.83188pt>
+<use Imagens/resized-2.png>
+<Imagens/Sun_Ball1.jpeg, id=1445, 223.83624pt x 107.40125pt>
+<use Imagens/Sun_Ball1.jpeg>
+<Imagens/Sun_Ball2.jpeg, id=1446, 223.83624pt x 107.40125pt>
+<use Imagens/Sun_Ball2.jpeg>
+<Imagens/BolaLar/BL1.jpg, id=1447, 1444.64719pt x 810.77907pt>
+<use Imagens/BolaLar/BL1.jpg>
+<Imagens/BolaLar/BL2.jpg, id=1448, 1445.4pt x 813.0375pt>
+<use Imagens/BolaLar/BL2.jpg> [66 <./Imagens/resized-3.png> <./Imagens/resized-
+1.png> <./Imagens/resized-4.png> <./Imagens/resized-2.png> <./Imagens/Sun_Ball1
+.jpeg> <./Imagens/Sun_Ball2.jpeg>] (./Dissertacao.mw) [67 <./Imagens/BolaLar/BL
+1.jpg> <./Imagens/BolaLar/BL2.jpg>] (./Dissertacao.mw)
+<Imagens/Bola/B04.png, id=1466, 1284.8pt x 722.7pt> <use Imagens/Bola/B04.png>
+<Imagens/Bola/B05.png, id=1467, 1284.8pt x 722.7pt> <use Imagens/Bola/B05.png>
+<Imagens/Bola/B12.png, id=1468, 1284.8pt x 722.7pt> <use Imagens/Bola/B12.png>
+<Imagens/Bola/B37.png, id=1469, 1284.8pt x 722.7pt> <use Imagens/Bola/B37.png>
+<Imagens/Curva_ROC_Bola.png, id=1471, 615.80063pt x 341.77687pt>
+<use Imagens/Curva_ROC_Bola.png> [68] (./Dissertacao.mw) [69 <./Imagens/Bola/B0
+4.png (PNG copy)> <./Imagens/Bola/B05.png (PNG copy)> <./Imagens/Bola/B12.png (
+PNG copy)> <./Imagens/Bola/B37.png (PNG copy)> <./Imagens/Curva_ROC_Bola.png>]
+(./Dissertacao.mw) <Imagens/Dist.png, id=1488, 593.21625pt x 359.09157pt>
+<use Imagens/Dist.png> [70 <./Imagens/Dist.png>] (./Dissertacao.mw)
+<Imagens/ROC1.png, id=1499, 437.38406pt x 403.5075pt> <use Imagens/ROC1.png>
+[71] (./Dissertacao.mw)
+<Imagens/Milton_Det.jpg, id=1510, 192.03171pt x 178.19717pt>
+<use Imagens/Milton_Det.jpg> [72 <./Imagens/ROC1.png>] (./Dissertacao.mw)
+<Imagens/Darwin01.png, id=1522, 481.8pt x 271.0125pt>
+<use Imagens/Darwin01.png>
+<Imagens/Darwin02.png, id=1523, 481.8pt x 270.25969pt>
+<use Imagens/Darwin02.png>
+<Imagens/Darwin03.png, id=1524, 481.8pt x 271.0125pt>
+<use Imagens/Darwin03.png>
+<Imagens/Darwin04.png, id=1525, 481.8pt x 270.25969pt>
+<use Imagens/Darwin04.png>
+<Imagens/Darwin05.png, id=1526, 481.8pt x 271.0125pt>
+<use Imagens/Darwin05.png>
+<Imagens/Darwin06.png, id=1527, 481.8pt x 271.0125pt>
+<use Imagens/Darwin06.png>
+<Imagens/Darwin07.png, id=1528, 481.8pt x 271.0125pt>
+<use Imagens/Darwin07.png>
+<Imagens/Darwin08.png, id=1529, 481.8pt x 271.0125pt>
+<use Imagens/Darwin08.png>
+<Imagens/Darwin09.png, id=1530, 481.8pt x 270.25969pt>
+<use Imagens/Darwin09.png>
+<Imagens/Darwin10.png, id=1531, 481.8pt x 270.25969pt>
+<use Imagens/Darwin10.png>
+<Imagens/Darwin11.png, id=1532, 481.8pt x 271.0125pt>
+<use Imagens/Darwin11.png>
+<Imagens/Darwin12.png, id=1533, 481.8pt x 271.0125pt>
+<use Imagens/Darwin12.png> [73 <./Imagens/Milton_Det.jpg>] (./Dissertacao.mw)
+[74 <./Imagens/Darwin01.png> <./Imagens/Darwin02.png> <./Imagens/Darwin03.png> 
+<./Imagens/Darwin04.png> <./Imagens/Darwin05.png> <./Imagens/Darwin06.png> <./I
+magens/Darwin07.png> <./Imagens/Darwin08.png> <./Imagens/Darwin09.png> <./Image
+ns/Darwin10.png> <./Imagens/Darwin11.png> <./Imagens/Darwin12.png>]
+(./Dissertacao.mw) <Imagens/HeartsHOG.png, id=1576, 671.50874pt x 358.33875pt>
+<use Imagens/HeartsHOG.png>
+<Imagens/HeartsHAAR.png, id=1577, 677.53125pt x 355.3275pt>
+<use Imagens/HeartsHAAR.png>
+<Imagens/ROCHH.png, id=1582, 603.75563pt x 377.91188pt>
+<use Imagens/ROCHH.png> [75 <./Imagens/HeartsHOG.png> <./Imagens/HeartsHAAR.png
+>] (./Dissertacao.mw) <Imagens/FPS.png, id=1595, 544.28343pt x 356.0803pt>
+<use Imagens/FPS.png> [76 <./Imagens/ROCHH.png>] (./Dissertacao.mw)
+<Imagens/MixHOG.png, id=1605, 963.6pt x 479.54156pt> <use Imagens/MixHOG.png>
+<Imagens/MixHAAR.png, id=1606, 963.6pt x 475.02469pt>
+<use Imagens/MixHAAR.png>
+<Imagens/CIT01HOG.png, id=1611, 599.99156pt x 258.9675pt>
+<use Imagens/CIT01HOG.png>
+<Imagens/CIT01HAAR.png, id=1612, 599.99156pt x 258.9675pt>
+<use Imagens/CIT01HAAR.png> [77 <./Imagens/FPS.png>] (./Dissertacao.mw))
+[78 <./Imagens/MixHOG.png> <./Imagens/MixHAAR.png>] (./Dissertacao.mw) [79 <./I
+magens/CIT01HOG.png> <./Imagens/CIT01HAAR.png>] (./Dissertacao.mw)
+(./Capitulo5.tex [80] (./Dissertacao.mw) [81] (./Dissertacao.mw)) [82]
+(./Dissertacao.mw) (./Dissertacao.bbl [83] (./Dissertacao.mw) [84]
+(./Dissertacao.mw) [85] (./Dissertacao.mw) [86] (./Dissertacao.mw) [87]
+(./Dissertacao.mw) [88] (./Dissertacao.mw)) (./Anexos.tex [89]
+(./Dissertacao.mw) [90] (./Dissertacao.mw)pdfTeX warning (ext4): destination wi
+th the same identifier (name{section.1.1}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.3  \section{Séries Temporais}
+                                pdfTeX warning (ext4): destination with the sam
+e identifier (name{section.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ...s Simples de Previsão de Série Temporal}
+                                                   [91] (./Dissertacao.mw)
+<Imagens/MM.png, id=1769, 496.85625pt x 242.40562pt> <use Imagens/MM.png>)
+[92 <./Imagens/MM.png>] (./Dissertacao.mw) [93] (./Dissertacao.mw)
+(./Dissertacao.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 87 (\begingroup)
+### bottom level
+(see the transcript file for additional information)pdfTeX warning (dest): name
+{section*.52} has been referenced but does not exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
+re/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Dissertacao.pdf (97 pages, 22479381 bytes).
+Transcript written on Dissertacao.log.

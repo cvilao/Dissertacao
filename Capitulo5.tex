@@ -1,0 +1,49 @@
+
+Esse trabalho apresentou uma solução de visão computacional para o ambiente KidSize, robusto à mudanças de iluminação, usando algoritmos de visão básicos e bem conhecidos, entretanto, o ambiente real provou ser bastante desafiador.
+
+Houveram diversas mudanças nas regras da RoboCup para a categoria entre os anos de 2014 e 2015, as duas principais mudanças são relativas às cores do gol(amarelo) e da bola (laranja), que passaram a ter suas cores alteradas para a cor branca. 
+
+Essas mudanças, apesar de drásticas para o domínio proposto, parecem levar ao encontro da meta da RoboCup. A abordagem apresentada permitiu que diversas técnicas pudessem ser utilizadas para identificar características como cores, texturas, bordas e contornos.
+
+Dada a limitação da aplicação em tempo real, HAAR teve um melhor desempenho levando-se em consideração apenas a velocidade de computação. No entanto, possui alguns problemas com iluminação e, portanto, têm uma alta taxa de falsos alarmes especialmente em ambientes reais e complexos. Os resultados mostram algumas vantagens para a técnica de Haar em quadros por segundo, de forma que pode ser executado em Full HD, mas com alguns falsos positivos, uma vez que é uma técnica muito sensível às mudanças de iluminação e, embora o descritor HOG demonstrou mais precisão em termos de detecção, mostrou ter uma limitação da taxa de velocidade e resolução máxima de 640x480 pixels. Quando se trata de avaliar os descritores e seus classificadores a escolha dos parâmetros e o hardware utilizado tiveram fortes influências no desempenho total do sistema.
+
+O tempo gasto em treinamento também foi uma questão complicada. Enquanto Hog determinava todas as características por si só e levava apenas alguns minutos para o treinamento, o HAAR precisava de uma pessoa para determinar onde os objetos se encontravam na imagens, e levando de 5 à 10 horas para ser concluído. As imagens de treinamento usadas para classificação usando o descritor HOG tiveram que ser reduzidas e normalizadas para o tamanho proposto no trabalho original de \citeonline{Dallal}.
+
+Na competição, no entanto, fazer o robô ignorar o ambiente de fundo provou ser uma tarefa muito desafiadora. Dessa forma, dado o hardware utilizado e os objetivos propostos, o descritor HAAR parece ser mais a técnica mais apropriada para o domínio proposto, principalmente por sua  velocidade de processamento. 
+
+Construir uma base de imagens de robôs, a variedade de robôs atuantes na liga é muito grande e para se ter um classificador confiável, é necessário um conjunto de imagens de treinamento provenientes dos mais diversos tipos de robôs, assim como, suas respectivas dimensões.
+
+O time qualificou-se e participou da RoboCup, liga KidSize, pela primeira vez em 2014, atingindo a segunda fase de grupos, terminando entre os 16 melhores colocados de 23 inscritos. 
+
+
+
+\section{Contribuições}
+
+As seguintes contribuições são decorrentes desse, e são citadas:
+
+\begin{itemize}
+	\item a construção do sistema de visão computacional do robô para a competição do time RoboFEI em diversos campeonatos de futebol \cite{Vilao} \cite{perico2014hardware};
+	%\item disponibilização do banco de imagens normalizadas de robôs e bolas utilizadas no treinamento do HAAR e do HOG;
+	\item quebra de um paradigma para o domínio, onde se acreditava que era necessário o uso de segmentação por cores, com o desenvolvimento de um sistema de visão computacional para identificação da bola que não é dependente de segmentação de cores;
+	\item um sistema de detecção de robôs ainda pouco explorado nesse domínio \cite{Vilao2};
+	\item a equipe foi campeã Latino-Americano de futebol de robôs \cite{LARC2014} e ficou entre os 16 melhores colocados na categoria KidSize da Robocup nos anos de 2014 em João Pessoa \cite{JP2014} e 2015 na cidade de Hefei na China \cite{JP2015}.
+\end{itemize}
+
+
+\section{Trabalhos Futuros}
+
+Certos aspectos do desenvolvimento do sistema de visão computacional foram abordados no presente visando solucionar os mais diversos problemas inerentes desse tipo de sistema. Com o intuito de melhorar, expandir ou modificar o presente serão citados alguns itens que surgiram durante a elaboração do presente e que são descritos brevemente como possíveis trabalhos futuros.
+
+
+\begin{enumerate}
+\item uma comparação entre o HOG e o HAAR foi proposta, porém outras técnicas podem ser utilizadas, como por exemplo, o CenTrist. Trata-se de uma técnica computacionalmente eficiente para capturar e determinar contornos comparado com o HOG, mas ainda há a escassez de artigos que implementaram e testaram a precisão do descritor Centrist para identificar robôs;
+
+\item um estudo para identificar os níveis de processamento e robustez de redes neurais profundas (Deep Neural Networks - DNN) para identificação de robôs e outros objetos com o video de uma câmera em movimento também pode ser vislumbrado;
+
+\item implementar o filtro de Kalmman no rastreamento da bola pode ser uma alternativa para o filtro de partículas;
+
+\item limitar a área de rastreamento da bola, já que a bola precisa estar no campo, é possível considerar que a bola estará contida em uma região predominantemente verde;
+
+\item uma comparação entre o Haar e a transformada de Hough para círculos para a bola laranja;
+
+\end{enumerate}

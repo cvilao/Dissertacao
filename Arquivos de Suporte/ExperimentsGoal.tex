@@ -1,0 +1,43 @@
+\section{Gol}
+Computacionalmente falando, o algoritmo de reconhecimento de gol, como é mostrado na figura ~\ref{fig:Goal}, tem um desempenho similar ao algoritmo de rastreamento da bola. O gol é centralizado da mesma forma que a bola assim, o robô pode saber onde está a bola e alinhar a si mesmo de uma forma que possa chutar a bola em direção ao gol.
+
+
+\begin{figure}[!ht]
+\centering
+\parbox{2.5in}{\includegraphics[width=2.5in]{Imagens/Gol_Ori.png}\center{\fontsize{10pt}{10pt}\selectfont (a)}} 
+\qquad 
+\begin{minipage}{2.5in}%
+\includegraphics[width=2.5in]{Imagens/Gol_Seg.png}\center{\fontsize{10pt}{10pt}\selectfont (c)}
+\end{minipage}
+\vspace*{3mm}
+
+\parbox{2.5in}{\includegraphics[width=2.5in]{Imagens/Gol.png}\center{\fontsize{10pt}{10pt}\selectfont (b)}} 
+\qquad
+\begin{minipage}{2.5in}%
+\includegraphics[width=2.5in]{Imagens/Milton_Gol.jpg}\center{\fontsize{10pt}{10pt}\selectfont (d)}
+\end{minipage}%
+
+\caption{Identificação do gol, (a) Original, (b) Segmentada, (c) Resultado, (d) Resultado sem o travessão.\\ Fonte: O Autor }%
+\label{fig:Goal}%
+\end{figure}
+
+
+\section{Linhas de Campo}
+
+Devido à sua importância na localização do robô, as linhas de campo têm um papel importante na visão. Como existem muitas linhas no campo de futebol, uma significativa perda de desempenho é notada, já que a transformada de Hough precisou ser aplicada duas vezes para linhas e para círculos. Dessa forma, para manter a taxa de quadros por segundo, a resolução foi reduzida para 1080x720 pixels. 
+
+\begin{figure}[!h1]
+\centering
+\includegraphics[width=4in]{Imagens/Field.png}
+\DeclareGraphicsExtensions.
+\caption{Metade de um campo de futebol foi usada para demonstrar como as linhas são determinadas. \\ Fonte: O Autor}
+\label{Fig:F1}
+\end{figure}
+
+\begin{figure}[!h1]
+\centering
+\includegraphics[width=4in]{Imagens/Field2.png}
+\DeclareGraphicsExtensions.
+\caption{As linhas de campo do ponto de vista do robô do campo de futebol\\ Fonte: O Autor}
+\label{Fig:F2}
+\end{figure}

@@ -1,0 +1,116 @@
+No capítulo anterior, algumas técnicas de visão computacional foram apresentadas, mas, que na verdade, de maneira geral, tratam-se simplesmente de uma fundamentação teórica, que apesar do esforço ainda não permitem a contextualização dessas técnicas no cenário pretendido. 
+Visando facilitar o entendimento desse capítulo, as abordagens de visão computacional que não foram utilizadas por times da RoboCup, mas que possuem relevância, e técnicas que foram utilizadas por times na RoboCup, serão abordadas com um enfoque mais prático.  
+
+\section{Identificação de objetos}
+
+% INTRODUÇÃO
+Atualmente a visão computacional aplicada à robótica melhora no mesmo ritmo que a capacidade computacional. A quantidade de informação que uma imagem pode ser redundante ou desnecessária. Dessa forma o sistema de percepção deve reduzir ou tratar essa informação para que os objetivos sejam alcançados. 
+
+Diversas abordagens têm sido propostas para o reconhecimento de objetos, sendo as mais recentes se valendo do uso de Redes Neurais Profundas (DNN) \cite{Deep1} \cite{Deep2} \cite{mccannobject}. A maioria usa uma ou mais características, geralmente únicas a esse objeto, fazendo-o sobressair aos demais itens na imagem capturada. Um ponto em comum às muitas das abordagens, decorre do uso de câmeras estáticas, nesse sentido o sistema poderia interpretar os dados provenientes da(s) câmera(s) de forma equivocada, já que a vibração da câmera causada pelo movimento do robô causa o borramento da região de interesse e arredores além de, provocar o movimento de pixels não pertencentes à essa região. 
+
+Para reconhecer um objeto é necessário distinguí-lo do plano de fundo usando suas características únicas ou informação temporal, verificando quadro a quadro a região de interesse.
+
+Com a finalidade de inferir algum formato à região de interesse, muitos algoritmos são propostos para a detecção de borda, incluindo o uso de gradientes. Reconhecer objetos parcialmente observáveis, em tempo real, torna-se uma tarefa particularmente difícil de  solucionar, já que um objeto parcialmente ocluso tem seu formato alterado. 
+
+De forma análoga, a cor pode ser usada como uma forma de segmentar a região de interesse, que apesar de ser uma característica simples de se computar, é muito influenciada pela iluminação do ambiente. O time AUTMan, da Politécnica de Teerã \cite{AUTMan}, separa a imagem em três camadas, em cada qual segmenta uma cor referente à um objeto, sendo que cada uma dessas camadas serve de entrada para a próxima. Primeiramente as linhas de campo são segmentadas, em seguida o gol e por último, a bola. Dessa forma não é possível ver a bola se a segmentação do campo não estiver concluída. 
+
+A fim de reduzir os efeitos da iluminação ambiente, os dez primeiros colocados efetuaram uma mudança do sistemas de cor do RGB para o HSV ou para YUV. Alguns, simplesmente, usaram um desses dois sistemas de cor de forma nativa em suas respectivas câmeras. Todos os times são unânimes quanto ao uso de uma tabela de pesquisa (Look-up Table - LUT), na qual diversos valores de cor são armazenados previamente para uso na segmentação. Alguns times usam uma GUI \footnote{GUI - Do inglês: "Graphical User Interface ", Interface gráfica para Usuário} para calibrar esses valores durante a competição.
+
+\subsection{Reconhecimento da Bola}
+
+Devido a importância da bola em jogo de futebol, o algoritmo de identificação da bola precisa ser rápido, robusto à oclusão e às diversas condições de iluminação. Algumas características da bola, como seu formato circular, sua cor e seu tamanho, são largamente utilizadas por todos os times, não só para encontrar a bola mas, também, para calcular sua distância do robô. 
+
+%Como premissa, a bola apresentada em 2014 possuía cor predominantemente laranja, porém, devido ao seu polimento a mesma refletia uma certa quantidade de luz branca provenientes das luminárias.  
+
+O filtro de Kalmann \cite{Kalmman} e o filtro de partículas proposto por \citeonline{AdaptPart}, também chamado de algoritmo de condensação  \cite{Condensation} para uso em imagens digitais, são amplamente usados em outros domínios como formas probabilísticas de inferir a posição de um objeto digital. São técnicas mais custosas em termos de tempo de computação mas, com mais poder de processamento, seria possível usá-las como uma forma complementar de identificar a posição na qual a bola se encontra.
+ 
+Calcular a distância da bola ao robô, quando esta encontra-se parcialmente oclusa, adiciona uma componente de dificuldade, já que o tamanho conhecido da bola é usado como forma de computar essa distância. Nesse sentido, o time NUBots, da universidade de Newcastle \cite{Bunden}, criaram linhas de varredura horizontais e verticais onde todos os pixels são considerados de forma individual. Determinaram a linha de horizonte verde e, usando uma LUT, geraram as transições referentes à classe de cor da bola. 
+
+Esse mesmo time lidou com o problema da oclusão em 2012, adicionando uma etapa de verificação, onde quatro pontos de interesse, sem oclusão, podem ser usados em um método de atualização de centro, quando um determinado limite (threshold) de pixels consecutivos não pertencentes à bola são alcançados. Apesar de robusto contra ruído e alguma oclusão, esse método ainda precisa de duas verificações de tamanho e mais duas de cor. 
+
+Esse algoritmo trabalha em baixo nível, segmentando pixels de forma individual e, por esse motivo, pode-se dizer que está efetuando a detecção com pouquíssimos recursos computacionais, é claro também que, trabalhando nesse nível, várias verificações precisam ser executadas de maneira que os pixels possam ser agrupados em regiões com uma mínima confiabilidade. A transformada de Hough probabilística usada pelo time Bold Hearts \citeonline{Bold}, da universidade de Hertfordshire, Inglaterra, parece fornecer essa confiabilidade ao custo de mais processamento. Nenhum time parece ter usado a informação temporal da câmera. Na verdade, o processamento aparenta ter sido efetuado como se tirassem diversas fotos e cada foto tivesse sido processada individualmente, sem que a informação do quadro anterior passasse para o próximo quadro.
+
+Segmentar uma região por movimento é feito, de maneira geral, comparando os pixels do quadro atual com os pixels do quadro anterior, de forma individual ou em forma de máscaras. O rastreamento por fluxo ótico \cite{Fleet} funciona muito bem para câmeras estáticas onde os pixels que representam o plano de fundo tem pouca ou nenhuma alteração são facilmente subtraídos, deixando apenas os pixels que podem significar um objeto em movimento. Para o robô proposto, a câmera se movimenta e oscila frequentemente fazendo com que essa técnica apresente regiões provenientes de falsos movimentos, visto que, se a câmera inteira se mover muitos pixels que deveriam ser considerados parte do plano de fundo se moverão também.
+
+
+\subsection{Identificação dos Robôs}
+% RECONHECIMENTO DOS ROBÔS
+
+Um importante item de um jogador de futebol é saber se seu adversário está a caminho de roubar-lhe a bola, ou saber a posição de seu companheiro de equipe para efetuar um passe. A identificação de robôs é especialmente difícil já que a variedade de robôs da liga é grande e a cada ano esses são modificados por suas equipes. Na verdade, na liga nenhum time demonstrou em seu trabalho de descrição de times qualquer menção ao reconhecimento de robôs.
+
+O maior problema do algoritmo de reconhecimento de robôs é executá-lo em tempo real, devido ao número de dimensões ou características dos robôs e do fundo serem consideravelmente elevados, assim como, seus custos computacionais. Devido ao exposto, deve haver uma redução de características menos importantes. Na verdade o problema de reconhecimento dos robôs pode ser dividido em três partes:
+
+\begin{itemize}
+\item{Redução de características com a extração dos descritores mais relevantes;}
+\item{Treinamento e classificação (É robô ou não é robô);}
+\item{Identificação do time pela sua respectiva cor. (Sorteada no começo da partida)}
+\end{itemize}
+
+Um dos mais populares e bem sucedidos detectores de pessoas é o Histograma de Gradientes Orientados  \footnote{HOG - Do inglês: "Histogram of Oriented Gradients"}, usado juntamente com o classificador Máquina de Vetores de Suporte \footnote{SVM - Do inglês: "Support Vector Machine"}.
+
+\citeonline{Castro} utilizaram essa abordagem com uma segmentação de cores para identificar a qual time cada robô pertence após um reconhecimento do torso do robô NAO \cite{NAO}\footnote{TDP - Do inglês: "Team Description Papers"}. Na standard platform league, todos os robôs obedecem ao padrão NAO, portanto se faz necessário identificar apenas um robô, e todos os outros terão o mesmo formato. Decorre do treinamento mais um problema dessa aplicação, a variedade de robôs presentes na categoria KidSize pode dificultar esse objetivo.
+
+Há outros algoritmos que poderiam ser usados, como o Centrist \cite{Wu}. Outros detectores usam o movimento para iniciar o rastreamento e, como já foi visto, a câmera na cabeça do robô vibra muito. Outros classificadores como o LBP \cite{Viola}, o PCA/LDA \cite{Martinez}, entre outros, podem ser usados já que a classificação ocorre comparando vetores de descritores de treinamento com vetores de teste.
+
+\begin{table}[ht!]
+    \caption{Quadro de referência} \label{tbl:Times}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline 
+    Time 	& Sistema 	& Segmen  	& Bola		& Gol 		   & Linhas	   & Robô	\\ 
+    	 	& Cores   	& tação		& 		&     		   & Campo	   & 	 	\\ 
+    \hline 
+
+    CIT 	& RGB - HSV 	& LUT	  	& Transição	&  Transição	   & Segmentação   & --	     	\\
+    Brains	& 	 	& 	  	& de pixels	&  de pixels	   & Branco com    &	     	\\
+    		& 	 	& 	  	& 		&  	 	   & Verificação   &	     	\\
+    		& 	 	& 	  	& 		&  	 	   & Linear        &	     	\\
+
+    \hline 
+
+    Bold 	& RGB - HSV 	& LUT	  	& Transição	&  Transformada	   & Segmentação   & --     	\\
+    Hearts	& 	 	& 	  	& de pixels	&  Hough 	   & Branco e      &	     	\\
+    		& 	 	& 	  	& 		&  Probabi-  	   & Regressão     &	     	\\
+    		& 	 	& 	  	& 		&  -lística	   & Linear        &	     	\\
+    \hline 
+
+    Baset	& RGB - HSV 	& LUT	  	& Transição	&  Transição	   & Segmentação   &            \\
+    		& 	 	& 	  	& de pixels	&  de pixels	   & Branco        & --     	\\
+    		& 	 	& 	  	& Contornos	&  Contornos       & RANSAC        &	     	\\
+    \hline 
+
+    Eros	& YUYV  	& LUT	  	& Transição	&  Transformada	   & Segmentação   & --	     	\\
+    		& nativo	& 	  	& de pixels	&  de Hough	   & Branco        &	     	\\
+
+    \hline 
+     
+    AUTMan	& RGB - HSV 	& LUT	  	& Transição	&  Transição	   & Segmentação   & --	     \\
+    		& 	 	& 	  	& de pixels	&  de pixels       & Branco        &	     \\
+    \hline
+
+    \end{tabular}
+    \caption*{Fonte: Artigos de Descrição de Equipes$^4$, 2014 \cite{AUTMan}, \cite{Bold}, \cite{CIT}, \cite{Baset}, \cite{EROS} }
+
+\end{table}
+
+\section{Considerações finais}
+
+Vimos nesse capítulo que as equipes, inseridas no domínio RoboCup, trabalham em baixo nível e em médio nível \cite{AUTMan}, \cite{Bold}, \cite{CIT}, \cite{Baset}, \cite{EROS}. Essas técnicas são bem utilizadas e têm resultados pertinentes porém, com a mudança das regras, esses algoritmos vão precisar de cada vez mais estágios de verificação. Vimos também que diversas adversidades são inerentes do domínio, e que por esse motivo precisam de técnicas que possam identificar características, mas, que também, possam levar em conta algum contexto do objeto pertencente ao jogo.
+Dessa forma, ao lançar o artifício de utilizar técnicas de alto nível e considerando o que outras equipes têm feito, serão abordados no próximo capítulo dois aspectos do sistema de visão: 
+
+\begin{enumerate}
+	\item a identificação e rastreamento da bola.
+		\begin{enumerate}
+			\item Algoritmo proposto conforme Apêndice A
+			\item Descritor e Classificador Haar-AdaBoost
+		\end{enumerate}
+	\item a detecção de robôs.
+		\begin{enumerate}
+			\item Descritor e Classificador HOG-SVM
+			\item Descritor e Classificador Haar-AdaBoost
+		\end{enumerate}
+\end{enumerate}
+
+Nos dois casos, as técnicas serão postas a prova com o mesmo conjunto de imagens pertinentes aos seus respectivos objetivos. De maneira que possam coexistir no sistema de visão do robô sem onerá-lo em demasia.
+
+

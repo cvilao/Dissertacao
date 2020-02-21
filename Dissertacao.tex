@@ -1,0 +1,166 @@
+
+\documentclass[rascunho]{fei}
+\usepackage[utf8]{inputenc}
+%\usepackage[brazilian]{babel}
+\usepackage{verbatim}
+
+\usepackage[caption=false]{subfig}
+\usepackage{float}
+\usepackage{amssymb}
+
+%\usepackage{subfigure}
+%\selectlanguage{brazilian}
+
+\author{Claudio de Oliveira Vilão Junior}
+\title{UM SISTEMA DE VISÃO COMPUTACIONAL MONOCULAR PARA UM ROBÔ MÓVEL HUMANOIDE}
+%\subtitulo{CONTROLE SERVO-VISUAL DE JOGADORES DE FUTEBOL DE ROBÔS humanoides}
+%\cidade{Cidade}
+%\instituicao{Instituição de Ensino}
+
+\begin{document}
+\overfullrule=2cm
+\maketitle
+
+\begin{folhaderosto}
+Dissertação de Mestrado apresentada ao Centro Universitário da FEI para obtenção do título de Mestre em Engenharia Elétrica, orientado pelo Prof. Dr. Reinaldo Augusto da Costa Bianchi.
+\end{folhaderosto}
+
+\fichacatalografica
+\folhadeaprovacao
+\dedicatoria{A meus pais.}
+
+\begin{agradecimentos}
+Agradeço pelo incentivo que me foi dado em momentos de dificuldade por todos os meus familiares, em especial meus pais Anna Maria Cortezi Oliveira Vilão e Claudio de Oliveira Vilão. 
+
+Preciso agradecer, com uma ênfase maior, o Prof. Dr. Reinaldo Augusto da Costa Bianchi por me ajudar e suportar em todos os momentos que passei durante este período, mas principalmente por acreditar no meu trabalho e em mim. Não posso deixar de mencionar, e talvez nem precise,  mas, gostaria de agradecer pelas oportunidades que tem me dado, além do apoio, da motivação, das críticas construtivas e das aulas. Muito obrigado Professor.
+
+Aos professores do Centro Universitário da FEI pelo incentivos e pelas aulas ministradas: Prof. Dr. Carlos Eduardo Thomaz, Prof. Dr. Flávio Tonidandel, Prof. Dr. Paulo Sérgio Silva Rodrigues, Prof. Dr. Paulo E. Santos.
+
+Agradeço ao colega Ms. Isaac Jesus da Silva por sua contribuição me ajudando nas pesquisas científicas que vem sendo desenvolvidas com sugestões e críticas construtivas.
+Agradeço aos colegas Ms. Danilo Hernani Perico e Ms. Thiago Pedro Donadon Homem por terem me ajudado com sugestões e críticas, mas também transmitindo motivação e foco.
+
+Agradeço à minha esposa Mônica Farias da Silva pelo suporte e paciência, além de auxílio e dicas do tratamento de imagens.
+
+Agradeço a Deus.
+\end{agradecimentos}
+
+\epigrafe{A good scientist is a person with original ideas.}{Freeman Dyson}
+
+\begin{resumo}
+
+\begin{comment}
+Uma única imagem representa um conjunto de dados de tamanho considerável e tipicamente várias operações precisam ser feitas em cada pixel da referida imagem. Em uma estrutura de vídeo, a qual pode ser assimilado como uma sucessão de várias imagens, esta tarefa torna-se ainda mais difícil, já que, a taxa de quadros por segundo necessita ser mantida mesmo com a câmera em movimento. Este trabalho pretende descrever um sistema de visão monocular para quatro robôs humanoides desenvolvidos para participar da liga humanoide na categoria Kid Size, da RoboCup. O sistema de visão proposto permite que os robôs sejam capazes de acompanhar uma bola e detectar companheiros e adversários, fornecendo informações, tais como, distâncias e orientações de todos esses objetos simultaneamente, de forma que, todos os processos possam ser executados em tempo real com diferentes resoluções de câmera. Devido a mudança constante de regras da competição, aumentando cada vez mais a complexidade do ambiente, o uso de técnicas de alto nível, ainda pouco começam a parecer atraentes. Dessa forma o uso do Haar-Adaboost e do HOG-SVM para detecção de objetos pertencentes ao jogo, apresentaram resultados relevantes. Técnicas de baixo, médio e alto nível foram utilizadas em nossos robôs com poucas adversidades, com taxa de quadros por segundo condizentes com um robô de ação rápida e com a capacidade de generalização e identificação dos objetos demonstrados nas Curvas de Características de Operação do Receptor (ROC). 
+\end{comment}
+
+Uma única imagem representa um conjunto de dados de tamanho considerável e tipicamente várias operações precisam ser feitas em cada pixel da referida imagem. Em uma estrutura de vídeo, a qual pode ser descrita como uma sucessão de várias imagens, esta tarefa torna-se ainda mais difícil, já que a taxa de quadros analisadas necessita ser mantida mesmo com a câmera em movimento. Este trabalho descreve um sistema de visão monocular para quatro robôs humanoides desenvolvidos para participar da liga humanoide na categoria KidSize, da RoboCup. O sistema de visão proposto permite que os robôs acompanhem uma bola e detectem companheiros e adversários, fornecendo informações  como  distâncias e orientações de todos esses objetos simultaneamente, de forma que, todos os processos possam ser executados em tempo real com diferentes resoluções de câmera. Devido a mudança constante de regras da competição, aumentando cada vez mais a complexidade do ambiente, o uso de técnicas de alto nível começam a parecer atraentes. Dessa forma o uso do Haar-Adaboost e do HOG-SVM para detecção de objetos pertencentes ao jogo, apresentaram resultados relevantes. Técnicas de baixo, médio e alto nível foram utilizadas em nossos robôs com poucas adversidades, com taxa de quadros por segundo condizentes com um robô de ação rápida e com a capacidade de generalização e identificação dos objetos demonstrados nas Curvas de Características de Operação do Receptor (ROC). 
+
+\palavraschave{Robô humanoide, Visão computacional, Controle servovisual, Rastreamento de objetos, Reconhecimento de objetos }
+
+\end{resumo}
+
+\begin{abstract}
+
+A single image represents a dataset of considerable size, and typically several operations has to be done in each pixel of that image. In a video frame, which can be assimilated to a succession of multiple images, this task becomes even more challenging, due to shaking camera, and since the frame rate per second needs to be maintained. This paper aims to describe a monocular vision system for four humanoid robots developed to participate in the humanoid league in the category Kid Size, RoboCup. The proposed vision system allows robots to be able to keep tracking of a ball and detect teammates and opponents, providing information such as distances and estimated orientations of all these objects simultaneously. It is possible for all threads to run in real time with different camera resolutions. Due to constantly changing competition rules which has continually increased the environment complexity, the use of high-level techniques gradually becomes more attractive. Thus the use of Haar-AdaBoost and HOG-SVM to detect objects belonging to the game, presented relevant results. All levels of techniques were used in our robots with few adversities, with frame rate per second consistent with a fast-acting robot and the ability to generalize and identify the soccer game belonging objects. All results are shown in the Receiver Operating Characteristics Curves (ROC).
+
+\keywords{Humanoid robot, Computational vision, Visual servoing, Object tracking, Object recognition}
+\end{abstract}
+
+%\tabelas
+%\figuras
+%\algoritmos
+%\sumario
+
+%Esse foi colocado depois usando o manual.tex
+%\glsaddall
+%\let\cleardoublepage\clearpage
+\listoffigures
+\listoftables
+\listofalgorithms
+%\listoftheorems
+\printglossaries
+\tableofcontents
+
+\newacronym[longplural= Support Vector Machine]
+{svm}{SVM}{Support Vector Machine}
+
+\newacronym[longplural= Histogram of Oriented Gradients]
+{hog}{HOG}{Histogram of Oriented Gradients}
+
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------CAPÍTULO 1 - INTRODUÇÃO ------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+\chapter{Introdução}
+\label{chap:introduction}
+\input{Capitulo1}
+%%===============================================================================
+
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------CAPÍTULO 2 - FUNDAMENTAÇÃO TEÓRICA--------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+\chapter{Fundamentação Teórica: Visão Computacional}
+\label{chap:revision}
+\input{Capitulo2}
+
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------CAPÍTULO 3 - TRABALHO CORRELATOS----------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+%\chapter{Visão Computacional Aplicada a Robótica - Domínio RoboCup Humanoide}
+%\label{chap:relatedwork}
+%\input{Capitulo3}
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------------  CAPÍTULO 4 - PROPOSTA --------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+\chapter{Sistema Desenvolvido}
+\label{chap:software}
+\input{Capitulo3}
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------  CAPÍTULO 5 - EXPERIMENTOS E RESULTADOS ---------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+\chapter{Experimentos Realizados e Resultados}
+\label{chap:experiments}
+\input{Capitulo4}
+%%===============================================================================
+
+
+
+%*********************************************************************************************************************************************
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------  CAPÍTULO 6 - CONCLUSÃO -------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------------------
+%*********************************************************************************************************************************************
+
+\chapter{Conclusão}
+\input{Capitulo5}
+%%===============================================================================
+
+
+
+\bibliography{Bibliografia}
+
+%\appendix
+%\input{appendix}
+
+\anexos
+
+\input{Anexos}
+
+\end{document}

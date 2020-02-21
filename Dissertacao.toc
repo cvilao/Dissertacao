@@ -1,0 +1,59 @@
+\select@language {portuges}
+\select@language {portuges}
+\select@language {english}
+\select@language {portuges}
+\select@language {english}
+\select@language {portuges}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}Uma Breve Introdu\IeC {\c c}\IeC {\~a}o \IeC {\`a} Vis\IeC {\~a}o Computacional de Rob\IeC {\^o}s M\IeC {\'o}veis Humanoides}{12}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Tipos de Sistemas de Vis\IeC {\~a}o Computacional para Rob\IeC {\^o}s M\IeC {\'o}veis}{13}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{14}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{14}{section.1.3}
+\contentsline {section}{\numberline {1.4}Justificativas}{14}{section.1.4}
+\contentsline {section}{\numberline {1.5}Hist\IeC {\'o}rico}{15}{section.1.5}
+\contentsline {section}{\numberline {1.6}Dom\IeC {\'\i }nio}{16}{section.1.6}
+\contentsline {section}{\numberline {1.7}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{17}{section.1.7}
+\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica: Vis\IeC {\~a}o Computacional}{18}{chapter.2}
+\contentsline {section}{\numberline {2.1}Processamento de imagens coloridas}{19}{section.2.1}
+\contentsline {section}{\numberline {2.2}Baixo N\IeC {\'\i }vel - Filtros}{20}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Transforma\IeC {\c c}\IeC {\~o}es de intensidade}{21}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Histogramas}{21}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Filtros Espaciais}{22}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Segmenta\IeC {\c c}\IeC {\~a}o}{23}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Morfologia Matem\IeC {\'a}tica}{24}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Transformada de Hough}{26}{section.2.3}
+\contentsline {section}{\numberline {2.4}Propaga\IeC {\c c}\IeC {\~a}o da Densidade Condicional - Condensa\IeC {\c c}\IeC {\~a}o}{28}{section.2.4}
+\contentsline {section}{\numberline {2.5}Descritor Histograma de Gradientes Orientados (HOG) com M\IeC {\'a}quina de Vetores de Suporte (SVM)}{29}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}SVM}{31}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}Um exemplo em duas dimens\IeC {\~o}es}{32}{subsubsection.2.5.1.1}
+\contentsline {section}{\numberline {2.6}Descritor HAAR com Boosting }{35}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Classificador Boosting}{35}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}HAAR-Adaboost}{39}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Controle Servo-Visual}{42}{section.2.7}
+\contentsline {section}{\numberline {2.8}Identifica\IeC {\c c}\IeC {\~a}o de objetos}{43}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Reconhecimento da Bola}{44}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Identifica\IeC {\c c}\IeC {\~a}o dos Rob\IeC {\^o}s}{46}{subsection.2.8.2}
+\contentsline {section}{\numberline {2.9}Considera\IeC {\c c}\IeC {\~o}es finais}{47}{section.2.9}
+\contentsline {chapter}{\numberline {3}Sistema Desenvolvido}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}Bola}{49}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}A Bola Laranja}{50}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}A Bola Branca}{53}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Advers\IeC {\'a}rios e Companheiros de Equipe}{55}{section.3.2}
+\contentsline {section}{\numberline {3.3}HOG-SVM Online}{57}{section.3.3}
+\contentsline {section}{\numberline {3.4}Controle Servo-Visual}{59}{section.3.4}
+\contentsline {section}{\numberline {3.5}O sistema de vis\IeC {\~a}o}{61}{section.3.5}
+\contentsline {chapter}{\numberline {4}Experimentos Realizados e Resultados}{63}{chapter.4}
+\contentsline {section}{\numberline {4.1}O rob\IeC {\^o}}{63}{section.4.1}
+\contentsline {section}{\numberline {4.2}Experimento - Encontrando uma bola laranja usando segmenta\IeC {\c c}\IeC {\~a}o e transformada de Hough para c\IeC {\'\i }rculos}{64}{section.4.2}
+\contentsline {section}{\numberline {4.3}Experimento - Encontrando uma bola branca usando caracter\IeC {\'\i }sticas HAAR}{67}{section.4.3}
+\contentsline {section}{\numberline {4.4}Experimento - Determina\IeC {\c c}\IeC {\~a}o da dist\IeC {\^a}ncia da bola ao rob\IeC {\^o}}{68}{section.4.4}
+\contentsline {section}{\numberline {4.5}Experimento - Detectando Rob\IeC {\^o}s usando o Descritor HOG com o Classificador SVM}{71}{section.4.5}
+\contentsline {section}{\numberline {4.6}Experimento - Detectando Rob\IeC {\^o}s usando o Descritor HAAR com o Classificador Boosting}{73}{section.4.6}
+\contentsline {section}{\numberline {4.7}Discuss\IeC {\~a}o - Comparando os dois descritores e seus classificadores}{74}{section.4.7}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{80}{chapter.5}
+\contentsline {section}{\numberline {5.1}Contribui\IeC {\c c}\IeC {\~o}es}{81}{section.5.1}
+\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{81}{section.5.2}
+\contentsline {section}{\hspace {4em}REFER\^ENCIAS}{83}{Item.34}
+\contentsline {chapter}{\hspace {4em}ANEXO A -- M\IeC {\'e}dia M\IeC {\'o}vel}{90}{section*.52}
+\contentsline {section}{\numberline {A.1}S\IeC {\'e}ries Temporais}{91}{section.1.1}
+\contentsline {section}{\numberline {A.2}M\IeC {\'e}todos Simples de Previs\IeC {\~a}o de S\IeC {\'e}rie Temporal}{91}{section.1.2}

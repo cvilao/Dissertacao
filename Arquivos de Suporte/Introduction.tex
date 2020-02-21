@@ -1,0 +1,166 @@
+
+A Robocup é uma iniciativa educacional de pesquisa, é também uma competição cujo objetivo é incentivar a pesquisa robótica fornecendo desafios nos quais uma grande quantidade de tecnologias possam ser integradas. Jogadores de xadrez artificiais, como o Deep Blue, são bons exemplos do que esse tipo de iniciativa pode fazer pela robótica e a inteligência artificial. 
+
+O conceito de robôs jogadores de futebol foi introduzida em 1993 no Japão, e até hoje, é uma das mais importantes divisões da Robocup. Em 2014, essa competição foi celebrada no Brasil. O objetivo oficial da organização é apresentar, até 2050, um time de robôs jogadores de futebol totalmente autônomos capazes de vencer uma partida, usando as regras oficiais da FIFA, contra a seleção vencedora da Copa do mundo. 
+
+Quatro robôs autônomos (figura ~\ref{Fig:Robos}) foram desenvolvidos pelo time humanoide da FEI para atuar na liga Kid Size da Robocup, de maneira que cada um pudesse apresentar somente características humanas, ou seja, precisavam ter o formato humanoide. O dispositivo de aquisição de imagens precisa estar posicionada na cabeça, além de, necessitar de um processo de decisão e de visão individual livre de controles externos e, é claro, nenhum sensor, a não ser que represente um sentido humano. 
+
+
+
+\section{Motivação}
+
+Onde os algoritmos propostos na literatura não se enquadram no contexto. 
+
+A motivação do presente trabalho é desenvolver um sistema de visão computacional robusto e rápido para um robô humanoide, já que um dos maiores problemas da visão computacional, é ter que lidar com a quantidade de informação, muitas vezes irrelevante, e algoritmos que requerem grande esforço de processamento.  
+
+
+
+
+
+\section{Objetivos}
+
+Este projeto visa desenvolver um sistema servo-visual para um robô humanoide atuante na competição Robocup no ano de 2014, Liga humanoide, categoria Kid Size. Serão desenvolvidos sistemas de visão computacional que permitam ao agente:\\
+
+\begin{enumerate}
+	\item Rastrear uma bola, de tamanho conhecido e cor discrepante do fundo, fornecendo sua posição em um sistema de coordenadas;
+	\item Identificar linhas de um campo de futebol, assim, como o gol, de modo que essas informações possam ser utilizadas para o agente tomar uma decisão;
+	\item Reconhecer agentes do mesmo time e do time rival, possibilitando a realização de passes entre robôs;
+	\item Determinar se ele se encontra orientado para o campo de ataque ou de defesa.
+
+\end{enumerate}
+
+\section{Justificativas}
+O desenvolvimento de um time de futebol de robôs representa uma aplicação do uso de agentes autônomos com comportamento inteligente, visando a execução de uma tarefa, geralmente complexa, em equipe. O estudo e desenvolvimento da inteligência artificial, fornece desafios e problemas onde diversas tecnologias e metodologias podem ser combinadas para a obtenção dos resultados desejados, especialmente em visão computacional.
+
+\begin{figure}[!t1]
+\centering
+\includegraphics[width=5.5in]{Imagens/robos.jpg}
+\DeclareGraphicsExtensions.
+\caption{Robôs desenvolvidos.\\ Fonte: o Autor}
+\label{Fig:Robos}
+\end{figure}
+
+\section{Histórico}
+
+A primeira edição da Robocup aconteceu em 1997 em Nagoya, no Japão, depois de se ter organizado uma pré-Robocup em Osaka, no mesmo país, com finalidades de encontrar possíveis dificuldades e problemas na organização desse tipo evento em escala global. A iniciativa foi lançada pelo Dr. Hiroaki Kitano (Tóquio), um pesquisador na área de Inteligência Artificial que se tornou presidente e fundador da Robocup Federation.
+
+
+\begin{table}[ht!]
+    \caption{Histórico Robocup} 
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline 
+    Competição & Ano & Cidade & País Sede \\ 
+    \hline 
+    Robocup & 2015 & Hefei & China \\ 
+    \hline 
+    Robocup & 2014 & João Pessoa & Brasil \\ 
+    \hline 
+    Robocup & 2013 & Eindhoven & Holanda \\ 
+    \hline 
+    Robocup & 2012 & Cidade do México & México \\ 
+    \hline 
+    Robocup & 2011 & Istambul & Turquia \\ 
+    \hline 
+    Robocup & 2010 & * & Singapura \\ 
+    \hline 
+    Robocup & 2009 & Graz & Áustria \\ 
+    \hline 
+    Robocup & 2008 & Suzhou & China \\ 
+    \hline 
+    Robocup & 2007 & Atlanta & Estados Unidos \\ 
+    \hline 
+    Robocup & 2006 & Bremen & Alemanha \\ 
+    \hline 
+    Robocup & 2005 & Osaka & Japão \\ 
+    \hline 
+    Robocup & 2004 & Lisboa & Portugal \\ 
+    \hline 
+    Robocup & 2003 & Pádova & Itália \\ 
+    \hline 
+    Robocup & 2002 & Fukuoka/Busan & Japão/ Coréia do Sul \\ 
+    \hline 
+    Robocup & 2001 & Seatle & Estados Unidos \\ 
+    \hline 
+    Robocup & 2000 & Melbourne & Austrália \\ 
+    \hline 
+    Robocup & 1999 & Estocolmo & Suécia \\ 
+    \hline 
+    Robocup & 1998 & Paris & França \\ 
+    \hline 
+    Robocup & 1997 & Nagoya & Japão \\ 
+    \hline 
+    \end{tabular}
+	\label{tbl:historico}
+    \caption*{Fonte: \citeonline{Rules}}
+\end{table}
+
+\section{Domínio}
+
+O projeto tem como base a principal competição de futebol para robôs, a Robocup, sendo a liga de atuação do agente a Humanoid League na categoria Kid Size. Todos os dados dessa seção estão de acordo com o livro de regras de 2014 da Robocup.
+
+O campo de jogo consiste de uma superfície plana e nivelada, coberta por um carpete verde. As linhas brancas têm 5 centímetros de largura. Segmentos de linha de 10 centímetros de largura são usados para a marca de penalty e a posição inicial do início da partida. O campo é limitado pelas linha maiores, chamadas laterais, e por linhas menores, definidas como sendo de fundo, onde se encontram os gols. Todas as áreas localizadas fora dessas quatro linhas são consideradas desconhecidas e indefinidas. Os gols são compostos por duas traves, um travessão e uma rede. O travessão, bem como as traves dos gols são amarelos, o trançado da malha da rede não possui aberturas maiores do que 4 centímetros e sua cor poderá ser cinza ou preta. 
+
+São utilizadas apenas lâmpadas como forma de iluminação. Porém, as condições de iluminação dependem do local da competição. O campo é iluminado de forma constante e com brilho suficiente, sem influência da luz do dia. Em volta do campo, um local é definido onde somente o juiz, seus assistentes e mais dois manipuladores dos robôs podem atuar. Nenhum participante pode usar, abaixo da cintura, cores iguais ou similares às definidas para o campo, bola ou gols. Em 2014, a bola possuía coloração laranja, dois times jogavam por vez e cada time de futebol poderia ter no máximo quatro jogadores. 
+
+Apenas os sensores equivalentes aos sentidos humanos são permitidos, mas, não são obrigatórios. Robôs humanoides devem ter o formato de seus corpos semelhante ao do ser humano, devem ter pernas e braços. Uma série de restrições são aplicadas às medidas dos agentes, uma delas, que tem mais relevância para a pesquisa, é a relação entre a altura do corpo do robô \(H_{\text{Robô}}\) e a altura da cabeça \(H_{\text{Cabeça}}\), como segue:
+
+A altura da cabeça, incluindo o pescoço, deve satisfazer a seguinte expressão:\hfill 
+
+%\hspace{80}
+\begin{equation}
+0,05 * H_{\text{Robô}} \leq H_{\text{Cabeça}} \leq 0,25 * H_{\text{Robô}}  \\
+\end{equation}
+Onde a altura da cabeça é definida, como sendo, a distância do eixo da primeira junta do braço, no ombro, até o topo da cabeça.
+
+\begin{table}[ht!]
+    \caption{Medidas Importantes do Campo, da Bola e dos Jogadores} \label{tbl:medidas}
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline 
+    Descrição & Comprimento (cm) \\ 
+    \hline 
+    Linha Lateral ( Comprimento do Campo) & 900  \\ 
+    \hline 
+    Linha de Fundo ( Largura do Campo) & 600 \\ 
+    \hline 
+    Largura da grande área & 60 \\ 
+    \hline 
+    Comprimento da grande área & 345 \\ 
+    \hline 
+    Diâmetro do grande círculo & 150 \\ 
+    \hline 
+    Diâmetro da Bola & 10 \\ 
+    \hline 
+    Altura Máxima dos Agentes & 90 \\ 
+    \hline 
+    Largura dos Gols & 225 \\ 
+    \hline
+    Altura dos Gols & 110 \\
+    \hline
+    Altura das malhas dos Gols & 100 \\
+    \hline
+    Largura das traves e travessões & 10 \\
+    \hline
+
+
+    \end{tabular}
+    \caption*{Fonte: Livro de Regras Robocup - (Robocup Rules Book), 2014 \cite{Rules}}
+\end{table}
+
+O campo de visão dos robôs é limitado a 180 graus, isso significa que o ângulo máximo entre quaisquer dois pontos na sobreposição do campo de visão, de todas as câmeras montadas sobre o robô, precisam ser inferiores a esse ângulo. 
+
+O mecanismo para girar (pan) a câmera é limitado a 270 graus, 135 graus para cada lado, contados da posição de olhar para frente. Já o mecanismo para erguer (tilt) a câmera é limitado a 90 graus medidos da linha horizontal, essas restrições simulam as mesmas limitações das juntas do pescoço humano. 
+
+Seguindo essa linha de limitações humanas, fica definido que, de qualquer posição do robô, de qualquer ângulo de câmera ou do robô, o mesmo não pode ser capaz de visualizar os dois gols ao mesmo tempo, e o número de câmeras fica limitado a duas, porém, a visão monocular também é permitida, de qualquer forma deve(m) estar na cabeça do robô.
+
+Robôs participantes das competições da liga humanoide devem ser, predominantemente, pretos, cinzas, prateados ou brancos, com as limitações de serem não reflexivos e terem o pés pretos. Qualquer cor do campo, gol, bola ou time adversário deve ser evitada no robô. Braços, pernas e corpos devem ter aparência sólida e devem estar marcadas com a cor magenta (para agentes do time vermelho) e com a cor ciano (para agentes do time azul), ambas as marcas devem ter no mínimo 5 centímetros e estar visíveis nos dois lados das pernas e braços.
+
+\section{Organização do Trabalho}
+
+As seções anteriores apresentaram domínio, justificativas, objetivos, histórico e motivação deste trabalho, compondo o capítulo introdutório. Os demais capítulos estão estruturados da seguinte maneira:
+
+Conceitos básicos de aquisição, processamento e representação de imagens digitais são abordados no capítulo 2, apresentando, em forma de revisão, alguns dos mais conceituados algoritmos de processamento digital de imagens contextualizando-os com a visão computacional, a pesquisa prossegue com o capítulo 3, em que trabalhos correlatos são estudados e é posto em perspectiva o modo como algumas equipes participantes da Robocup utilizam algoritmos de processamento digital de imagens na forma de visão computacional, de maneira que, é possível visualizar como solucionaram os mais variados problemas visuais do jogo de futebol.
+
+A visão do agente foi baseada no que outras equipes têm feito, mas, também, em conceituados algoritmos de visão computacional. A descrição desse sistema de visão, com fluxogramas e testes a serem feitos, é apresentada na proposta de trabalho abarcada pelo capítulo 4. O capítulo 5 traz os testes já executados, os quais geraram alguns resultados preliminares. Por fim, nas Considerações Finais, no capítulo 6, é feita uma breve síntese das atividades realizadas até o momento, apontado para perspectivas futuras, por meio de um Cronograma de atividades.
+

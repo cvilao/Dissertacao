@@ -1,0 +1,3624 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.19)  29 NOV 2015 22:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Dissertacao.tex
+(./Dissertacao.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(./fei.cls
+Document Class: fei 2015/02/08 0.9.2 Modelo da FEI
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 80.
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
+\babel@savecnt=\count91
+\U@D=\dimen111
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen112
+\captionmargin@=\dimen113
+\captionwidth=\dimen114
+\caption@tempdima=\dimen115
+\caption@indent=\dimen116
+\caption@parindent=\dimen117
+\caption@hangindent=\dimen118
+)
+\c@ContinuedFloat=\count92
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/06/17 v1.17 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count93
+\calc@Bcount=\count94
+\calc@Adimen=\dimen119
+\calc@Bdimen=\dimen120
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count95
+\calc@Cskip=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen121
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen122
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip10
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks17
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks18
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks19
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count108
+\l_MT_multwidth_dim=\dimen130
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen131
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen132
+\l_MT_above_intertext_sep=\dimen133
+\l_MT_below_intertext_sep=\dimen134
+\l_MT_above_shortintertext_sep=\dimen135
+\l_MT_below_shortintertext_sep=\dimen136
+)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count109
+))
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/morewrites/morewrites.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2015/06/15 v5630 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2015/06/15 v5630 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/05/20 v5608 L3 Bootstrap code
+L3 Module: l3names 2015/02/24 v5535 L3 Namespace for primitives
+L3 Module: l3basics 2015/01/27 v5500 L3 Basic definitions
+L3 Module: l3expan 2014/11/27 v5472 L3 Argument expansion
+L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
+L3 Module: l3str 2015/03/01 v5545 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2015/02/21 v5529 L3 Integers
+\c_max_int=\count110
+\l_tmpa_int=\count111
+\l_tmpb_int=\count112
+\g_tmpa_int=\count113
+\g_tmpb_int=\count114
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2015/04/13 v5566 L3 Control structures
+\g__prg_map_int=\count115
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2015/02/26 v5537 L3 Messages
+L3 Module: l3file 2015/06/07 v5627 L3 File and I/O operations
+\l_iow_line_count_int=\count116
+\l__iow_target_count_int=\count117
+\l__iow_current_line_int=\count118
+\l__iow_current_word_int=\count119
+\l__iow_current_indentation_int=\count120
+L3 Module: l3skip 2015/05/18 v5607 L3 Dimensions and skips
+\c_zero_dim=\dimen139
+\c_max_dim=\dimen140
+\l_tmpa_dim=\dimen141
+\l_tmpb_dim=\dimen142
+\g_tmpa_dim=\dimen143
+\g_tmpb_dim=\dimen144
+\c_zero_skip=\skip59
+\c_max_skip=\skip60
+\l_tmpa_skip=\skip61
+\l_tmpb_skip=\skip62
+\g_tmpa_skip=\skip63
+\g_tmpb_skip=\skip64
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+L3 Module: l3keys 2015/06/14 v5629 L3 Key-value interfaces
+\g__keyval_level_int=\count121
+\l_keys_choice_int=\count122
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count123
+\c__fp_middle_shift_int=\count124
+\c__fp_trailing_shift_int=\count125
+\c__fp_big_leading_shift_int=\count126
+\c__fp_big_middle_shift_int=\count127
+\c__fp_big_trailing_shift_int=\count128
+\c__fp_Bigg_leading_shift_int=\count129
+\c__fp_Bigg_middle_shift_int=\count130
+\c__fp_Bigg_trailing_shift_int=\count131
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen145
+\l__coffin_offset_x_dim=\dimen146
+\l__coffin_offset_y_dim=\dimen147
+\l__coffin_x_dim=\dimen148
+\l__coffin_y_dim=\dimen149
+\l__coffin_x_prime_dim=\dimen150
+\l__coffin_y_prime_dim=\dimen151
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\l__coffin_display_coffin=\box39
+\l__coffin_display_coord_coffin=\box40
+\l__coffin_display_pole_coffin=\box41
+\l__coffin_display_offset_dim=\dimen152
+\l__coffin_display_x_dim=\dimen153
+\l__coffin_display_y_dim=\dimen154
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2015/05/21 v5613 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen155
+\l__box_bottom_dim=\dimen156
+\l__box_left_dim=\dimen157
+\l__box_right_dim=\dimen158
+\l__box_top_new_dim=\dimen159
+\l__box_bottom_new_dim=\dimen160
+\l__box_left_new_dim=\dimen161
+\l__box_right_new_dim=\dimen162
+\l__box_internal_box=\box42
+\l__coffin_bounding_shift_dim=\dimen163
+\l__coffin_left_corner_dim=\dimen164
+\l__coffin_right_corner_dim=\dimen165
+\l__coffin_bottom_corner_dim=\dimen166
+\l__coffin_top_corner_dim=\dimen167
+\l__coffin_scaled_total_height_dim=\dimen168
+\l__coffin_scaled_width_dim=\dimen169
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/05/21 v5613 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count132
+))
+(/usr/share/texlive/texmf-dist/tex/latex/morewrites/primargs.sty
+Package: primargs 2013/01/08 v0.2e Parsing arguments of primitives
+)
+Package: morewrites 2013/01/08 v0.2e Always room for a new write
+\g__morewrites_late_write_int=\count133
+\g__morewrites_iow=\write3
+\g__morewrites_ior=\read1
+\g__morewrites_stream_int=\count134
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
+\g__morewrites_at_end_int=\count135
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count136
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip65
+\skiplinenumber=\skip66
+\skiprule=\skip67
+\skiphlne=\skip68
+\skiptext=\skip69
+\skiplength=\skip70
+\algomargin=\skip71
+\skipalgocfslide=\skip72
+\algowidth=\dimen170
+\inoutsize=\dimen171
+\inoutindent=\dimen172
+\interspacetitleruled=\dimen173
+\interspacealgoruled=\dimen174
+\interspacetitleboxruled=\dimen175
+\algocf@inoutbox=\box43
+\algocf@inputbox=\box44
+\AlCapSkip=\skip73
+\AlCapHSkip=\skip74
+\algoskipindent=\skip75
+\algocf@nlbox=\box45
+\algocf@hangingbox=\box46
+\algocf@untilbox=\box47
+\algocf@skipuntil=\skip76
+\algocf@capbox=\box48
+\algoheightruledefault=\skip77
+\algoheightrule=\skip78
+\algotitleheightruledefault=\skip79
+\algotitleheightrule=\skip80
+\c@algocfline=\count137
+\c@algocfproc=\count138
+\c@algocf=\count139
+\algocf@algoframe=\box49
+\algocf@algobox=\box50
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip81
+\thm@postskip=\skip82
+\thm@headsep=\skip83
+\dth@everypar=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2014/04/21 v66
+\thmt@toks=\toks27
+\c@thmt@dummyctr=\count140
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2014/04/21 v66
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2014/04/21 v66
+\@parsespec=\toks28
+))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2014/04/21 v66
+Package thm-kv Info: Theorem names will be uppercased on input line 40.
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 156.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2014/04/21 v66
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2014/04/21 v66
+
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/remreset.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2014/04/21 v66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2014/04/21 v66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2014/04/21 v66
+\thmt@style@headstyle=\toks29
+))
+Package thmtools Info: Key `qed' (with value `\qedsymbol ')
+(thmtools)             is not a known style key.
+(thmtools)             Will pass this to every \declaretheorem
+(thmtools)             that uses `style=feistyle' on input line 142.
+\c@axioma=\count141
+\c@teorema=\count142
+\c@lema=\count143
+\c@hipotese=\count144
+\c@proposicao=\count145
+\c@conjectura=\count146
+\c@paradoxo=\count147
+\c@corolario=\count148
+\c@definicao=\count149
+\c@exemplo=\count150
+
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 44.
+\cftparskip=\skip84
+\cftbeforetoctitleskip=\skip85
+\cftaftertoctitleskip=\skip86
+\cftbeforepartskip=\skip87
+\cftpartnumwidth=\skip88
+\cftpartindent=\skip89
+\cftbeforechapskip=\skip90
+\cftchapindent=\skip91
+\cftchapnumwidth=\skip92
+\cftbeforesecskip=\skip93
+\cftsecindent=\skip94
+\cftsecnumwidth=\skip95
+\cftbeforesubsecskip=\skip96
+\cftsubsecindent=\skip97
+\cftsubsecnumwidth=\skip98
+\cftbeforesubsubsecskip=\skip99
+\cftsubsubsecindent=\skip100
+\cftsubsubsecnumwidth=\skip101
+\cftbeforeparaskip=\skip102
+\cftparaindent=\skip103
+\cftparanumwidth=\skip104
+\cftbeforesubparaskip=\skip105
+\cftsubparaindent=\skip106
+\cftsubparanumwidth=\skip107
+\cftbeforeloftitleskip=\skip108
+\cftafterloftitleskip=\skip109
+\cftbeforefigskip=\skip110
+\cftfigindent=\skip111
+\cftfignumwidth=\skip112
+\c@lofdepth=\count151
+\c@lotdepth=\count152
+\cftbeforelottitleskip=\skip113
+\cftafterlottitleskip=\skip114
+\cftbeforetabskip=\skip115
+\cfttabindent=\skip116
+\cfttabnumwidth=\skip117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/06/15 v0.4y Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\AM@pagewidth=\dimen176
+\AM@pageheight=\dimen177
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/06/15 v0.4y Pdfpages driver for pdfTeX (AM)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
+\AM@pagebox=\box51
+\AM@toc@title=\toks30
+\c@AM@survey=\count153
+\AM@templatesizebox=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2013/07/11 v1.3a Package for typesetting indices in a synchro
+nous mode
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks31
+\XKV@tempa@toks=\toks32
+)
+\XKV@depth=\count154
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2015/06/15 v5630 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count155
+\l__xparse_m_args_int=\count156
+\l__xparse_mandatory_args_int=\count157
+\l__xparse_processor_int=\count158
+\l__xparse_v_nesting_int=\count159
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count160
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchcmd with sig. '' on line 125.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretocmd with sig. '' on line 126.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptocmd with sig. '' on line 127.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowcmd with sig. '' on line 128.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchbibmacro with sig. 'm' on line 131.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretobibmacro with sig. 'm' on line 133.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptobibmacro with sig. 'm' on line 135.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowbibmacro with sig. 'm' on line 137.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchfieldformat with sig. 'O{*}m' on line 139.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretofieldformat with sig. 'O{*}m' on line 141.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptofieldformat with sig. 'O{*}m' on line 143.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowfieldformat with sig. 'O{*}m' on line 145.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchnameformat with sig. 'O{*}m' on line 147.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretonameformat with sig. 'O{*}m' on line 149.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptonameformat with sig. 'O{*}m' on line 151.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshownameformat with sig. 'O{*}m' on line 153.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchlistformat with sig. 'O{*}m' on line 155.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretolistformat with sig. 'O{*}m' on line 157.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptolistformat with sig. 'O{*}m' on line 159.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowlistformat with sig. 'O{*}m' on line 161.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchindexfieldformat with sig. 'O{*}m' on line 163.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretoindexfieldformat with sig. 'O{*}m' on line 165.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptoindexfieldformat with sig. 'O{*}m' on line 167.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowindexfieldformat with sig. 'O{*}m' on line 169.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchindexnameformat with sig. 'O{*}m' on line 171.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretoindexnameformat with sig. 'O{*}m' on line 173.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptoindexnameformat with sig. 'O{*}m' on line 175.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowindexnameformat with sig. 'O{*}m' on line 177.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchindexlistformat with sig. 'O{*}m' on line 179.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretoindexlistformat with sig. 'O{*}m' on line 181.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xappindextolistformat with sig. 'O{*}m' on line 183.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowindexlistformat with sig. 'O{*}m' on line 185.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchbibdriver with sig. 'm' on line 187.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretobibdriver with sig. 'm' on line 189.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptobibdriver with sig. 'm' on line 191.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowbibdriver with sig. 'm' on line 193.
+.................................................
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+\c@tracingmulticols=\count161
+\mult@box=\box53
+\multicol@leftmargin=\dimen178
+\c@unbalance=\count162
+\c@collectmore=\count163
+\doublecol@number=\count164
+\multicoltolerance=\count165
+\multicolpretolerance=\count166
+\full@width=\dimen179
+\page@free=\dimen180
+\premulticols=\dimen181
+\postmulticols=\dimen182
+\multicolsep=\skip118
+\multicolbaselineskip=\skip119
+\partial@page=\box54
+\last@line=\box55
+\maxbalancingoverflow=\dimen183
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@gfirstbox=\box58
+\mult@firstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\c@columnbadness=\count167
+\c@finalcolumnbadness=\count168
+\last@try=\dimen184
+\multicolovershoot=\dimen185
+\multicolundershoot=\dimen186
+\mult@nat@firstbox=\box77
+\colbreak@box=\box78
+\mc@col@check@num=\count169
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen187
+\Hy@linkcounter=\count170
+\Hy@pagecounter=\count171
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count172
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count173
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen188
+\Fld@menulength=\count174
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count175
+\c@Item=\count176
+\c@Hfootnote=\count177
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count178
+\c@bookmark@seq@number=\count179
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2015/07/17 v4.17 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/mfirstuc.sty
+Package: mfirstuc 2015/02/03 v1.10 (NLCT)
+\@glsmfirst=\toks33
+\@glsmrest=\toks34
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2015/07/11 v2.23 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count180
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2015/07/11 v2.23 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count181
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count182
+\FP@xia=\count183
+\FP@xib=\count184
+\FP@xfa=\count185
+\FP@xfb=\count186
+\FP@rega=\count187
+\FP@regb=\count188
+\FP@regs=\count189
+\FP@times=\count190
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count191
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks35
+\@dtl@tmpcount=\count192
+\dtl@tmplength=\skip121
+\dtl@sortresult=\count193
+\@dtl@numgrpsepcount=\count194
+\@dtl@datatype=\count195
+\dtl@codeA=\count196
+\dtl@codeB=\count197
+\@dtl@foreach@level=\count198
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
+307.sty
+Package: glossaries-compatible-307 2015/07/17 v4.17 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2015/03/23 v1.2 (NLCT) Track Languages
+
+(/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuge
+s.ldf
+File: glossaries-portuges.ldf 2014/11/23 v1.0
+
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuge
+s-noenc.ldf))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries-english/glossaries-english.
+ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
+)
+\gls@level=\count199
+\@gls@tmpb=\toks36
+\gls@tmplen=\skip122
+\glskeylisttok=\toks37
+\glslabeltok=\toks38
+\glsshorttok=\toks39
+\glslongtok=\toks40
+
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
+y
+Package: glossary-hypernav 2015/07/17 v4.17 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2015/07/17 v4.17 (NLCT)
+\glslistdottedwidth=\skip123
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2015/07/17 v4.17 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip124
+\LTright=\skip125
+\LTpre=\skip126
+\LTpost=\skip127
+\LTchunksize=\count200
+\LTcapwidth=\dimen191
+\LT@head=\box79
+\LT@firsthead=\box80
+\LT@foot=\box81
+\LT@lastfoot=\box82
+\LT@cols=\count201
+\LT@rows=\count202
+\c@LT@tables=\count203
+\c@LT@chunks=\count204
+\LT@p@ftn=\toks41
+)
+\glsdescwidth=\skip128
+\glspagelistwidth=\skip129
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2015/07/17 v4.17 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count205
+\ST@wd=\dimen192
+\ST@rightskip=\skip130
+\ST@leftskip=\skip131
+\ST@parfillskip=\skip132
+\ST@pageleft=\dimen193
+\ST@headht=\dimen194
+\ST@tailht=\dimen195
+\ST@pagesofar=\dimen196
+\ST@pboxht=\dimen197
+\ST@lineht=\dimen198
+\ST@stretchht=\dimen199
+\ST@prevht=\dimen200
+\ST@toadd=\dimen201
+\ST@dimen=\dimen202
+\ST@pbox=\box83
+))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2015/07/17 v4.17 (NLCT)
+\glstreeindent=\skip133
+))
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+Package: abntex2cite 2015/04/28 v1.9.5 abnTeX2
+
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+\minimumbiblabelwidth=\skip134
+\ABCIauxlen=\skip135
+\c@ABCIaux=\count206
+\c@ABCImax=\count207
+\biblabelsep=\skip136
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+\ABCItoken=\toks42
+)
+\bibitemsep=\skip137
+\bibparskip=\skip138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks43
+\inpenc@posthook=\toks44
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks45
+\verbatim@line=\toks46
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count208
+\sf@farskip=\skip139
+\sf@captopadj=\dimen203
+\sf@capskip=\skip140
+\sf@nearskip=\skip141
+\c@subfigure=\count209
+\c@subfigure@save=\count210
+\c@subtable=\count211
+\c@subtable@save=\count212
+\sf@top=\skip142
+\sf@bottom=\skip143
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count213
+\float@exts=\toks47
+\float@box=\box84
+\@float@everytoks=\toks48
+\@floatcapt=\box85
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(./Dissertacao.aux
+
+LaTeX Warning: Label `fig_features' multiply defined.
+
+)
+\openout1 = `Dissertacao.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 20.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=14.4pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count214
+\scratchdimen=\dimen204
+\scratchbox=\box86
+\nofMPsegments=\count215
+\nofMParguments=\count216
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count217
+\MPscratchDim=\dimen205
+\MPnumerator=\count218
+\makeMPintoPDFobject=\count219
+\everyMPtoPDFconversion=\toks50
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box87
+Package hyperref Info: Link coloring OFF on input line 20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count220
+)
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
+
+(./Dissertacao.out) (./Dissertacao.out)
+\@outlinefile=\write4
+ (./Dissertacao.glsdefs)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 24.
+\openout3 = `Dissertacao.mw'.
+
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Dissertacao.mw)
+
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 26.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 26.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 26.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 26.
+
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 26.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 26.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<FichaCat.pdf, id=222, 597.23125pt x 845.1575pt>
+File: FichaCat.pdf Graphic file (type pdf)
+ <use FichaCat.pdf>
+Package pdftex.def Info: FichaCat.pdf used on input line 28.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: FichaCat.pdf Graphic file (type pdf)
+
+<use FichaCat.pdf>
+Package pdftex.def Info: FichaCat.pdf used on input line 28.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+ <FichaCat.pdf, id=225, page=1, 597.23125pt x 845.1575pt>
+File: FichaCat.pdf Graphic file (type pdf)
+
+<use FichaCat.pdf, page 1>
+Package pdftex.def Info: FichaCat.pdf, page1 used on input line 28.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: FichaCat.pdf Graphic file (type pdf)
+ <use FichaCat.pdf, page 1>
+Package pdftex.def Info: FichaCat.pdf, page1 used on input line 28.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: FichaCat.pdf Graphic file (type pdf)
+
+<use FichaCat.pdf, page 1>
+Package pdftex.def Info: FichaCat.pdf, page1 used on input line 28.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: FichaCat.pdf Graphic file (type pdf)
+ <use FichaCat.pdf, page 1>
+Package pdftex.def Info: FichaCat.pdf, page1 used on input line 28.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 \fichacatalografica
+                        
+\openout3 = `Dissertacao.mw'.
+
+ [1] (./Dissertacao.mw)
+
+File: FichaCat.pdf Graphic file (type pdf)
+ <use FichaCat.pdf, page 1>
+Package pdftex.def Info: FichaCat.pdf, page1 used on input line 28.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+\openout3 = `Dissertacao.mw'.
+
+
+[2 <./FichaCat.pdf>] (./Dissertacao.mw)
+<Ata.pdf, id=242, 597.55246pt x 845.19763pt>
+File: Ata.pdf Graphic file (type pdf)
+ <use Ata.pdf>
+Package pdftex.def Info: Ata.pdf used on input line 29.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ata.pdf Graphic file (type pdf)
+ <use Ata.pdf>
+Package pdftex.def Info: Ata.pdf used on input line 29.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+
+<Ata.pdf, id=245, page=1, 597.55246pt x 845.19763pt>
+File: Ata.pdf Graphic file (type pdf)
+ <use Ata.pdf, page 1>
+Package pdftex.def Info: Ata.pdf, page1 used on input line 29.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ata.pdf Graphic file (type pdf)
+
+<use Ata.pdf, page 1>
+Package pdftex.def Info: Ata.pdf, page1 used on input line 29.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+File: Ata.pdf Graphic file (type pdf)
+ <use Ata.pdf, page 1>
+Package pdftex.def Info: Ata.pdf, page1 used on input line 29.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+File: Ata.pdf Graphic file (type pdf)
+ <use Ata.pdf, page 1>
+Package pdftex.def Info: Ata.pdf, page1 used on input line 29.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+File: Ata.pdf Graphic file (type pdf)
+
+<use Ata.pdf, page 1>
+Package pdftex.def Info: Ata.pdf, page1 used on input line 29.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 29.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 \folhadeaprovacao
+                      
+\openout3 = `Dissertacao.mw'.
+
+ [2 <./Ata.pdf>] (./Dissertacao.mw)
+Overfull \hbox (178.69351pt too wide) in paragraph at lines 30--30
+|  $[]$  |
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 32.
+\openout3 = `Dissertacao.mw'.
+
+[3] (./Dissertacao.mw)
+
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 45.
+\openout3 = `Dissertacao.mw'.
+
+ [4] (./Dissertacao.mw)
+
+
+Overfull \hbox (59.18465pt too wide) in paragraph at lines 47--47
+|  $[]$  |
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+\openout3 = `Dissertacao.mw'.
+
+[5] (./Dissertacao.mw)
+
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+\openout3 = `Dissertacao.mw'.
+
+ [6] (./Dissertacao.mw)
+
+\openout3 = `Dissertacao.mw'.
+
+ [7] (./Dissertacao.mw)
+
+
+
+(./Dissertacao.lof
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 42.
+\openout3 = `Dissertacao.mw'.
+
+ [8] (./Dissertacao.mw)
+
+
+)
+\tf@lof=\write5
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 76.
+\openout3 = `Dissertacao.mw'.
+
+ [9] (./Dissertacao.mw)
+(./Dissertacao.lot)
+\tf@lot=\write6
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+\openout3 = `Dissertacao.mw'.
+
+ [10] (./Dissertacao.mw)
+
+
+ (./Dissertacao.loa)
+\tf@loa=\write7
+
+No file Dissertacao.acr.
+No file Dissertacao.sym.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 81.
+\openout3 = `Dissertacao.mw'.
+
+[11] (./Dissertacao.mw)
+
+
+ (./Dissertacao.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+\openout3 = `Dissertacao.mw'.
+
+ [12] (./Dissertacao.mw)
+
+)
+\tf@toc=\write8
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 81.
+\openout3 = `Dissertacao.mw'.
+
+ [13]
+(./Dissertacao.mw)
+\@gls@deffile=\write9
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 95.
+ (./Capitulo1.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 9.
+
+<Imagens/robos.jpg, id=486, 3565.32pt x 2007.5pt>
+File: Imagens/robos.jpg Graphic file (type jpg)
+ <use Imagens/robos.jpg>
+Package pdftex.def Info: Imagens/robos.jpg used on input line 15.
+(pdftex.def)             Requested size: 341.43306pt x 192.24608pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 29.
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 
+     
+\openout3 = `Dissertacao.mw'.
+
+ [12] (./Dissertacao.mw)
+
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 
+     
+\openout3 = `Dissertacao.mw'.
+
+ [13 <./Imagens/robos.jpg>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 54.
+\openout3 = `Dissertacao.mw'.
+
+ [14] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 72.
+\openout3 = `Dissertacao.mw'.
+
+
+[15] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 105.
+\openout3 = `Dissertacao.mw'.
+
+ [16] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 108.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+\openout3 = `Dissertacao.mw'.
+
+ [17] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+
+(./Capitulo2.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 16.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 16.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 18.
+\openout3 = `Dissertacao.mw'.
+
+ [18] (./Dissertacao.mw)
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 30.
+\openout3 = `Dissertacao.mw'.
+
+ [19] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 43.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+\openout3 = `Dissertacao.mw'.
+
+ [20]
+(./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 55.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 63.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 63.
+\openout3 = `Dissertacao.mw'.
+
+ [21] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
+\openout3 = `Dissertacao.mw'.
+
+ [22] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+
+<Imagens/Filtro_Gaussiana.png, id=635, 898.10532pt x 347.79938pt>
+File: Imagens/Filtro_Gaussiana.png Graphic file (type png)
+
+<use Imagens/Filtro_Gaussiana.png>
+Package pdftex.def Info: Imagens/Filtro_Gaussiana.png used on input line 79.
+(pdftex.def)             Requested size: 397.48499pt x 153.92908pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 88.
+
+<Imagens/Seg_Hsv.png, id=645, 127.22531pt x 97.11281pt>
+File: Imagens/Seg_Hsv.png Graphic file (type png)
+
+<use Imagens/Seg_Hsv.png>
+Package pdftex.def Info: Imagens/Seg_Hsv.png used on input line 98.
+(pdftex.def)             Requested size: 180.67499pt x 137.91743pt.
+ <Imagens/Seg.jpeg, id=646, 115.93312pt x 90.3375pt>
+File: Imagens/Seg.jpeg Graphic file (type jpg)
+
+<use Imagens/Seg.jpeg>
+Package pdftex.def Info: Imagens/Seg.jpeg used on input line 99.
+(pdftex.def)             Requested size: 180.67499pt x 140.79771pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 103.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 103.
+\openout3 = `Dissertacao.mw'.
+
+ [23 <./Imagens/Filtro_Gaussiana.png>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 108.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 114.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 114.
+\openout3 = `Dissertacao.mw'.
+
+[24 <./Imagens/Seg_Hsv.png> <./Imagens/Seg.jpeg>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+
+<Imagens/Morphology.jpeg, id=669, 410.2828pt x 317.68687pt>
+File: Imagens/Morphology.jpeg Graphic file (type jpg)
+
+<use Imagens/Morphology.jpeg>
+Package pdftex.def Info: Imagens/Morphology.jpeg used on input line 121.
+(pdftex.def)             Requested size: 180.67499pt x 139.89413pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 132.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 135.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 135.
+\openout3 = `Dissertacao.mw'.
+
+ [25 <./Imagens/Morphology.jpeg>]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+\openout3 = `Dissertacao.mw'.
+
+ [26] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 163.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 163.
+\openout3 = `Dissertacao.mw'.
+
+ [27] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 163.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 176.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 176.
+\openout3 = `Dissertacao.mw'.
+
+ [28]
+(./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 201.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 201.
+\openout3 = `Dissertacao.mw'.
+
+ [29] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+
+<Imagens/HOGBloco.png, id=732, 304.88907pt x 242.40562pt>
+File: Imagens/HOGBloco.png Graphic file (type png)
+
+<use Imagens/HOGBloco.png>
+Package pdftex.def Info: Imagens/HOGBloco.png used on input line 214.
+(pdftex.def)             Requested size: 284.52756pt x 226.22643pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 227.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 227.
+\openout3 = `Dissertacao.mw'.
+
+[30] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 228.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 236.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 236.
+\openout3 = `Dissertacao.mw'.
+
+ [31 <./Imagens/HOGBloco.png>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 237.
+
+<Imagens/SVM.png, id=752, 278.54062pt x 146.04562pt>
+File: Imagens/SVM.png Graphic file (type png)
+ <use Imagens/SVM.png>
+Package pdftex.def Info: Imagens/SVM.png used on input line 243.
+(pdftex.def)             Requested size: 216.81pt x 113.6811pt.
+
+<Imagens/SVM2.png, id=757, 611.28375pt x 174.6525pt>
+File: Imagens/SVM2.png Graphic file (type png)
+ <use Imagens/SVM2.png>
+Package pdftex.def Info: Imagens/SVM2.png used on input line 253.
+(pdftex.def)             Requested size: 397.48499pt x 113.56541pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 260.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 260.
+\openout3 = `Dissertacao.mw'.
+
+
+[32 <./Imagens/SVM.png>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 269.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 269.
+\openout3 = `Dissertacao.mw'.
+
+ [33 <./Imagens/SVM2.png>]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 286.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 286.
+\openout3 = `Dissertacao.mw'.
+
+ [34] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 289.
+
+<Imagens/Edges.png, id=816, 131.74219pt x 51.94406pt>
+File: Imagens/Edges.png Graphic file (type png)
+ <use Imagens/Edges.png>
+Package pdftex.def Info: Imagens/Edges.png used on input line 301.
+(pdftex.def)             Requested size: 85.35826pt x 33.65701pt.
+
+<Imagens/Line1.png, id=817, 131.74219pt x 51.94406pt>
+File: Imagens/Line1.png Graphic file (type png)
+ <use Imagens/Line1.png>
+Package pdftex.def Info: Imagens/Line1.png used on input line 303.
+(pdftex.def)             Requested size: 85.35826pt x 33.65701pt.
+
+<Imagens/Line2.png, id=818, 131.74219pt x 51.94406pt>
+File: Imagens/Line2.png Graphic file (type png)
+ <use Imagens/Line2.png>
+Package pdftex.def Info: Imagens/Line2.png used on input line 305.
+(pdftex.def)             Requested size: 85.35826pt x 33.65701pt.
+
+<Imagens/Center.png, id=819, 74.52844pt x 51.94406pt>
+File: Imagens/Center.png Graphic file (type png)
+ <use Imagens/Center.png>
+Package pdftex.def Info: Imagens/Center.png used on input line 307.
+(pdftex.def)             Requested size: 85.35826pt x 59.49582pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagens/HaarJanela.png, id=822, 381.67593pt x 147.55125pt>
+File: Imagens/HaarJanela.png Graphic file (type png)
+
+<use Imagens/HaarJanela.png>
+Package pdftex.def Info: Imagens/HaarJanela.png used on input line 315.
+(pdftex.def)             Requested size: 199.16928pt x 76.995pt.
+
+<Imagens/HaarJanela2.png, id=823, 479.54156pt x 132.495pt>
+File: Imagens/HaarJanela2.png Graphic file (type png)
+
+<use Imagens/HaarJanela2.png>
+Package pdftex.def Info: Imagens/HaarJanela2.png used on input line 317.
+(pdftex.def)             Requested size: 284.52756pt x 78.6141pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 323.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 327.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 327.
+\openout3 = `Dissertacao.mw'.
+
+[35] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 330.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 330.
+\openout3 = `Dissertacao.mw'.
+
+ [36 <./Imagens/Edges.png> <./Imagens/Line1.png> <./Imagens/Line2.png> <./Image
+ns/Center.png> <./Imagens/HaarJanela.png> <./Imagens/HaarJanela2.png>] (./Disse
+rtacao.mw)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 337.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 339.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8.33334> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 339.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 362.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+<Imagens/Boost1.png, id=883, 461.47406pt x 426.09187pt>
+File: Imagens/Boost1.png Graphic file (type png)
+
+<use Imagens/Boost1.png>
+Package pdftex.def Info: Imagens/Boost1.png used on input line 371.
+(pdftex.def)             Requested size: 227.62204pt x 210.16518pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
+\openout3 = `Dissertacao.mw'.
+
+[37] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
+\openout3 = `Dissertacao.mw'.
+
+ [38] (./Dissertacao.mw)
+
+
+
+<Imagens/Boost2.png, id=929, 477.28313pt x 426.09187pt>
+File: Imagens/Boost2.png Graphic file (type png)
+
+<use Imagens/Boost2.png>
+Package pdftex.def Info: Imagens/Boost2.png used on input line 390.
+(pdftex.def)             Requested size: 227.62204pt x 203.20844pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 397.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 402.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 402.
+\openout3 = `Dissertacao.mw'.
+
+[39 <./Imagens/Boost1.png>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 408.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 408.
+\openout3 = `Dissertacao.mw'.
+
+ [40 <./Imagens/Boost2.png>]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 434.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 434.
+\openout3 = `Dissertacao.mw'.
+
+ [41] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 437.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 458.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 458.
+\openout3 = `Dissertacao.mw'.
+
+ [42] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 464.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 470.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 470.
+\openout3 = `Dissertacao.mw'.
+
+ [43]
+(./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 479.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 487.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 487.
+\openout3 = `Dissertacao.mw'.
+
+ [44] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 496.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 500.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 500.
+\openout3 = `Dissertacao.mw'.
+
+ [45] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 556.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 560.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 560.
+\openout3 = `Dissertacao.mw'.
+
+ [46]
+(./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 571.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 571.
+\openout3 = `Dissertacao.mw'.
+
+ [47] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 128.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 128.
+\openout3 = `Dissertacao.mw'.
+
+ [48] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 128.
+
+(./Capitulo3.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+ <Imagens/Orientation.png, id=1135, 310.91156pt x 361.35pt>
+File: Imagens/Orientation.png Graphic file (type png)
+
+<use Imagens/Orientation.png>
+Package pdftex.def Info: Imagens/Orientation.png used on input line 10.
+(pdftex.def)             Requested size: 142.26378pt x 165.34082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
+\openout3 = `Dissertacao.mw'.
+
+[49] (./Dissertacao.mw)
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 25.
+
+<Imagens/ImBolaL.png, id=1147, 295.1025pt x 247.67531pt>
+File: Imagens/ImBolaL.png Graphic file (type png)
+
+<use Imagens/ImBolaL.png>
+Package pdftex.def Info: Imagens/ImBolaL.png used on input line 31.
+(pdftex.def)             Requested size: 199.16928pt x 167.16228pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+\openout3 = `Dissertacao.mw'.
+
+ [50 <./Imagens/Orientation.png>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 116.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+\openout3 = `Dissertacao.mw'.
+
+[51 <./Imagens/ImBolaL.png>] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+\openout3 = `Dissertacao.mw'.
+
+ [52] (./Dissertacao.mw)
+
+
+
+<Imagens/ImBola.png, id=1198, 523.20468pt x 345.54094pt>
+File: Imagens/ImBola.png Graphic file (type png)
+
+<use Imagens/ImBola.png>
+Package pdftex.def Info: Imagens/ImBola.png used on input line 123.
+(pdftex.def)             Requested size: 227.62204pt x 150.3249pt.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 152.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 152.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 199.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 199.
+\openout3 = `Dissertacao.mw'.
+
+ [53 <./Imagens/ImBola.png>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 199.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 199.
+\openout3 = `Dissertacao.mw'.
+
+ [54] (./Dissertacao.mw)
+
+
+
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 199.
+
+<Imagens/liga.jpg, id=1251, 2673.99pt x 758.835pt>
+File: Imagens/liga.jpg Graphic file (type jpg)
+ <use Imagens/liga.jpg>
+Package pdftex.def Info: Imagens/liga.jpg used on input line 209.
+(pdftex.def)             Requested size: 426.79134pt x 121.11502pt.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+\openout3 = `Dissertacao.mw'.
+
+ [55 <./Imagens/liga.jpg>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 256.
+\openout3 = `Dissertacao.mw'.
+
+ [56] (./Dissertacao.mw)
+
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 257.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+
+LaTeX Warning: Command \c invalid in math mode on input line 320.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 320.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
+\openout3 = `Dissertacao.mw'.
+
+ [57] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
+\openout3 = `Dissertacao.mw'.
+
+[58] (./Dissertacao.mw)
+
+
+
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 364.
+
+<Imagens/Regioes.png, id=1353, 368.87813pt x 255.20343pt>
+File: Imagens/Regioes.png Graphic file (type png)
+
+<use Imagens/Regioes.png>
+Package pdftex.def Info: Imagens/Regioes.png used on input line 373.
+(pdftex.def)             Requested size: 216.81pt x 149.99628pt.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 420.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 424.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 424.
+\openout3 = `Dissertacao.mw'.
+
+ [59 <./Imagens/Regioes.png>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 424.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 424.
+\openout3 = `Dissertacao.mw'.
+
+ [60] (./Dissertacao.mw)
+
+
+
+<Imagens/StartP.png, id=1393, 380.17032pt x 462.22687pt>
+File: Imagens/StartP.png Graphic file (type png)
+
+<use Imagens/StartP.png>
+Package pdftex.def Info: Imagens/StartP.png used on input line 430.
+(pdftex.def)             Requested size: 361.34999pt x 439.35283pt.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
+\openout3 = `Dissertacao.mw'.
+
+ [61] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
+\openout3 = `Dissertacao.mw'.
+
+ [62 <./Imagens/StartP.png>]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
+ (./Capitulo4.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 14.
+\openout3 = `Dissertacao.mw'.
+
+ [63] (./Dissertacao.mw)
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+
+<Imagens/resized-darwin.jpg, id=1420, 481.8pt x 271.0125pt>
+File: Imagens/resized-darwin.jpg Graphic file (type jpg)
+
+<use Imagens/resized-darwin.jpg>
+Package pdftex.def Info: Imagens/resized-darwin.jpg used on input line 18.
+(pdftex.def)             Requested size: 252.94499pt x 142.27954pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 33.
+\openout3 = `Dissertacao.mw'.
+
+ [64 <./Imagens/resized-darwin.jpg>]
+(./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 44.
+\openout3 = `Dissertacao.mw'.
+
+ [65] (./Dissertacao.mw)
+<Imagens/resized-3.png, id=1441, 240.14719pt x 89.58469pt>
+File: Imagens/resized-3.png Graphic file (type png)
+
+<use Imagens/resized-3.png>
+Package pdftex.def Info: Imagens/resized-3.png used on input line 50.
+(pdftex.def)             Requested size: 180.67499pt x 67.4002pt.
+
+<Imagens/resized-1.png, id=1442, 237.13594pt x 88.83188pt>
+File: Imagens/resized-1.png Graphic file (type png)
+
+<use Imagens/resized-1.png>
+Package pdftex.def Info: Imagens/resized-1.png used on input line 53.
+(pdftex.def)             Requested size: 180.67499pt x 67.6837pt.
+
+<Imagens/resized-4.png, id=1443, 237.13594pt x 89.58469pt>
+File: Imagens/resized-4.png Graphic file (type png)
+
+<use Imagens/resized-4.png>
+Package pdftex.def Info: Imagens/resized-4.png used on input line 58.
+(pdftex.def)             Requested size: 180.67499pt x 68.2573pt.
+
+<Imagens/resized-2.png, id=1444, 238.64156pt x 88.83188pt>
+File: Imagens/resized-2.png Graphic file (type png)
+
+<use Imagens/resized-2.png>
+Package pdftex.def Info: Imagens/resized-2.png used on input line 61.
+(pdftex.def)             Requested size: 180.67499pt x 67.25401pt.
+
+<Imagens/Sun_Ball1.jpeg, id=1445, 223.83624pt x 107.40125pt>
+File: Imagens/Sun_Ball1.jpeg Graphic file (type jpg)
+
+<use Imagens/Sun_Ball1.jpeg>
+Package pdftex.def Info: Imagens/Sun_Ball1.jpeg used on input line 71.
+(pdftex.def)             Requested size: 199.16928pt x 95.56712pt.
+
+<Imagens/Sun_Ball2.jpeg, id=1446, 223.83624pt x 107.40125pt>
+File: Imagens/Sun_Ball2.jpeg Graphic file (type jpg)
+
+<use Imagens/Sun_Ball2.jpeg>
+Package pdftex.def Info: Imagens/Sun_Ball2.jpeg used on input line 72.
+(pdftex.def)             Requested size: 199.16928pt x 95.56712pt.
+
+<Imagens/BolaLar/BL1.jpg, id=1447, 1444.64719pt x 810.77907pt>
+File: Imagens/BolaLar/BL1.jpg Graphic file (type jpg)
+
+<use Imagens/BolaLar/BL1.jpg>
+Package pdftex.def Info: Imagens/BolaLar/BL1.jpg used on input line 97.
+(pdftex.def)             Requested size: 199.16928pt x 111.77629pt.
+
+<Imagens/BolaLar/BL2.jpg, id=1448, 1445.4pt x 813.0375pt>
+File: Imagens/BolaLar/BL2.jpg Graphic file (type jpg)
+
+<use Imagens/BolaLar/BL2.jpg>
+Package pdftex.def Info: Imagens/BolaLar/BL2.jpg used on input line 98.
+(pdftex.def)             Requested size: 199.16928pt x 112.0256pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 110.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 110.
+\openout3 = `Dissertacao.mw'.
+
+ [66 <./Imagens/resized-3.png> <./Imagens/resized-1.png> <./Imagens/resized-4.p
+ng> <./Imagens/resized-2.png> <./Imagens/Sun_Ball1.jpeg> <./Imagens/Sun_Ball2.j
+peg>] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 117.
+\openout3 = `Dissertacao.mw'.
+
+ [67 <./Imagens/BolaLar/BL1.jpg> <./Imagens/BolaLar/BL2.jpg>] (./Dissertacao.mw
+)
+\openout3 = `Dissertacao.mw'.
+
+
+<Imagens/Bola/B04.png, id=1466, 1284.8pt x 722.7pt>
+File: Imagens/Bola/B04.png Graphic file (type png)
+ <use Imagens/Bola/B04.png>
+Package pdftex.def Info: Imagens/Bola/B04.png used on input line 126.
+(pdftex.def)             Requested size: 199.16928pt x 112.02837pt.
+
+<Imagens/Bola/B05.png, id=1467, 1284.8pt x 722.7pt>
+File: Imagens/Bola/B05.png Graphic file (type png)
+ <use Imagens/Bola/B05.png>
+Package pdftex.def Info: Imagens/Bola/B05.png used on input line 128.
+(pdftex.def)             Requested size: 199.16928pt x 112.02837pt.
+
+<Imagens/Bola/B12.png, id=1468, 1284.8pt x 722.7pt>
+File: Imagens/Bola/B12.png Graphic file (type png)
+ <use Imagens/Bola/B12.png>
+Package pdftex.def Info: Imagens/Bola/B12.png used on input line 130.
+(pdftex.def)             Requested size: 199.16928pt x 112.02837pt.
+
+<Imagens/Bola/B37.png, id=1469, 1284.8pt x 722.7pt>
+File: Imagens/Bola/B37.png Graphic file (type png)
+ <use Imagens/Bola/B37.png>
+Package pdftex.def Info: Imagens/Bola/B37.png used on input line 132.
+(pdftex.def)             Requested size: 199.16928pt x 112.02837pt.
+
+<Imagens/Curva_ROC_Bola.png, id=1471, 615.80063pt x 341.77687pt>
+File: Imagens/Curva_ROC_Bola.png Graphic file (type png)
+
+<use Imagens/Curva_ROC_Bola.png>
+Package pdftex.def Info: Imagens/Curva_ROC_Bola.png used on input line 143.
+(pdftex.def)             Requested size: 398.33858pt x 221.08846pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 154.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 154.
+\openout3 = `Dissertacao.mw'.
+
+ [68] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 160.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 160.
+\openout3 = `Dissertacao.mw'.
+
+ [69 <./Imagens/Bola/B04.png (PNG copy)> <./Imagens/Bola/B05.png (PNG copy)> <.
+/Imagens/Bola/B12.png (PNG copy)> <./Imagens/Bola/B37.png (PNG copy)> <./Imagen
+s/Curva_ROC_Bola.png>]
+(./Dissertacao.mw) <Imagens/Dist.png, id=1488, 593.21625pt x 359.09157pt>
+File: Imagens/Dist.png Graphic file (type png)
+
+<use Imagens/Dist.png>
+Package pdftex.def Info: Imagens/Dist.png used on input line 163.
+(pdftex.def)             Requested size: 426.79134pt x 258.35942pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 178.
+\openout3 = `Dissertacao.mw'.
+
+ [70 <./Imagens/Dist.png>] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 223.
+
+<Imagens/ROC1.png, id=1499, 437.38406pt x 403.5075pt>
+File: Imagens/ROC1.png Graphic file (type png)
+ <use Imagens/ROC1.png>
+Package pdftex.def Info: Imagens/ROC1.png used on input line 241.
+(pdftex.def)             Requested size: 341.43306pt x 314.99318pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 248.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 248.
+\openout3 = `Dissertacao.mw'.
+
+
+[71] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+
+<Imagens/Milton_Det.jpg, id=1510, 192.03171pt x 178.19717pt>
+File: Imagens/Milton_Det.jpg Graphic file (type jpg)
+
+<use Imagens/Milton_Det.jpg>
+Package pdftex.def Info: Imagens/Milton_Det.jpg used on input line 251.
+(pdftex.def)             Requested size: 199.16928pt x 184.83397pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 262.
+\openout3 = `Dissertacao.mw'.
+
+ [72 <./Imagens/ROC1.png>] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 263.
+
+<Imagens/Darwin01.png, id=1522, 481.8pt x 271.0125pt>
+File: Imagens/Darwin01.png Graphic file (type png)
+
+<use Imagens/Darwin01.png>
+Package pdftex.def Info: Imagens/Darwin01.png used on input line 271.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+
+<Imagens/Darwin02.png, id=1523, 481.8pt x 270.25969pt>
+File: Imagens/Darwin02.png Graphic file (type png)
+
+<use Imagens/Darwin02.png>
+Package pdftex.def Info: Imagens/Darwin02.png used on input line 273.
+(pdftex.def)             Requested size: 128.0374pt x 71.82054pt.
+
+<Imagens/Darwin03.png, id=1524, 481.8pt x 271.0125pt>
+File: Imagens/Darwin03.png Graphic file (type png)
+
+<use Imagens/Darwin03.png>
+Package pdftex.def Info: Imagens/Darwin03.png used on input line 275.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+
+<Imagens/Darwin04.png, id=1525, 481.8pt x 270.25969pt>
+File: Imagens/Darwin04.png Graphic file (type png)
+
+<use Imagens/Darwin04.png>
+Package pdftex.def Info: Imagens/Darwin04.png used on input line 277.
+(pdftex.def)             Requested size: 128.0374pt x 71.82054pt.
+
+<Imagens/Darwin05.png, id=1526, 481.8pt x 271.0125pt>
+File: Imagens/Darwin05.png Graphic file (type png)
+
+<use Imagens/Darwin05.png>
+Package pdftex.def Info: Imagens/Darwin05.png used on input line 279.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+
+<Imagens/Darwin06.png, id=1527, 481.8pt x 271.0125pt>
+File: Imagens/Darwin06.png Graphic file (type png)
+
+<use Imagens/Darwin06.png>
+Package pdftex.def Info: Imagens/Darwin06.png used on input line 281.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+
+<Imagens/Darwin07.png, id=1528, 481.8pt x 271.0125pt>
+File: Imagens/Darwin07.png Graphic file (type png)
+
+<use Imagens/Darwin07.png>
+Package pdftex.def Info: Imagens/Darwin07.png used on input line 283.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+
+<Imagens/Darwin08.png, id=1529, 481.8pt x 271.0125pt>
+File: Imagens/Darwin08.png Graphic file (type png)
+
+<use Imagens/Darwin08.png>
+Package pdftex.def Info: Imagens/Darwin08.png used on input line 285.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+
+<Imagens/Darwin09.png, id=1530, 481.8pt x 270.25969pt>
+File: Imagens/Darwin09.png Graphic file (type png)
+
+<use Imagens/Darwin09.png>
+Package pdftex.def Info: Imagens/Darwin09.png used on input line 287.
+(pdftex.def)             Requested size: 128.0374pt x 71.82054pt.
+
+<Imagens/Darwin10.png, id=1531, 481.8pt x 270.25969pt>
+File: Imagens/Darwin10.png Graphic file (type png)
+
+<use Imagens/Darwin10.png>
+Package pdftex.def Info: Imagens/Darwin10.png used on input line 289.
+(pdftex.def)             Requested size: 128.0374pt x 71.82054pt.
+
+<Imagens/Darwin11.png, id=1532, 481.8pt x 271.0125pt>
+File: Imagens/Darwin11.png Graphic file (type png)
+
+<use Imagens/Darwin11.png>
+Package pdftex.def Info: Imagens/Darwin11.png used on input line 291.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+
+<Imagens/Darwin12.png, id=1533, 481.8pt x 271.0125pt>
+File: Imagens/Darwin12.png Graphic file (type png)
+
+<use Imagens/Darwin12.png>
+Package pdftex.def Info: Imagens/Darwin12.png used on input line 293.
+(pdftex.def)             Requested size: 128.0374pt x 72.02058pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 296.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 296.
+\openout3 = `Dissertacao.mw'.
+
+ [73 <./Imagens/Milton_Det.jpg>] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 300.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 306.
+\openout3 = `Dissertacao.mw'.
+
+
+[74 <./Imagens/Darwin01.png> <./Imagens/Darwin02.png> <./Imagens/Darwin03.png> 
+<./Imagens/Darwin04.png> <./Imagens/Darwin05.png> <./Imagens/Darwin06.png> <./I
+magens/Darwin07.png> <./Imagens/Darwin08.png> <./Imagens/Darwin09.png> <./Image
+ns/Darwin10.png> <./Imagens/Darwin11.png> <./Imagens/Darwin12.png>]
+(./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+ <Imagens/HeartsHOG.png, id=1576, 671.50874pt x 358.33875pt>
+File: Imagens/HeartsHOG.png Graphic file (type png)
+
+<use Imagens/HeartsHOG.png>
+Package pdftex.def Info: Imagens/HeartsHOG.png used on input line 309.
+(pdftex.def)             Requested size: 284.52756pt x 151.82993pt.
+
+<Imagens/HeartsHAAR.png, id=1577, 677.53125pt x 355.3275pt>
+File: Imagens/HeartsHAAR.png Graphic file (type png)
+
+<use Imagens/HeartsHAAR.png>
+Package pdftex.def Info: Imagens/HeartsHAAR.png used on input line 311.
+(pdftex.def)             Requested size: 284.52756pt x 149.22026pt.
+
+<Imagens/ROCHH.png, id=1582, 603.75563pt x 377.91188pt>
+File: Imagens/ROCHH.png Graphic file (type png)
+
+<use Imagens/ROCHH.png>
+Package pdftex.def Info: Imagens/ROCHH.png used on input line 319.
+(pdftex.def)             Requested size: 341.43306pt x 213.71089pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+\openout3 = `Dissertacao.mw'.
+
+ [75 <./Imagens/HeartsHOG.png> <./Imagens/HeartsHAAR.png>] (./Dissertacao.mw) <
+Imagens/FPS.png, id=1595, 544.28343pt x 356.0803pt>
+File: Imagens/FPS.png Graphic file (type png)
+
+<use Imagens/FPS.png>
+Package pdftex.def Info: Imagens/FPS.png used on input line 331.
+(pdftex.def)             Requested size: 341.43306pt x 223.37007pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 342.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 342.
+\openout3 = `Dissertacao.mw'.
+
+ [76 <./Imagens/ROCHH.png>] (./Dissertacao.mw)
+<Imagens/MixHOG.png, id=1605, 963.6pt x 479.54156pt>
+File: Imagens/MixHOG.png Graphic file (type png)
+ <use Imagens/MixHOG.png>
+Package pdftex.def Info: Imagens/MixHOG.png used on input line 346.
+(pdftex.def)             Requested size: 426.79134pt x 212.3892pt.
+
+<Imagens/MixHAAR.png, id=1606, 963.6pt x 475.02469pt>
+File: Imagens/MixHAAR.png Graphic file (type png)
+
+<use Imagens/MixHAAR.png>
+Package pdftex.def Info: Imagens/MixHAAR.png used on input line 348.
+(pdftex.def)             Requested size: 426.79134pt x 210.38867pt.
+
+<Imagens/CIT01HOG.png, id=1611, 599.99156pt x 258.9675pt>
+File: Imagens/CIT01HOG.png Graphic file (type png)
+
+<use Imagens/CIT01HOG.png>
+Package pdftex.def Info: Imagens/CIT01HOG.png used on input line 355.
+(pdftex.def)             Requested size: 426.79134pt x 184.21593pt.
+
+<Imagens/CIT01HAAR.png, id=1612, 599.99156pt x 258.9675pt>
+File: Imagens/CIT01HAAR.png Graphic file (type png)
+
+<use Imagens/CIT01HAAR.png>
+Package pdftex.def Info: Imagens/CIT01HAAR.png used on input line 357.
+(pdftex.def)             Requested size: 426.79134pt x 184.21593pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
+\openout3 = `Dissertacao.mw'.
+
+ [77 <./Imagens/FPS.png>] (./Dissertacao.mw))
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 151.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 151.
+\openout3 = `Dissertacao.mw'.
+
+
+[78 <./Imagens/MixHOG.png> <./Imagens/MixHAAR.png>] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 151.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 151.
+\openout3 = `Dissertacao.mw'.
+
+ [79 <./Imagens/CIT01HOG.png> <./Imagens/CIT01HAAR.png>] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 151.
+
+(./Capitulo5.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 16.
+\openout3 = `Dissertacao.mw'.
+
+ [80] (./Dissertacao.mw)
+
+\openout3 = `Dissertacao.mw'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 40.
+\openout3 = `Dissertacao.mw'.
+
+ [81] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 157.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 157.
+\openout3 = `Dissertacao.mw'.
+
+ [82]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 157.
+ (./Dissertacao.bbl
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 97.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 97.
+\openout3 = `Dissertacao.mw'.
+
+ [83] (./Dissertacao.mw)
+
+\openout3 = `Dissertacao.mw'.
+
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+\openout3 = `Dissertacao.mw'.
+
+ [84]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 271.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 271.
+\openout3 = `Dissertacao.mw'.
+
+ [85] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 356.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 356.
+\openout3 = `Dissertacao.mw'.
+
+ [86] (./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 437.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 437.
+\openout3 = `Dissertacao.mw'.
+
+ [87]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 522.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 522.
+\openout3 = `Dissertacao.mw'.
+
+ [88] (./Dissertacao.mw)) (./Anexos.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+\openout3 = `Dissertacao.mw'.
+
+ [89]
+(./Dissertacao.mw)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+\openout3 = `Dissertacao.mw'.
+
+ [90] (./Dissertacao.mw)
+
+\openout3 = `Dissertacao.mw'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.1.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3  \section{Séries Temporais}
+                                
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+pdfTeX warning (ext4): destination with the same identifier (name{section.1.2})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ...s Simples de Previsão de Série Temporal}
+                                                  
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 22.
+\openout3 = `Dissertacao.mw'.
+
+ [91] (./Dissertacao.mw)
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+
+<Imagens/MM.png, id=1769, 496.85625pt x 242.40562pt>
+File: Imagens/MM.png Graphic file (type png)
+ <use Imagens/MM.png>
+Package pdftex.def Info: Imagens/MM.png used on input line 32.
+(pdftex.def)             Requested size: 397.48499pt x 193.92844pt.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 165.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 165.
+\openout3 = `Dissertacao.mw'.
+
+
+[92 <./Imagens/MM.png>] (./Dissertacao.mw)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 166.
+\openout3 = `Dissertacao.mw'.
+
+ [93] (./Dissertacao.mw)
+\openout3 = `Dissertacao.glsdefs'.
+
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+
+(./Dissertacao.aux
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+\openout3 = `Dissertacao.mw'.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+\openout3 = `Dissertacao.out'.
+
+Package rerunfilecheck Info: File `Dissertacao.out' has not changed.
+(rerunfilecheck)             Checksum: AA01A5D45F11F3EB33BB2BBCDF368046;4248.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+\openout3 = `Dissertacao.lof'.
+
+\openout3 = `Dissertacao.lot'.
+
+\openout3 = `Dissertacao.loa'.
+
+\openout3 = `Dissertacao.toc'.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 87 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 25241 strings out of 493085
+ 419524 string characters out of 6136916
+ 622596 words of memory out of 5000000
+ 27424 multiletter control sequences out of 15000+600000
+ 61829 words of font info for 70 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 53i,18n,74p,10392b,18152s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section*.52} has been referenced bu
+t does not exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
+re/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Dissertacao.pdf (97 pages, 22479381 bytes).
+PDF statistics:
+ 1950 PDF objects out of 2073 (max. 8388607)
+ 1699 compressed objects within 17 object streams
+ 536 named destinations out of 1000 (max. 500000)
+ 765 words of extra memory for PDF output out of 10000 (max. 10000000)
+

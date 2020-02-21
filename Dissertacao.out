@@ -1,0 +1,53 @@
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Uma Breve Introdu\347\343o \340 Vis\343o Computacional de Rob\364s M\363veis Humanoides}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Tipos de Sistemas de Vis\343o Computacional para Rob\364s M\363veis}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Motiva\347\343o}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Justificativas}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.5}{Hist\363rico}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.6}{Dom\355nio}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.7}{Organiza\347\343o do Trabalho}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Fundamenta\347\343o Te\363rica: Vis\343o Computacional}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Processamento de imagens coloridas}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Baixo N\355vel - Filtros}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Transforma\347\365es de intensidade}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Histogramas}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Filtros Espaciais}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.4}{Segmenta\347\343o}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.5}{Morfologia Matem\341tica}{section.2.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Transformada de Hough}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.4}{Propaga\347\343o da Densidade Condicional - Condensa\347\343o}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{Descritor Histograma de Gradientes Orientados \(HOG\) com M\341quina de Vetores de Suporte \(SVM\)}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.5.1}{SVM}{section.2.5}% 21
+\BOOKMARK [3][-]{subsubsection.2.5.1.1}{Um exemplo em duas dimens\365es}{subsection.2.5.1}% 22
+\BOOKMARK [1][-]{section.2.6}{Descritor HAAR com Boosting }{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.6.1}{Classificador Boosting}{section.2.6}% 24
+\BOOKMARK [2][-]{subsection.2.6.2}{HAAR-Adaboost}{section.2.6}% 25
+\BOOKMARK [1][-]{section.2.7}{Controle Servo-Visual}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.8}{Identifica\347\343o de objetos}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.8.1}{Reconhecimento da Bola}{section.2.8}% 28
+\BOOKMARK [2][-]{subsection.2.8.2}{Identifica\347\343o dos Rob\364s}{section.2.8}% 29
+\BOOKMARK [1][-]{section.2.9}{Considera\347\365es finais}{chapter.2}% 30
+\BOOKMARK [0][-]{chapter.3}{Sistema Desenvolvido}{}% 31
+\BOOKMARK [1][-]{section.3.1}{Bola}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.1.1}{A Bola Laranja}{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.2}{A Bola Branca}{section.3.1}% 34
+\BOOKMARK [1][-]{section.3.2}{Advers\341rios e Companheiros de Equipe}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.3}{HOG-SVM Online}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.4}{Controle Servo-Visual}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.5}{O sistema de vis\343o}{chapter.3}% 38
+\BOOKMARK [0][-]{chapter.4}{Experimentos Realizados e Resultados}{}% 39
+\BOOKMARK [1][-]{section.4.1}{O rob\364}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.2}{Experimento - Encontrando uma bola laranja usando segmenta\347\343o e transformada de Hough para c\355rculos}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.3}{Experimento - Encontrando uma bola branca usando caracter\355sticas HAAR}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.4}{Experimento - Determina\347\343o da dist\342ncia da bola ao rob\364}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.5}{Experimento - Detectando Rob\364s usando o Descritor HOG com o Classificador SVM}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.6}{Experimento - Detectando Rob\364s usando o Descritor HAAR com o Classificador Boosting}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.7}{Discuss\343o - Comparando os dois descritores e seus classificadores}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 47
+\BOOKMARK [1][-]{section.5.1}{Contribui\347\365es}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{Trabalhos Futuros}{chapter.5}% 49
+\BOOKMARK [1][-]{Item.34}{ REFER\312NCIAS}{chapter.5}% 50
+\BOOKMARK [0][-]{section*.52}{ ANEXO A \205 M\351dia M\363vel}{}% 51
+\BOOKMARK [1][-]{section.1.1}{S\351ries Temporais}{section*.52}% 52
+\BOOKMARK [1][-]{section.1.2}{M\351todos Simples de Previs\343o de S\351rie Temporal}{section*.52}% 53

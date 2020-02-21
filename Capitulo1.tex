@@ -1,0 +1,113 @@
+
+\addtocounter{page}{-2} % A capa não é contada para efeito de páginas
+
+Um robô é um sistema computacional com sinais de entrada provenientes dos sensores e um conjunto de atuadores que permitem ao agente interagir com o ambiente ao qual está inserido. O conceito de robôs jogadores de futebol foi introduzida em 1993 no Japão, e até hoje, é uma das mais importantes divisões da RoboCup. O objetivo oficial da organização é apresentar, até 2050, um time de robôs jogadores de futebol totalmente autônomos capazes de vencer uma partida, usando as regras oficiais da FIFA, contra a seleção humana vencedora da copa do mundo. 
+
+Quatro robôs autônomos (figura ~\ref{Fig:Robos}) foram desenvolvidos pelo time humanoide da FEI para atuar na liga KidSize da RoboCup, de maneira que cada um pudesse apresentar somente características humanas, ou seja, precisavam ter o formato humanoide. O dispositivo de aquisição de imagens precisa estar posicionada na cabeça, além de, necessitar de um processo de decisão e de visão individual livre de controles externos e, é claro, nenhum sensor, a não ser que represente um sentido humano. 
+
+
+\section{Uma Breve Introdução à Visão Computacional de Robôs Móveis Humanoides}
+\label{Intro}
+A robótica móvel foca em robôs que possuem a capacidade de se mover em um determinado ambiente. Os robôs móveis precisam interagir com o ambiente, muitas vezes complexo, e isso por si só não é trivial. As dificuldades decorrem de como esse agente artificial sente e manipula esse ambiente.  Robôs humanoides foram criados devido ao desejo do ser humano pela criação de um robô que fosse capaz de realizar as atividades feitas pelo homem, e que também possuísse uma semelhança física, mas também, para sobressair as limitações que os robôs sobre rodas possuem.
+
+\begin{figure}[!t]
+\centering \caption{Robôs desenvolvidos.}
+\includegraphics[width=12cm]{Imagens/robos.jpg}
+\DeclareGraphicsExtensions.
+\caption*{Fonte: Autor}
+\label{Fig:Robos}
+\end{figure}
+
+A câmera, sendo um importante sensor do ambiente, proporciona imagens cheias de informação que o robô precisa processar e, a partir dai, tomar uma decisão. Os robôs humanoides atuais possuem uma câmera com é o caso do Darwin-OP \cite{Darwin} ou duas câmeras que podem estar posicionadas de maneira estéreo como é o caso do robô do time Nubots \cite{Nubots} \cite{Edrom}, ou duas câmeras posicionadas de maneira a uma voltada para o horizonte e outra voltada 45 graus na direção do chão, como é o caso do \citeonline{NAO}. 
+
+
+
+
+\subsection{Tipos de Sistemas de Visão Computacional para Robôs Móveis}
+
+Dois tipos de sistemas de visão computacional são normalmente utilizados o sistema de visão passiva e o sistema de visão ativa. O sistema de visão computacional passiva para robôs móveis se vale do conceito reativo de agir \cite{Tsotsos}. \citeonline{Tsotsos} ao se referir ao sistema de visão passiva menciona a pouca complexidade da busca pelo objeto de forma passiva reagindo ao seu movimento. \citeonline{Aloimonos} introduziram o primeiro formato geral para um sistema de visão ativa no final de 1980 a fim de melhorar a qualidade de percepção de rastreamento de objetos procurando-os e estimando sua posição futura. O sistema de visão ativa é particularmente importante para lidar com problemas como oclusões, campo de visão limitado e resolução da câmera limitada \cite{Denzler}.  Outras vantagens são: Reduzir o borrão causado por um objeto em movimento \cite{Rivlin}, reforçar a percepção de profundidade de um objeto concentrando-se duas câmeras no mesmo objeto, ou movimentar as câmeras \cite{Aloimonos} com o mesmo fim. Finalmente, câmeras autônomas são câmeras que podem direcionar a si mesmas no ambiente. \citeonline{Denzler} usaram um conjunto de câmeras estéreis para acompanhar o movimento de um objeto.
+
+\section{Motivação}
+\label{Mot}
+A motivação do presente trabalho é desenvolver um sistema de visão computacional robusto e rápido para um robô humanoide, já que um dos maiores problemas da visão computacional é ter que lidar com a quantidade de informação, muitas vezes irrelevante, e algoritmos que requerem grande 
+esforço de processamento. Ser capaz de identificar quais os pixels de uma imagem compõem um objeto é um problema não-trivial. Os trabalhos publicados para o domínio proposto se baseiam em operações que lidam diretamente com todos os pixels da imagem, ditas operações de baixo e médio nível, geralmente com baixo custo computacional. De modo que o desenvolvimento desse sistema complemente essas técnicas com o uso de técnicas de alto nível, ou seja com alguma inferência de contexto ao agrupamento de pixels.
+
+
+\section{Objetivos}
+\label{Obj}
+Este projeto visa desenvolver um sistema servo-visual para um robô humanoide atuante na competição RoboCup, Liga humanoide, categoria KidSize. Serão desenvolvidos sistemas de visão computacional que permitam ao agente:
+
+\begin{enumerate}
+	\item rastrear uma bola, de tamanho conhecido, fornecendo as coordenadas de sua posição;
+	\item identificar agentes do mesmo time e do time rival;
+\end{enumerate}
+
+\section{Justificativas}
+\label{Jus}
+O desenvolvimento de um time de futebol de robôs representa uma aplicação do uso de agentes autônomos com comportamento inteligente, visando a execução de uma tarefa, geralmente complexa, em equipe. O estudo e desenvolvimento da inteligência artificial, fornece desafios e problemas onde diversas tecnologias e metodologias podem ser combinadas para a obtenção dos resultados desejados, especialmente em visão computacional.
+
+
+
+\section{Histórico}
+\label{His}
+A RoboCup é uma iniciativa educacional de pesquisa, é também uma competição cujo objetivo é incentivar a pesquisa robótica fornecendo desafios nos quais uma grande quantidade de tecnologias possam ser integradas. A cada ano uma nova cidade é escolhida em um pais diferente para sediar esse evento. Em 1992, o professor Alan Mackworth, em suas próprias palavras, considerou a possibilidade de robôs jogarem futebol:
+
+\begin{quote}
+``Suppose we want to build a robot to play soccer. Quite apart from all the difficult robotics and perception problems involved, we have substantial challenges in representation for planning and action'' \\ \cite{Mackworth}
+\end{quote} 
+
+Na tradução livre do inglês:  'Suponha que quiséssemos construir um robô para jogar futebol. Além de, todos os problemas robóticos e de percepção envolvidos, teremos desafios substanciais em representações do planejamento e das ações'. Após essa menção, os pesquisadores: Minoru Asada, Yasuo Kuniyoshi, e Hiroaki Kitano organizaram um workshop em Tóquio, fato que culminou, um ano mais tarde, em uma competição de robótica limitada apenas às fronteiras nipônicas chamada Robot J-League. Em 1997, essa competição tornou-se mundial e teve seu nome alterado para RoboCup. 
+
+O objetivo e meta da RoboCup, foi bem sintetizada na frase da própria RoboCup Federation:
+\begin{quote}
+``Em meados de século 21, uma equipe totalmente autônoma de robôs humanoides jogadores de futebol deve vencer um jogo contra o time de humanos campeão da última Copa do Mundo da FIFA, utilizando as regras da FIFA.'' \cite{siteobjetivoRoboCup}. 
+\end{quote}
+
+Essa frase propõe que este objetivo será um dos grandes desafios compartilhados pelas comunidades de robótica e de Inteligência Artificial para os próximos 50 anos. A RoboCup, por possuir um intuito científico, possui além das diversas competições, o simpósio que acontece logo após as mesmas. Nele os participantes, podem publicar seus trabalhos científicos relevantes da área.
+
+\section{Domínio}
+\label{Dom}
+O projeto tem como base a principal competição de futebol para robôs, a RoboCup, sendo a liga de atuação do agente a liga Humanoide na categoria KidSize. Todos os dados dessa seção estão de acordo com o livro de regras de 2014 da RoboCup. \cite{Rules}
+
+O campo de jogo consiste de uma superfície plana e nivelada, coberta por um carpete verde liso na regras de 2014 \cite{Rules} e com grama artificial nas regras de 2015. Segmentos de linha de 10 centímetros de largura são usados para a marca de penalty e a posição inicial do início da partida. O campo é limitado pelas linha maiores, chamadas laterais, e por linhas menores, definidas como sendo de fundo, onde se encontram os gols. Todas as áreas localizadas fora dessas quatro linhas são consideradas desconhecidas e indefinidas. Os gols são compostos por duas traves, um travessão e uma rede. As condições de iluminação dependem do local da competição. Em volta do campo, um local é definido onde somente o juiz, seus assistentes e mais dois manipuladores dos robôs podem atuar. Nenhum participante pode usar, abaixo da cintura, cores iguais ou similares às definidas para o campo, bola ou gols. 
+
+Apenas os sensores equivalentes aos sentidos humanos são permitidos, mas, não são obrigatórios. Robôs humanoides devem ter o formato de seus corpos semelhante ao do ser humano, devem ter pernas e braços. Uma série de restrições são aplicadas às medidas dos agentes, uma delas, que tem mais relevância para a pesquisa, é a relação entre a altura do corpo do robô \(H_{\text{Robô}}\) e a altura da cabeça \(H_{\text{Cabeça}}\), de forma que, a altura da cabeça, incluindo o pescoço, deve satisfazer a seguinte expressão \cite{Rules}:\hfill 
+
+%\hspace{80}
+\begin{equation}
+0,05 * H_{\text{Robô}} \leq H_{\text{Cabeça}} \leq 0,25 * H_{\text{Robô}}  \\
+\end{equation}
+Onde a altura da cabeça é definida, como sendo, a distância do eixo da primeira junta do braço, no ombro, até o topo da cabeça.
+
+\begin{table}[ht!]
+    \caption{Medidas Importantes do Campo, da Bola e dos Jogadores} \label{tbl:medidas}
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline 
+    Descrição & Comprimento (cm) \\ 
+    \hline 
+    Linha Lateral ( Comprimento do Campo ) & 900  \\ 
+    \hline 
+    Linha de Fundo ( Largura do Campo ) & 600 \\ 
+    \hline 
+    Diâmetro do grande círculo & 150 \\ 
+    \hline 
+    Diâmetro da Bola & 10 \\ 
+    \hline 
+    Altura Máxima dos Agentes & 90 \\ 
+    \hline 
+
+    \end{tabular}
+    \caption*{Fonte: Livro de Regras RoboCup - (RoboCup Rules Book), 2014 \cite{Rules}}
+\end{table}
+
+O campo de visão dos robôs é limitado a 180 graus, isso significa que o ângulo máximo entre quaisquer dois pontos na sobreposição do campo de visão de todas as câmeras montadas sobre o robô precisam, obrigatoriamente, ser inferiores a 180 graus. O mecanismo para girar (pan) a câmera é limitado a 270 graus, 135 graus para cada lado, contados da posição de olhar para frente. Já o mecanismo para erguer (tilt) a câmera é limitado a 90 graus medidos da linha horizontal, essas restrições simulam as mesmas limitações das juntas do pescoço humano. Seguindo essa linha de limitações humanas, fica definido que de qualquer posição do robô e de qualquer ângulo de câmera ou do robô, o mesmo não pode ser capaz de visualizar os dois gols ao mesmo tempo. O número de câmeras fica limitado a duas, porém, a visão monocular também é permitida, de qualquer forma deve(m) estar na cabeça do robô.
+
+Robôs participantes das competições da liga humanoide devem ter corpos, predominantemente, pretos, cinzas, prateados ou brancos, com as limitações de serem não reflexivos e terem o pés pretos. Qualquer cor do campo, gol, bola ou time adversário deve ser evitada no robô. Braços, pernas e corpos devem ter aparência sólida e devem estar marcadas com a cor magenta (para agentes do time vermelho) e com a cor ciano (para agentes do time azul), ambas as marcas devem ter no mínimo 5 centímetros e estar visíveis nos dois lados das pernas e braços.
+
+\section{Organização do Trabalho}
+
+As seções anteriores apresentaram uma breve introdução sobre alguns tipos de visão para robôs móveis, a motivação, os principais objetivos, as justificativas, um breve histórico da RoboCup, e finalmente, o domínio ao qual este trabalho esta inserido, compondo o capítulo introdutório. Os demais capítulos estão estruturados da seguinte maneira:
+
+Conceitos básicos de aquisição, processamento e representação de imagens digitais são abordados no capítulo 2, apresentando, em forma de revisão, alguns dos mais conceituados algoritmos de processamento digital de imagens contextualizando-os com a visão computacional. A pesquisa prossegue nesse mesmo capítulo, pondo em perspectiva o modo como algumas equipes participantes da RoboCup solucionaram os mais variados problemas visuais do jogo de futebol. A descrição desse sistema de visão, com fluxogramas e testes a serem feitos, é apresentada na proposta de trabalho abarcada pelo capítulo 3. O capítulo 4 traz os testes já executados com resultados. Por fim, nas Considerações Finais, no capítulo 5, é feita uma breve síntese das atividades realizadas até o momento apresentando as contribuições e apontado para perspectivas futuras.
+

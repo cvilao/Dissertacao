@@ -1,0 +1,146 @@
+\subsection{Segmentação}
+
+A segmentação, em visão computacional, é o processo de dividir ou segregar uma imagem digital em duas ou mais regiões diferentes, com o objetivo de simplificar de uma imagem visando facilitar a sua análise ou interpretação. Os retornos esperados, como resultados do processo de segmentação, são atributos dessa imagem, como, regiões e contornos. Convém elucidar a diferença entre borda e contorno, a borda se verifica como sendo uma transição de uma parte do contorno de um objeto. A maior dificuldade é interpretar quais bordas pertencem, efetivamente, ao contorno de uma região ou objeto.
+
+Cada um dos pixels em uma mesma região é segmentada, levando-se em consideração alguma característica ou propriedade computacional. São propriedades comuns a cor, a intensidade, a textura ou, mesmo, a continuidade. 
+
+Todas as regiões selecionadas devem possuir limiares de características que permitam sua discretização umas das outras. De acordo com \citeonline{Benallal} e \citeonline{Broggi} é possível efetuar a segmentação seguida de reconhecimento de formato em tempo real. 
+
+\begin{figure}[!h1]
+\centering
+\includegraphics[width=2.5in]{Imagens/Seg_Hsv.png}
+\includegraphics[width=2.5in]{Imagens/Seg.jpeg}
+\DeclareGraphicsExtensions.
+\caption{Segmentação do Laranja usando como entrada uma imagem no modelo de cores HSI. \\ Fonte: o Autor}
+\label{Fig:Seg}
+\end{figure}
+
+
+\subsection{Morfologia Matemática}
+
+Morfologia é o estudo da forma, sendo o estudo morfológico o estudo das estruturas dessa forma. Em linguística, morfologia é o estudo da estrutura das palavras. Em biologia, morfologia está mais diretamente relacionada à forma de um organismo, por exemplo, a forma de uma folha pode ser usada para identificar uma planta ou a forma de uma colônia de bactérias pode ser usada para identificar sua variedade.
+Por outro lado, os matemáticos consideram a morfologia uma parte da teoria de conjuntos, e por consequência, denomina-se morfologia matemática como sendo um conjunto de métodos, inicialmente desenvolvidos por \citeonline{Matheron}, que tem em comum o objetivo de estudar a estrutura geométrica de um objeto ou parte dele. 
+
+Segundo \citeonline{Dougherty}, é possível definir a morfologia digital como sendo um caminho para descrever ou analisar a forma de um objeto digital, levando-se em conta sua estrutura geométrica, baseado no fato de que uma imagem consiste em um conjunto de pixels, que podem ser reunidos em grupos, criando uma estrutura bidimensional (forma). Nesse estudo fica subentendida a referência à morfologia digital. Certas operações matemáticas, quando aplicadas em conjuntos de pixels, podem ser usadas para ressaltar aspectos específicos das formas permitindo que sejam contadas ou reconhecidas.
+
+A base da morfologia segundo \citeonline{Gonzalez} consiste em extrair as informações relativas à geometria e à topologia de um conjunto desconhecido (no caso uma imagem) pela transformação através de outro conjunto bem definido, chamado elemento estruturante. Operações morfológicas estão divididas em binárias (aplicadas a imagens com pixels pretos ou brancos), e sobre imagens coloridas (aplicadas a imagens em tons de cinza ou, como o próprio nome diz, em imagens coloridas).
+
+Após processamento, um objeto é considerado um conjunto matemático de pixels brancos, sendo, cada pixel, identificado pelos seus índices de linha e coluna. No caso de operações binárias, um pixel afetado por essa operação será substituído pelo seu valor oposto. Em operações executadas em imagens coloridas pode ocorrer apenas a modificação parcial do valor do pixel.
+Com isso torna importante ao contexto a utilização de teoria dos conjuntos, pois é a base utilizada na morfologia, assim, é com esta teoria que será descrita e apresentada uma imagem.  
+
+\begin{figure}[!ht1]
+\centering
+\includegraphics[width=2.5in]{Imagens/Morphology.jpeg}
+\DeclareGraphicsExtensions.
+\caption{Exemplo de erosão e dilatação para um objeto circular, com elemento estruturante circular. \\ Fonte: o Autor}
+\label{Fig:Morfologia}
+\end{figure}
+
+As operações básicas da morfologia digital são a erosão, em que pixels que não atendem a um dado padrão são apagados da imagem, e a dilatação, em que uma pequena área relacionada a um pixel é alterada para um dado padrão. Todavia, dependendo do tipo de imagem que está sendo processada (preto e banco, tons de cinza ou colorida), a definição dessas operações muda, assim, cada tipo deve ser considerado separadamente.
+
+
+
+\subsection{Transformada de Hough}
+
+Sendo uma ferramenta de uso comum em visão computacional, a transformada de \\Hough é um processo matemático que detecta formas geométricas em imagens digitais. Essa técnica, desenvolvida por \citeonline{Hough}, encontra formas que são paramatrizáveis em imagens digitais como linhas, círculos e elipses, mesmo em imagens com pouca visibilidade da forma ou imagens fortemente ruidosas.
+
+Em geral, a transformada é aplicada após a imagem sofrer um pré-processamento, comumente a detecção de bordas.A transformada de Hough encontra uma relação entre o espaço de imagem e o espaço de parâmetros. Cada transição (ou borda) de uma imagem é transformada por um mapeamento para determinar sua relação no espaço de parâmetros através de um vetor. 
+
+As posições do vetor são incrementadas e indicarão quais os parâmetros correspondentes à forma especificada, através do máximo local do acumulador. A detecção de retas foi sua primeira aplicação mas, a transformada de Hough foi modificada para possibilitar a localização de outras formas geométricas. A transformada de Hough utilizada, majoritariamente, atualmente pode ser atribuída a \citeonline{HoughCircle} e a \citeonline{FastHough}.
+
+Hough usou a equação definida por y = a.x + b como representação paramétrica de uma linha, fato que conduziu a soluções infinitas para linhas paralelas ao eixo y, cuja solução será abordada posteriormente.
+ 
+O algoritmo de Hough requer um acumulador de dimensão igual ao número de parâmetros desconhecidos. Por exemplo: achar segmentos de linhas usando a equação y = ax + b, requer achar dois parâmetros para cada segmento: a e b, ou seja, duas dimensões da matriz acumuladora.
+
+Assim, usando uma matriz acumuladora A, o procedimento de Hough examina cada pixel e calcula os parâmetros da curva (equação) especificada que passa pelo pixel. 
+O procedimento examina cada pixel e calcula os parâmetros da equação de reta que passa por esse pixel, incrementando a matriz acumuladora.
+
+Caso uma imagem que não foi pré-processada com algoritmo de detecção de bordas, fato incomum na transformada de Hough, será examinado o pixel e sua vizinhança na imagem para determinar se há evidência de borda ou transição naquele pixel. Quando todos pixels tiverem sido processados, procura-se na matriz acumuladora os maiores valores. Esses valores indicam os parâmetros de prováveis linhas na imagem.
+
+Ao procurar os máximos na matriz acumuladora, lança-se o artifício do uso de um limiar, visando encontrar uma quantidade mínima de pontos colineares. Qualquer valor da matriz acumuladora que não for superior ao limiar será ignorado. As detecções de outras formas, utilizando a transformada de Hough, usam o mesmo princípio, com a ressalva na quantidade de parâmetros da equação que será empregada, e em consequência na dimensão do acumulador.
+ 
+\citeonline{HoughCircle} sugeriram coordenadas polares para representação de uma linha. Essa modificação manteve a quantidade de dimensões da matriz acumuladora e resolveu a limitação inicial de linhas paralelas ao eixo y. Usando esta parametrização, todo o ponto (x,y) na equação da reta satisfará a equação r= x . cos ( q ) + y . sin ( q ). Onde os parâmetros r e q são respectivamente a distância e a orientação da linha normal à reta candidata.
+
+Cada pixel do espaço da imagem produz uma função senoidal no espaço de Hough que alimenta um histograma. Com muitas senóides, ou seja, muitas possíveis linhas, o histograma gera diversos máximos que não correspondem efetivamente às linhas. Para resolver essa dificuldade, encontra-se a maior linha da imagem e remove-se sua contribuição do histograma. Repetindo esse procedimento até o fim das linhas encontradas, encontra-se o máximo global.
+
+Como uma forma de inferir um formato circular à bola, é usada a transformada de Hough para círculos, na implementação sugerida por \citeonline{Davies}. Essas formas são parametrizados por "x", "y" e "r", onde "x" e "y" referem-se a posição de centro e "r" ao raio do círculo. Agora que a matriz acumuladora têm três dimensões, é necessário reduzir a complexidade computacional da transformada de Hough. Determinar o centro e em seguida, encontrar o raio divide o problema em duas fases distintas, amenizando as dificuldades computacionais dessa técnica.
+
+Fica definido que a normal tangente de qualquer pixel pertencente a um círculo passa pelo centro desse círculo. Calcula-se a tangente como a linha que se ajusta melhor a todos pixels de uma vizinhança pequena (usando o método mínimos-quadrado), isso permite calcular a normal e registrá-la em um histograma. Finalmente, os máximos do histograma definem os locais de centros dos possíveis círculos. 
+
+Encontrar o raio esconde uma dificuldade prática, existem infinitos círculos que podem ter o mesmo centro. Para sobrepor essa dificuldade, alimenta-se um histograma unidimensional com a distância de cada pixel até o centro de um determinado círculo. Assim, os máximos dos histogramas correspondem aos raios dos círculos.
+
+Há ainda, a transformada probabilística de Hough, que afirma que é suficiente computar a transformada de Hough só de uma proporção de pixels na imagem. Estes pixels são escolhidos de forma aleatória usando-se uma função de densidade de probabilidade uniforme. Essa técnica foi  proposta por \citeonline{Kiryatti}.
+
+
+\subsection{Condensação}
+
+O algoritmo de condensação (Propagação densidade condicional) é um algoritmo de visão computacional. Sua aplicação principal é detectar e rastrear objetos que se movem em um ambiente desordenado. Ser capaz de identificar quais os pixels de uma imagem compõem um objeto é um problema não-trivial. A condensação é um algoritmo probabilístico que tenta resolver este problema.
+
+O próprio algoritmo é descrito em detalhe por Isard e Blake numa publicação no International Journal of Computer Vision em 1998. [1] Um dos aspectos mais interessantes do algoritmo é que ele não é calculado em cada pixel da imagem. Em vez disso, os pixels são escolhidos ao acaso, e apenas um subconjunto dos pixels acaba sendo processado. A presença de desordem tende a produzir distribuições de probabilidades para o estado do objeto que são multi-modais e, portanto, poderiam ser mal modelados pelo filtro de Kalman.
+
+
+
+
+
+\begin{comment}
+
+\subsection{Momentos}
+
+Momentos são utilizados para extração de características de uma imagem. A partir de uma imagem segmentada é possível descrever a distribuição espacial dos pontos contidos na imagem ou em uma região. Será feita uma pequena introdução de como calcular baricentros de figuras planas para definir os momentos de uma imagem digital, visando facilitar o entendimento do conceito.
+
+Se toda massa de um corpo estiver concentrada sobre um ponto, a esse ponto é dado o nome de baricentro ou centroide. Seguindo essa linha, o seu cálculo depende da distribuição da massa do corpo. Se os pontos desse objeto estiverem distribuídos de uma forma não homogênea, o centro de massa pode não se encontrar dentro do corpo
+
+O centro de massa de duas partículas (pontuais) localizadas em \(P_1 e P_2\) , com massas \(m_1\) e \(m_2\) é um ponto C no segmento de reta que une \(P_1\) a \(P_2\) a uma distância ponderada pelos valores \(m_1\) e \(m_2\). A ponderação é feita da seguinte maneira: a distância de \(P_1\) a C está para a distância de \(P_1\) a \(P_2\), assim como, a massa \(m_2\) está para a massa total \(m_1 + m_2\). Isto é:
+
+\begin{equation}
+\frac{ \bar{P_1C} } { \bar{P_1 P_2} } = \frac{ m_1 } { m_1 + m_2}
+\end{equation}
+
+Em imagens digitais os pontos são pixels e o equivalente à sua massa é estimada por sua intensidade ou área ocupada por esses pixels. Momentos de imagens são úteis para descrever objetos após segmentação. Propriedades simples da imagem, que são encontradas via momentos, incluem área ou intensidade total, centroide e informação sobre sua orientação. A primeira menção ao termo momentos em imagens digitais vem de \citeonline{Hu}.
+
+
+\subsection{Momentos centrais}
+
+A partir dos momentos é possível definir, segundo \citeonline{Flusser} algumas medidas importantes sobre os objetos de interesse, e que são úteis na identificação de diferentes formas, por exemplo, os momentos regulares de ordem 0 e 1 são usados para o cálculo do baricentro ou centro de massa do objeto. Momentos centrais são definidos da seguinte forma:
+
+\begin{equation}
+\displaystyle \mu_p{}_q = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}(x - \bar{x})^p . (y - \bar{y})^q f(x,y) dx dy
+\end{equation}\\
+
+Nessa fórmula $(\mu_{pq})$ é o momento de ordem (p+q) da função intensidades e os limites da integral representam respectivamente a largura e a altura da imagem digital. 
+
+\subsection{Momentos de Primeira Ordem}
+
+O momento de uma área plana em relação a um eixo é o produto de sua área pela distância de seu centroide ao referido eixo. O momento de uma região digital é calculada, computando-se a distância de cada pixel num processo equivalente ao de cálculo de centro de massa em um objeto bi-dimensional.  
+
+O teorema de Green \cite{Green} relaciona a integral de linha ao longo de uma curva fechada no plano com a integral dupla sobre a região limitada por essa curva, em outras palavras, é possível determinar a área de figuras planas somente integrando pelo perímetro desses objetos.
+
+O momento de uma imagem é uma média ponderada das intensidades dos pixels de uma imagem.
+
+\begin{equation}
+ mu_i{}_j = \sum\limits_{x,y} [ Array(x,y) . (x - \bar{x})^j . (y - \bar{y})^i ]
+\end{equation}\\
+
+onde $(\bar{x}, \bar{y})$ , é o centro de massa do objeto digital.
+
+\begin{equation}
+\bar{x} = \frac{m_1{}_0}{m_0{}_0} \textrm{ , }  \bar{y} = \frac{m_0{}_1}{m_0{}_0}
+\end{equation}\\
+
+Os momentos centrais normalizados, ou seja, invariantes à rotação e escala, são calculados da seguinte forma:
+
+\begin{equation}
+ nu_i{}_j = \frac{mu_i{}_j} { m_0{}_0 ^\frac{i+j}{2+1} }
+\end{equation}\\
+
+A informação sobre a orientação da imagem pode ser derivada  usando os momentos centrais de primeira ordem para construir uma matriz de covariância. Os autovetores dessa matriz correspondem aos eixos de maior e menor intensidade, dessa forma é possível extrair a orientação do objeto digital. Extraindo o autovetor com maior valor e, assim, definindo sua elongacionalidade.
+
+Definindo todas as possíveis posições do centro de massa dentro do objeto, tem-se a envoltória convexa ou fecho convexo do objeto. De outra forma ele é o “menor” conjunto convexo que contém esses pontos
+
+\end{comment}
+
+
+
+
+
+
